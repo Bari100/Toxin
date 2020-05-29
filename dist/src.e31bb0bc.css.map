@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\styles\\main.scss"],"names":[],"mappings":"AAAA;EACI;;AACA;EACI;;AAEJ;EACI","file":"src.e31bb0bc.css","sourceRoot":"..\\src","sourcesContent":["body {\r\n    background-color: aliceblue;\r\n    h1 {\r\n        color: antiquewhite;\r\n    }\r\n    p {\r\n        font-size: 100px;\r\n    }\r\n}"]}
