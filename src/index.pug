@@ -3,6 +3,76 @@ html(lang="en")
     head
         title Toxin
     body
-        h1 hello
-        p bye
+        header.header
+            .box__header.wrap
+                .logo__header
+                    img(src='../img/logo.svg')
+                ul
+                    li
+                        a(href='').nav__header О нас
+                    li
+                        a(href='').nav__header Услуги
+                        img(src='../img/arrow_down.svg')
+                    li.vacancy
+                        a(href='').nav__header Вакансии
+                    li
+                        a(href='').nav__header Новости
+                    li
+                        a(href='').nav__header Соглашения
+                        img(src='../img/arrow_down.svg')
+                    li.sign-in
+                        a(href='').button ВОЙТИ
+                    li.sign-up
+                        a(href='').button.button-color ЗАРЕГИСТРИРОВАТЬСЯ
+        .content.wrap
+            .text__content
+                p Лучшие номера для вашей работы, отдыха и просто вдохновения
+        footer.footer
+            .box__footer
+                .column-1__footer
+                    .logo__footer
+                        img(src='../img/logo.svg')
+                    p.text__footer
+                nav
+                    .column-2__footer
+                        ul
+                            li
+                                a(href='').nav__footer.b НАВИГАЦИЯ
+                            li
+                                a(href='').nav__footer О нас
+                            li
+                                a(href='').nav__footer Новости
+                            li
+                                a(href='').nav__footer Служба поддержки
+                            li
+                                a(href='').nav__footer Услуги
+                    .column-3__footer
+                        ul
+                            li
+                                a(href='').nav__footer.b О НАС
+                            li
+                                a(href='').nav__footer О сервисе
+                            li
+                                a(href='').nav__footer Наша команда
+                            li
+                                a(href='').nav__footer Вакансии
+                            li
+                                a(href='').nav__footer Инвесторы
+                    .column-4__footer
+                        ul
+                            li
+                                a(href='').nav__footer.b СЛУЖБА ПОДДЕРЖКИ
+                            li
+                                a(href='').nav__footer Соглашения
+                            li
+                                a(href='').nav__footer Сообщества
+                            li
+                                a(href='').nav__footer Связь с нами
+                    .column-5__footer
+                        ul
+                            li
+                                a(href='').nav__footer.b ПОДПИСКА
+                            li
+                                a(href='').nav__footer Получайте специальные предложения и нвоости сервиса
+                        input(type='email' name='email')
         script(src='index.js')

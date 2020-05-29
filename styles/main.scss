@@ -1,10 +1,26 @@
+@import 'fonts.scss';
+
 body {
-    background-color: aliceblue;
-    h1 {
-        color: antiquewhite;
+    background-color: aqua;
+    font-family: 'Montserrat'; 
+    font-size: 14px;
+    a {
+        text-decoration: none;
     }
-    p {
-        font-size: 100px;
-        color: white;
+    ul {
+        list-style-type: none;
     }
+}
+
+.wrap {
+    max-width: 1440px;
+}
+
+@import 'header.scss';
+
+.content {
+    background-image: url(../img/1.png);
+    background-size: cover;
+    margin: -14px auto 0;
+    height: 830px;
 }

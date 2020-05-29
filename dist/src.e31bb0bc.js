@@ -189,13 +189,20 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"./..\\fonts\\montserrat-v14-cyrillic_latin-regular.eot":[["montserrat-v14-cyrillic_latin-regular.e74ff5ad.eot","../fonts/montserrat-v14-cyrillic_latin-regular.eot"],"../fonts/montserrat-v14-cyrillic_latin-regular.eot"],"./..\\fonts\\montserrat-v14-cyrillic_latin-regular.woff2":[["montserrat-v14-cyrillic_latin-regular.67fcefcd.woff2","../fonts/montserrat-v14-cyrillic_latin-regular.woff2"],"../fonts/montserrat-v14-cyrillic_latin-regular.woff2"],"./..\\fonts\\montserrat-v14-cyrillic_latin-regular.woff":[["montserrat-v14-cyrillic_latin-regular.61ead990.woff","../fonts/montserrat-v14-cyrillic_latin-regular.woff"],"../fonts/montserrat-v14-cyrillic_latin-regular.woff"],"./..\\fonts\\montserrat-v14-cyrillic_latin-regular.ttf":[["montserrat-v14-cyrillic_latin-regular.e2a9b171.ttf","../fonts/montserrat-v14-cyrillic_latin-regular.ttf"],"../fonts/montserrat-v14-cyrillic_latin-regular.ttf"],"./..\\fonts\\montserrat-v14-cyrillic_latin-regular.svg":[["montserrat-v14-cyrillic_latin-regular.e8c2a464.svg","../fonts/montserrat-v14-cyrillic_latin-regular.svg"],"../fonts/montserrat-v14-cyrillic_latin-regular.svg"],"./..\\fonts\\montserrat-v14-cyrillic_latin-600.eot":[["montserrat-v14-cyrillic_latin-600.5f7a4f8e.eot","../fonts/montserrat-v14-cyrillic_latin-600.eot"],"../fonts/montserrat-v14-cyrillic_latin-600.eot"],"./..\\fonts\\montserrat-v14-cyrillic_latin-600.woff2":[["montserrat-v14-cyrillic_latin-600.e4855cee.woff2","../fonts/montserrat-v14-cyrillic_latin-600.woff2"],"../fonts/montserrat-v14-cyrillic_latin-600.woff2"],"./..\\fonts\\montserrat-v14-cyrillic_latin-600.woff":[["montserrat-v14-cyrillic_latin-600.021f36ba.woff","../fonts/montserrat-v14-cyrillic_latin-600.woff"],"../fonts/montserrat-v14-cyrillic_latin-600.woff"],"./..\\fonts\\montserrat-v14-cyrillic_latin-600.ttf":[["montserrat-v14-cyrillic_latin-600.23d588a7.ttf","../fonts/montserrat-v14-cyrillic_latin-600.ttf"],"../fonts/montserrat-v14-cyrillic_latin-600.ttf"],"./..\\fonts\\montserrat-v14-cyrillic_latin-600.svg":[["montserrat-v14-cyrillic_latin-600.8684382d.svg","../fonts/montserrat-v14-cyrillic_latin-600.svg"],"../fonts/montserrat-v14-cyrillic_latin-600.svg"],"./..\\img\\1.png":[["1.3e034116.png","../img/1.png"],"../img/1.png"],"_css_loader":"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/normalize.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("../styles/main.scss");
 
+require("../styles/normalize.css");
+
 console.log('Привет, Мир!');
-},{"../styles/main.scss":"../styles/main.scss"}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../styles/main.scss":"../styles/main.scss","../styles/normalize.css":"../styles/normalize.css"}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -223,7 +230,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63854" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59013" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
