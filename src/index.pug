@@ -5,8 +5,8 @@ html(lang="en")
     body
         header.header
             .box__header.wrap
-                .logo__header
-                    img(src='../img/logo.svg')
+                a(href='').logo__header
+                    img(src='../img/logo.svg' alt='logo')
                 ul
                     li
                         a(href='').nav__header О нас
@@ -27,17 +27,17 @@ html(lang="en")
         .content.wrap
             .text__content
                 p Лучшие номера для вашей работы, отдыха и просто вдохновения
-        footer.footer
-            .box__footer
+        footer.footer.wrap
+            .top__footer
                 .column-1__footer
-                    .logo__footer
+                    a(href='' alt='logo').logo__footer
                         img(src='../img/logo.svg')
-                    p.text__footer
+                    p.text__footer Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
                 nav
                     .column-2__footer
                         ul
                             li
-                                a(href='').nav__footer.b НАВИГАЦИЯ
+                                span НАВИГАЦИЯ
                             li
                                 a(href='').nav__footer О нас
                             li
@@ -49,7 +49,7 @@ html(lang="en")
                     .column-3__footer
                         ul
                             li
-                                a(href='').nav__footer.b О НАС
+                                span О НАС
                             li
                                 a(href='').nav__footer О сервисе
                             li
@@ -61,7 +61,7 @@ html(lang="en")
                     .column-4__footer
                         ul
                             li
-                                a(href='').nav__footer.b СЛУЖБА ПОДДЕРЖКИ
+                                span СЛУЖБА ПОДДЕРЖКИ
                             li
                                 a(href='').nav__footer Соглашения
                             li
@@ -71,8 +71,18 @@ html(lang="en")
                     .column-5__footer
                         ul
                             li
-                                a(href='').nav__footer.b ПОДПИСКА
+                                span ПОДПИСКА
                             li
-                                a(href='').nav__footer Получайте специальные предложения и нвоости сервиса
-                        input(type='email' name='email')
+                                p.text__footer Получайте специальные предложения и новости сервиса
+                            li
+                                input(type='email' name='email' placeholder='Email')
+                                button(type='submit')
+                                    img(src='../img/arrow_forward.svg')
+            .bottom__footer
+                //hr
+                p.copyright Copyright © 2018 Toxin отель. Все права зачищены.
+                .social
+                    a(href='' alt='twitter').btn-social.btn-tw
+                    a(href='' alt='facebook').btn-social.btn-fb
+                    a(href='' alt='instagram').btn-social.btn-inst
         script(src='index.js')

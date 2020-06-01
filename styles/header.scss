@@ -1,21 +1,25 @@
 .box__header {
-    background-color: aquamarine;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     .logo__header {
-        margin: 15px 0 13px 140px;
+        margin: 15px 0 13px 0;
     }
     ul {
         display: flex;
         justify-content: space-between;
-        margin: 27px 140px 0 0;
+        margin: 27px 0 0 0;
         .vacancy {
             margin-left: 45px;
         }
         .nav__header {
             color: rgba(31, 32, 65, 0.5);
             margin: 0 0 0 1px;
+            &:hover {
+                color: rgba(31, 32, 65, 0.75);
+            }
+            &:focus {
+                color: rgba(31, 32, 65, 0.99);
+            }
         }
         li {
             margin-left: 18px;

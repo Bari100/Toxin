@@ -1,7 +1,6 @@
 @import 'fonts.scss';
 
 body {
-    background-color: aqua;
     font-family: 'Montserrat'; 
     font-size: 14px;
     a {
@@ -13,14 +12,31 @@ body {
 }
 
 .wrap {
-    max-width: 1440px;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 @import 'header.scss';
 
 .content {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
     background-image: url(../img/1.png);
-    background-size: cover;
-    margin: -14px auto 0;
+    background-position: -42px -128px;
+    background-repeat: no-repeat;
+    background-size: 106%;
     height: 830px;
 }
+
+.text__content {
+    max-width: 297px;
+    text-align: right;
+    line-height: 23px;
+    margin-bottom: 7px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+@import 'footer';
