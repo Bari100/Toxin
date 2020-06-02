@@ -1,0 +1,22 @@
+.photo-room {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-room__1 {
+    background-image: url(../img/room/room.png);
+    width: 981px;
+    height: 485px;
+}
+
+.photo-room__2 {
+    background-image: url(../img/room/room-2.png);
+    width: 459px;
+    height: 242px;
+}
+
+.photo-room__3 {
+    background-image: url(../img/room/room-3.png);
+    width: 459px;
+    height: 242px;
+}

@@ -110,7 +110,7 @@ body ul {
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap-reverse;
-  background-image: url(/1.3e034116.png);
+  background-image: url(/1.06f8af9e.png);
   background-position: -42px -128px;
   background-repeat: no-repeat;
   background-size: 106%;
@@ -211,22 +211,28 @@ body ul {
   position: absolute;
   width: 1440px;
   right: -140px;
-  bottom: 36px;
+  bottom: 51px;
   border: none;
   height: 1px;
   background-color: rgba(31, 32, 65, 0.1);
 }
 .bottom__footer .social {
+  width: 112px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .bottom__footer .social .btn-social {
-  display: block;
-  background-image: url(/btn-social.482cd129.svg);
+  background-image: url(/btn-social.7d9ce395.svg);
   background-repeat: no-repeat;
 }
+.bottom__footer .social .btn-social:hover {
+  opacity: 0.75;
+}
+.bottom__footer .social .btn-social:focus {
+  opacity: 0.95;
+}
 .bottom__footer .social .btn-tw {
-  background-position: 1px 10px;
+  background-position: -1px 10px;
   width: 24px;
   height: 34px;
 }
@@ -236,9 +242,32 @@ body ul {
   height: 34px;
 }
 .bottom__footer .social .btn-inst {
-  background-position: -87px 10px;
+  background-position: -89px 10px;
   width: 24px;
   height: 34px;
+}
+
+.photo-room {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-room__1 {
+  background-image: url(/room.09fe70fd.png);
+  width: 981px;
+  height: 485px;
+}
+
+.photo-room__2 {
+  background-image: url(/room-2.2e3f350e.png);
+  width: 459px;
+  height: 242px;
+}
+
+.photo-room__3 {
+  background-image: url(/room-3.2d47b616.png);
+  width: 459px;
+  height: 242px;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 

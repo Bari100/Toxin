@@ -10,5 +10,10 @@
   "devDependencies": {
     "pug": "^3.0.0",
     "sass": "^1.26.7"
+  },
+  "dependencies": {
+    "assemble": "^0.3.83",
+    "grunt": "^0.4.5",
+    "styles": "^0.2.1"
   }
 }
