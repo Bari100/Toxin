@@ -2,14 +2,10 @@ doctype html
 html(lang="en")
     head
         title Номер
-        link(rel='stylesheet' href='styles/main.scss')
+        link(rel='stylesheet' href='styles/style.scss')
     body
-        include blocks/header/header.pug
-        .photo-room
-            .photo-room__1
-            .photo-room__blocks
-                .photo-room__2
-                .photo-room__3
-        .content-room.wrap
-        include blocks/footer/footer.pug
+        include blocks/_commons/header/header.pug
+        include blocks/room/photo-room/photo-room.pug
+        include blocks/room/content/reviews-room/reviews-room.pug
+        include blocks/_commons/footer/footer.pug
         //script(src='index.js')

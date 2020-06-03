@@ -1,7 +1,7 @@
-.box__header {
+.header__box {
     display: flex;
     justify-content: space-between;
-    .logo__header {
+    .header__logo {
         margin: 15px 0 13px 0;
     }
     ul {
@@ -11,7 +11,7 @@
         .vacancy {
             margin-left: 45px;
         }
-        .nav__header {
+        .header__nav {
             color: rgba(31, 32, 65, 0.5);
             margin: 0 0 0 1px;
             &:hover {

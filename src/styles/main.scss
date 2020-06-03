@@ -1,5 +1,3 @@
-@import 'fonts.scss';
-
 body {
     font-family: 'Montserrat'; 
     font-size: 14px;
@@ -18,8 +16,6 @@ body {
     padding-right: 140px;
 }
 
-@import '../blocks/header/header.scss';
-
 .content {
     display: flex;
     flex-direction: column-reverse;
@@ -31,13 +27,10 @@ body {
     height: 830px;
 }
 
-.text__content {
+.content__text {
     max-width: 297px;
     text-align: right;
     line-height: 23px;
     margin-bottom: 7px;
     color: rgba(31, 32, 65, 0.75);
 }
-
-@import '../blocks/footer/footer.scss';
-@import '../blocks/photo-room/photo-room.scss';

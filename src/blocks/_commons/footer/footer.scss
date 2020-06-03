@@ -40,6 +40,7 @@
         .column-5__footer {
             li {
                 margin-bottom: 19px;
+                position: relative;
                 p {
                     margin-bottom: 22px;
                 }
@@ -50,7 +51,6 @@
                     border-radius: 4px;
                     padding-left: 15px;
                     padding-right: 42px;
-                    position: relative;
                     &:focus {
                         outline: none;
                     }
@@ -62,13 +62,14 @@
                     background-color: transparent;
                     border-color: transparent;
                     position: absolute;
-                    right: 376px;
-                    bottom: -177px;
+                    right: -106px;
+                    bottom: 7px;
                     &:focus {
                         outline: none;
                     }
                     &:hover {
                         cursor: pointer;
+                        opacity: 0.75;
                     }
                 }
             }
@@ -95,7 +96,7 @@
         display: flex;
         justify-content: space-between;
         .btn-social {
-            background-image: url(/img/btn-social.svg);
+            background-image: url(../img/btn-social.svg);
             background-repeat: no-repeat;
             &:hover {
                 opacity: 0.75;

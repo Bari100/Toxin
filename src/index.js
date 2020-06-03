@@ -1,3 +1,2 @@
-import '/styles/main.scss'
-import '/styles/normalize.css'
+import '/styles/style.scss'
 console.log('Привет, Мир!')

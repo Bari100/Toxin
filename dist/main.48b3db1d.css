@@ -1,31 +1,3 @@
-/* montserrat-regular - cyrillic_latin */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/montserrat-v14-cyrillic_latin-regular.e74ff5ad.eot");
-  /* IE9 Compat Modes */
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("/montserrat-v14-cyrillic_latin-regular.e74ff5ad.eot?#iefix") format("embedded-opentype"), url("/montserrat-v14-cyrillic_latin-regular.67fcefcd.woff2") format("woff2"), url("/montserrat-v14-cyrillic_latin-regular.61ead990.woff") format("woff"), url("/montserrat-v14-cyrillic_latin-regular.e2a9b171.ttf") format("truetype"), url("/montserrat-v14-cyrillic_latin-regular.e8c2a464.svg#Montserrat") format("svg");
-  /* Legacy iOS */
-}
-/* montserrat-600 - cyrillic_latin */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/montserrat-v14-cyrillic_latin-600.5f7a4f8e.eot");
-  /* IE9 Compat Modes */
-  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("/montserrat-v14-cyrillic_latin-600.5f7a4f8e.eot?#iefix") format("embedded-opentype"), url("/montserrat-v14-cyrillic_latin-600.e4855cee.woff2") format("woff2"), url("/montserrat-v14-cyrillic_latin-600.021f36ba.woff") format("woff"), url("/montserrat-v14-cyrillic_latin-600.23d588a7.ttf") format("truetype"), url("/montserrat-v14-cyrillic_latin-600.8684382d.svg#Montserrat") format("svg");
-  /* Legacy iOS */
-}
-/* montserrat-700 - latin_cyrillic */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("/montserrat-v14-latin_cyrillic-700.85da606a.woff2") format("woff2"), url("/montserrat-v14-latin_cyrillic-700.c3040b57.woff") format("woff"), url("/montserrat-v14-latin_cyrillic-700.45f4a2cd.ttf") format("truetype"), url("/montserrat-v14-latin_cyrillic-700.383d4152.svg#Montserrat") format("svg");
-  /* Legacy iOS */
-}
 body {
   font-family: "Montserrat";
   font-size: 14px;
@@ -168,6 +140,7 @@ body ul {
 }
 .top__footer nav .column-5__footer li {
   margin-bottom: 19px;
+  position: relative;
 }
 .top__footer nav .column-5__footer li p {
   margin-bottom: 22px;
@@ -179,7 +152,6 @@ body ul {
   border-radius: 4px;
   padding-left: 15px;
   padding-right: 42px;
-  position: relative;
 }
 .top__footer nav .column-5__footer li input:focus {
   outline: none;
@@ -191,8 +163,8 @@ body ul {
   background-color: transparent;
   border-color: transparent;
   position: absolute;
-  right: 376px;
-  bottom: -177px;
+  right: -106px;
+  bottom: 7px;
 }
 .top__footer nav .column-5__footer li button:focus {
   outline: none;

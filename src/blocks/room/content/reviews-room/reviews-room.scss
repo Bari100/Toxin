@@ -1,0 +1,41 @@
+.reviews-room__impressions {
+    width: 311px;
+}
+
+.circle-list {
+    position: relative;
+    
+}
+
+.reviews-room__list {
+    position: absolute;
+    left: 110px;
+    top: 15px;
+    color: rgba(31, 32, 65, 0.75);
+    line-height: 24px;
+    li {
+        
+    }
+    li:before{
+        content: '';
+        display: inline-block;
+        height:9px;
+        width: 9px;
+        vertical-align: middle;
+        border-radius:50%;
+        margin-right:5px;
+        background: rgb(255,186,156);
+        background: linear-gradient(0deg, rgba(255,186,156,1) 0%, rgba(255,227,156,1) 100%);
+    }
+}
+
+.reviews-room__title {
+    font-size: 19px;
+    letter-spacing: -0.3px;
+    color: #1F2041;
+}
+@import'__circle/__circle.scss';
+
+.reviews-room__circle {
+    margin-left: 0;
+}
