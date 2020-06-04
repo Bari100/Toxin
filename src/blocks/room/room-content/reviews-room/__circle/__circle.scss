@@ -3,6 +3,9 @@
     width:120px;
     height:120px;
     margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quarter {
@@ -25,7 +28,7 @@
     right:0;
     background: rgb(188,156,255);
     background: linear-gradient(174deg, rgba(188,156,255,1) 0%, rgba(139,164,249,1) 100%);
-    border-radius:0 100% 0 0 ;
+    border-radius:0 100% 0 0;
 }
 .quarter3 {
     bottom:0;
@@ -42,7 +45,7 @@
     right:0;
     background: rgb(111,207,151);
     background: linear-gradient(174deg, rgba(111,207,151,1) 0%, rgba(102,210,234,1) 100%);
-    border-radius:0 0 100% 0 ;
+    border-radius:0 0 100% 0;
 }
 .cutout {
     width:93%;
@@ -70,4 +73,19 @@
     position: absolute;
     left: 4%;
     top: 49%;
+}
+
+.votes {
+    font-size: 15px;
+    font-weight: 600;
+    color: #BC9CFF;
+    position: absolute;
+    z-index: 20;
+    bottom: 25px;
+    text-align: center;
+    span {
+        display: block;
+        font-size: 22px;
+        letter-spacing: -0.5px;
+    }
 }

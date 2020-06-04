@@ -1,0 +1,45 @@
+.reviews-room__reviews {
+    
+    color: rgba(31, 32, 65, 0.75);
+    .reviews-room__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(31, 32, 65, 0.5);
+            margin-right: 3.5px;
+            margin-top: 4px;
+        }
+    }
+    .reviews-room__comment {
+        display: flex;
+        background-color: aliceblue;
+    }
+    .reviews-room__comment-images {
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: -20px;
+        //align-items: center;
+        
+        
+    }
+    .reviews-room__comment-name {
+        font-weight: 800;
+        line-height: 24px;
+        span {
+            display: block;
+            font-weight: 400;
+        }
+    }
+    .reviews-room__comment-text {
+        width: 653px;
+        line-height: 24px;
+    }
+    .reviews-room__comment-name-text {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,11 @@
+.reviews-room {
+    width: 712px;
+}
+
+.info-impressions {
+    display: flex;
+}
+
+@import'reviews-room__info/reviews-room__info.scss';
+@import'reviews-room__impressions/reviews-room__impressions.scss';
+@import'reviews-room__comment/reviews-room__comment.scss';
