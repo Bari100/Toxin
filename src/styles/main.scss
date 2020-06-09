@@ -41,3 +41,12 @@ body {
     margin-bottom: 7px;
     color: rgba(31, 32, 65, 0.75);
 }
+
+//MEDIA
+@media (max-width: 1055px) {
+    header.header {
+        .wrap {
+            padding-right: 15px;
+        }
+    }
+}
