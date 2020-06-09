@@ -2,20 +2,24 @@ header.header
             .header__box.wrap
                 a(href='').header__logo
                     img(src='img/logo.svg' alt='logo')
-                ul
-                    li
-                        a(href='').header__nav О&nbsp;нас
-                    li
-                        a(href='').header__nav Услуги
-                        img(src='img/arrow_down.svg')
-                    li.vacancy
-                        a(href='').header__nav Вакансии
-                    li
-                        a(href='').header__nav Новости
-                    li
-                        a(href='').header__nav Соглашения
-                        img(src='img/arrow_down.svg')
-                    li.sign-in
-                        a(href='').button ВОЙТИ
-                    li.sign-up
-                        a(href='').button.button-color ЗАРЕГИСТРИРОВАТЬСЯ
+                .header__navs    
+                    ul.header__nav-bar
+                        li
+                            a(href='').header__nav О&nbsp;нас
+                        li
+                            a(href='').header__nav Услуги
+                            img(src='img/arrow_down.svg')
+                        li.vacancy
+                            a(href='').header__nav Вакансии
+                        li
+                            a(href='').header__nav Новости
+                        li
+                            a(href='').header__nav Соглашения
+                            img(src='img/arrow_down.svg')
+                    ul.header__sign
+                        li.sign-in
+                            a(href='').button ВОЙТИ
+                        li.sign-up
+                            a(href='').button.button-color ЗАРЕГИСТРИРОВАТЬСЯ
+                        button.btn-menu
+                            img(src="img/btn-menu.svg")

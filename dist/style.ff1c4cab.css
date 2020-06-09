@@ -390,6 +390,13 @@ body ul {
 .wrap {
   max-width: 1160px;
   margin: 0 auto;
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.content-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
   padding-left: 140px;
   padding-right: 140px;
 }
@@ -413,6 +420,11 @@ body ul {
   color: rgba(31, 32, 65, 0.75);
 }
 
+@media (max-width: 1055px) {
+  header.header .wrap {
+    padding-right: 15px;
+  }
+}
 .header__box {
   display: flex;
   justify-content: space-between;
@@ -420,36 +432,45 @@ body ul {
 .header__box .header__logo {
   margin: 15px 0 13px 0;
 }
-.header__box ul {
+.header__box .header__navs {
+  display: flex;
+  margin-top: 13px;
+}
+.header__box .header__nav-bar {
   display: flex;
   justify-content: space-between;
-  margin: 27px 0 0 0;
 }
-.header__box ul .vacancy {
+.header__box .header__nav-bar .vacancy {
   margin-left: 45px;
 }
-.header__box ul .header__nav {
+.header__box .header__nav-bar .header__nav {
   color: rgba(31, 32, 65, 0.5);
   margin: 0 0 0 1px;
 }
-.header__box ul .header__nav:hover {
+.header__box .header__nav-bar .header__nav:hover {
   color: rgba(31, 32, 65, 0.75);
 }
-.header__box ul .header__nav:focus {
+.header__box .header__nav-bar .header__nav:focus {
   color: rgba(31, 32, 65, 0.99);
 }
-.header__box ul li {
-  margin-left: 18px;
+.header__box .header__nav-bar li {
+  margin-left: 19px;
   position: relative;
 }
-.header__box ul li img {
+.header__box .header__nav-bar li img {
   position: absolute;
-  bottom: 23px;
+  bottom: 10px;
 }
-.header__box ul .sign-in {
-  margin-left: 45px;
+.header__box .header__sign {
+  display: flex;
 }
-.header__box ul .button {
+.header__box .header__sign .sign-in {
+  margin-left: 5px;
+}
+.header__box .header__sign .sign-up {
+  margin-left: 18px;
+}
+.header__box .header__sign .button {
   color: #8BA4F9;
   background-color: transparent;
   font-weight: 600;
@@ -458,27 +479,57 @@ body ul {
   border-radius: 100px;
   padding: 7px 19px;
 }
-.header__box ul .button:hover {
+.header__box .header__sign .button:hover {
   background-color: rgba(139, 164, 249, 0.68);
   color: white;
   border: 2px solid #8BA4F9;
 }
-.header__box ul .button:focus {
+.header__box .header__sign .button:focus {
   background-color: #8ba4f9;
 }
-.header__box ul .button-color {
+.header__box .header__sign .button-color {
   color: white;
   background-color: #8BA4F9;
 }
-.header__box ul .button-color:focus {
+.header__box .header__sign .button-color:focus {
   background-color: white;
   color: #8BA4F9;
 }
+.header__box .header__sign .btn-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  margin-top: -6px;
+  border: none;
+  background-color: transparent;
+}
+.header__box .header__sign .btn-menu:focus {
+  outline: none;
+}
+@media (max-width: 1055px) {
+  .header__box .header__nav-bar {
+    display: none;
+  }
+  .header__box .header__sign .btn-menu {
+    display: block;
+  }
+  .header__box .header__sign .sign-up {
+    margin-right: 8px;
+  }
+}
 
 .top__footer {
-  display: flex;
+  width: 1440px;
+  margin: 0 auto;
   padding-top: 100px;
-  margin-bottom: 93px;
+  padding-bottom: 77px;
+  margin-bottom: 14px;
+  border: 1px solid;
+  border-color: rgba(31, 32, 65, 0.25) #fff rgba(31, 32, 65, 0.1) #fff;
+}
+.top__footer .wrap {
+  display: flex;
 }
 .top__footer .logo__footer {
   margin-bottom: 15px;
@@ -553,19 +604,11 @@ body ul {
 }
 
 .bottom__footer {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
   color: rgba(31, 32, 65, 0.75);
 }
-.bottom__footer hr {
-  position: absolute;
-  width: 1440px;
-  right: -140px;
-  bottom: 51px;
-  border: none;
-  height: 1px;
-  background-color: rgba(31, 32, 65, 0.1);
+.bottom__footer .wrap {
+  display: flex;
+  justify-content: space-between;
 }
 .bottom__footer .social {
   width: 112px;
@@ -815,12 +858,13 @@ body ul {
 }
 
 .reviews-room__reviews {
+  margin-bottom: 3px;
   color: rgba(31, 32, 65, 0.75);
 }
 .reviews-room__reviews .reviews-room__title {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 .reviews-room__reviews .reviews-room__title span {
   font-size: 14px;
@@ -831,29 +875,81 @@ body ul {
 }
 .reviews-room__reviews .reviews-room__comment {
   display: flex;
-  background-color: aliceblue;
+}
+.reviews-room__reviews .reviews-room__comment-avatar {
+  position: absolute;
+  left: -20px;
+  top: -1.5px;
+}
+.reviews-room__reviews .reviews-room__comment-like {
+  margin-top: 64px;
 }
 .reviews-room__reviews .reviews-room__comment-images {
-  background-color: antiquewhite;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-left: -20px;
+  margin-right: 10px;
+  padding-top: 5px;
+  position: relative;
+  width: 47.67px;
+  height: 80px;
 }
 .reviews-room__reviews .reviews-room__comment-name {
   font-weight: 800;
-  line-height: 24px;
+  margin-bottom: 15px;
 }
 .reviews-room__reviews .reviews-room__comment-name span {
   display: block;
   font-weight: 400;
+  margin-top: 8px;
 }
 .reviews-room__reviews .reviews-room__comment-text {
   width: 653px;
   line-height: 24px;
 }
-.reviews-room__reviews .reviews-room__comment-name-text {
-  margin-bottom: 0;
+
+.reviews-room__rules-cancel {
+  color: rgba(31, 32, 65, 0.75);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 53px;
+}
+.reviews-room__rules-cancel .reviews-room__rules {
+  width: 292px;
+}
+.reviews-room__rules-cancel .reviews-room__rules .reviews-room__title {
+  margin-left: 19px;
+}
+.reviews-room__rules-cancel .reviews-room__rules .reviews-room__rules-list {
+  margin-left: -40px;
+}
+.reviews-room__rules-cancel .reviews-room__rules .reviews-room__rules-list li {
+  margin-bottom: 18px;
+}
+.reviews-room__rules-cancel .reviews-room__rules .reviews-room__rules-list li:nth-child(2) {
+  margin-bottom: 15px;
+}
+.reviews-room__rules-cancel .reviews-room__rules .reviews-room__rules-list li:last-child {
+  line-height: 24px;
+}
+.reviews-room__rules-cancel .reviews-room__rules .reviews-room__rules-list li:before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: rgba(31, 32, 65, 0.25);
+}
+.reviews-room__rules-cancel .reviews-room__cancel {
+  width: 341px;
+  margin-right: 10px;
+}
+.reviews-room__rules-cancel .reviews-room__cancel .reviews-room__title {
+  margin-bottom: 18px;
+}
+.reviews-room__rules-cancel .reviews-room__cancel .reviews-room__cancel-text {
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

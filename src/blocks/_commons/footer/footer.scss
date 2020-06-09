@@ -1,7 +1,14 @@
 .top__footer {
-    display: flex;
+    .wrap {
+        display: flex;
+    }
+    width: 1440px;
+    margin: 0 auto;
     padding-top: 100px;
-    margin-bottom: 93px;
+    padding-bottom: 77px;
+    margin-bottom: 14px;
+    border: 1px solid;
+    border-color: rgba(31, 32, 65, 0.25) #fff rgba(31, 32, 65, 0.1) #fff;
     .logo__footer {
         margin-bottom: 15px;
     }
@@ -78,19 +85,11 @@
 }
 
 .bottom__footer {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    color: rgba(31, 32, 65, 0.75);
-    hr {
-        position: absolute;
-        width: 1440px;
-        right: -140px;
-        bottom: 51px;
-        border: none;
-        height: 1px;
-        background-color: rgba(31, 32, 65, 0.1);
+    .wrap {
+        display: flex;
+        justify-content: space-between;
     }
+    color: rgba(31, 32, 65, 0.75);
     .social {
         width: 112px;
         display: flex;

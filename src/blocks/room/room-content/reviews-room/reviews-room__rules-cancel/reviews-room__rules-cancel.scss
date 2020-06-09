@@ -1,0 +1,44 @@
+
+.reviews-room__rules-cancel {
+    color: rgba(31, 32, 65, 0.75);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+    .reviews-room__rules {
+        width: 292px;
+        .reviews-room__title {
+            margin-left: 19px;
+        }
+        .reviews-room__rules-list {
+            margin-left: -40px;
+            li {
+                margin-bottom: 18px;
+                &:nth-child(2) {
+                    margin-bottom: 15px;
+                }
+                &:last-child {
+                    line-height: 24px;
+                }
+            }
+            li:before{
+                content: '';
+                display: inline-block;
+                height: 10px;
+                width: 10px;
+                border-radius:50%;
+                margin-right:10px;
+                background: rgba(31, 32, 65, 0.25);
+            }
+        }
+    }
+    .reviews-room__cancel {
+        width: 341px;
+        margin-right: 10px;
+        .reviews-room__title {
+            margin-bottom: 18px;
+        }
+        .reviews-room__cancel-text {
+            line-height: 24px;
+        }
+    } 
+}
