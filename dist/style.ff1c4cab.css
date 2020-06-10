@@ -507,6 +507,14 @@ body ul {
 .header__box .header__sign .btn-menu:focus {
   outline: none;
 }
+.header__box .modal {
+  display: none;
+  position: fixed;
+  top: 71px;
+  right: 0;
+  width: 15%;
+  background-color: rgba(255, 255, 255, 0.95);
+}
 @media (max-width: 1055px) {
   .header__box .header__nav-bar {
     display: none;
@@ -516,6 +524,25 @@ body ul {
   }
   .header__box .header__sign .sign-up {
     margin-right: 8px;
+  }
+  .header__box .modal .header__nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 10px 0 0 10px;
+  }
+  .header__box .modal .header__nav-bar li {
+    margin: 0 0 22px 0;
+    padding: 0 0 0 0;
+  }
+  .header__box .modal .header__nav-bar li img {
+    bottom: -4px;
+  }
+}
+@media (min-width: 1056px) {
+  .header__box .modal .header__nav-bar {
+    display: none;
   }
 }
 
@@ -950,6 +977,20 @@ body ul {
 }
 .reviews-room__rules-cancel .reviews-room__cancel .reviews-room__cancel-text {
   line-height: 24px;
+}
+
+@media (max-width: 810px) {
+  .info-impressions {
+    display: block;
+  }
+
+  .reviews-room__rules-cancel {
+    display: block;
+  }
+
+  .reviews-room__reviews .reviews-room__comment-text {
+    max-width: 65%;
+  }
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

@@ -55,6 +55,14 @@
             }
         }
     }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 71px;
+        right: 0;
+        width: 15%;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
 
     //MEDIA
     @media (max-width: 1055px) {
@@ -67,6 +75,29 @@
             }
             .sign-up {
                 margin-right: 8px;;
+            }
+        }
+        .modal {
+            .header__nav-bar {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0;
+                padding: 10px 0 0 10px;
+                li {
+                    margin: 0 0 22px 0;
+                    padding: 0 0 0 0;
+                    img {
+                        bottom: -4px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1056px) {
+        .modal {
+            .header__nav-bar {
+                display: none;
             }
         }
     }

@@ -10,3 +10,17 @@
 @import'reviews-room__impressions/reviews-room__impressions.scss';
 @import'reviews-room__comment/reviews-room__comment.scss';
 @import'reviews-room__rules-cancel/reviews-room__rules-cancel.scss';
+
+@media(max-width: 810px) {
+    .info-impressions {
+        display: block;
+    }
+    .reviews-room__rules-cancel {
+        display: block;
+    }
+    .reviews-room__reviews {
+        .reviews-room__comment-text {
+            max-width: 65%;
+        }
+    }
+}

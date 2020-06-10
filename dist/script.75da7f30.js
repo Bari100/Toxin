@@ -117,85 +117,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/normalize.css/normalize.css":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"normalize.css":"../node_modules/normalize.css/normalize.css","./..\\..\\fonts\\montserrat-v14-cyrillic_latin-regular.eot":[["montserrat-v14-cyrillic_latin-regular.e74ff5ad.eot","../fonts/montserrat-v14-cyrillic_latin-regular.eot"],"../fonts/montserrat-v14-cyrillic_latin-regular.eot"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-regular.woff2":[["montserrat-v14-cyrillic_latin-regular.67fcefcd.woff2","../fonts/montserrat-v14-cyrillic_latin-regular.woff2"],"../fonts/montserrat-v14-cyrillic_latin-regular.woff2"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-regular.woff":[["montserrat-v14-cyrillic_latin-regular.61ead990.woff","../fonts/montserrat-v14-cyrillic_latin-regular.woff"],"../fonts/montserrat-v14-cyrillic_latin-regular.woff"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-regular.ttf":[["montserrat-v14-cyrillic_latin-regular.e2a9b171.ttf","../fonts/montserrat-v14-cyrillic_latin-regular.ttf"],"../fonts/montserrat-v14-cyrillic_latin-regular.ttf"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-regular.svg":[["montserrat-v14-cyrillic_latin-regular.e8c2a464.svg","../fonts/montserrat-v14-cyrillic_latin-regular.svg"],"../fonts/montserrat-v14-cyrillic_latin-regular.svg"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-600.eot":[["montserrat-v14-cyrillic_latin-600.5f7a4f8e.eot","../fonts/montserrat-v14-cyrillic_latin-600.eot"],"../fonts/montserrat-v14-cyrillic_latin-600.eot"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-600.woff2":[["montserrat-v14-cyrillic_latin-600.e4855cee.woff2","../fonts/montserrat-v14-cyrillic_latin-600.woff2"],"../fonts/montserrat-v14-cyrillic_latin-600.woff2"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-600.woff":[["montserrat-v14-cyrillic_latin-600.021f36ba.woff","../fonts/montserrat-v14-cyrillic_latin-600.woff"],"../fonts/montserrat-v14-cyrillic_latin-600.woff"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-600.ttf":[["montserrat-v14-cyrillic_latin-600.23d588a7.ttf","../fonts/montserrat-v14-cyrillic_latin-600.ttf"],"../fonts/montserrat-v14-cyrillic_latin-600.ttf"],"./..\\..\\fonts\\montserrat-v14-cyrillic_latin-600.svg":[["montserrat-v14-cyrillic_latin-600.8684382d.svg","../fonts/montserrat-v14-cyrillic_latin-600.svg"],"../fonts/montserrat-v14-cyrillic_latin-600.svg"],"./..\\..\\fonts\\montserrat-v14-latin_cyrillic-700.woff2":[["montserrat-v14-latin_cyrillic-700.85da606a.woff2","../fonts/montserrat-v14-latin_cyrillic-700.woff2"],"../fonts/montserrat-v14-latin_cyrillic-700.woff2"],"./..\\..\\fonts\\montserrat-v14-latin_cyrillic-700.woff":[["montserrat-v14-latin_cyrillic-700.c3040b57.woff","../fonts/montserrat-v14-latin_cyrillic-700.woff"],"../fonts/montserrat-v14-latin_cyrillic-700.woff"],"./..\\..\\fonts\\montserrat-v14-latin_cyrillic-700.ttf":[["montserrat-v14-latin_cyrillic-700.45f4a2cd.ttf","../fonts/montserrat-v14-latin_cyrillic-700.ttf"],"../fonts/montserrat-v14-latin_cyrillic-700.ttf"],"./..\\..\\fonts\\montserrat-v14-latin_cyrillic-700.svg":[["montserrat-v14-latin_cyrillic-700.383d4152.svg","../fonts/montserrat-v14-latin_cyrillic-700.svg"],"../fonts/montserrat-v14-latin_cyrillic-700.svg"],"./..\\img\\1.png":[["1.06f8af9e.png","img/1.png"],"img/1.png"],"./..\\img\\btn-social.svg":[["btn-social.7d9ce395.svg","img/btn-social.svg"],"img/btn-social.svg"],"./..\\img\\room\\room.png":[["room.09fe70fd.png","img/room/room.png"],"img/room/room.png"],"./..\\img\\room\\room-2.png":[["room-2.2e3f350e.png","img/room/room-2.png"],"img/room/room-2.png"],"./..\\img\\room\\room-3.png":[["room-3.2d47b616.png","img/room/room-3.png"],"img/room/room-3.png"],"_css_loader":"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"script.js":[function(require,module,exports) {
+$(document).ready(function () {
+  $(".btn-menu").click(function () {
+    $(".modal").show();
+  });
+});
+},{}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -399,5 +327,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/style.ff1c4cab.js.map
+},{}]},{},["C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
+//# sourceMappingURL=/script.75da7f30.js.map
