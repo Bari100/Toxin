@@ -55,7 +55,7 @@
             }
         }
     }
-    .modal {
+    .header__modal {
         display: none;
         position: fixed;
         top: 71px;
@@ -77,7 +77,7 @@
                 margin-right: 8px;;
             }
         }
-        .modal {
+        .header__modal {
             .header__nav-bar {
                 display: flex;
                 flex-direction: column;
@@ -95,7 +95,7 @@
         }
     }
     @media (min-width: 1056px) {
-        .modal {
+        .header__modal {
             .header__nav-bar {
                 display: none;
             }

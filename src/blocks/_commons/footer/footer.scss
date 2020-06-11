@@ -1,7 +1,7 @@
+.wrap {
+    display: flex;
+}
 .top__footer {
-    .wrap {
-        display: flex;
-    }
     width: 1440px;
     margin: 0 auto;
     padding-top: 100px;
@@ -17,13 +17,13 @@
         color: rgba(31, 32, 65, 0.75);
         line-height: 24px;
     }
-    nav {
+    .footer__nav-span {
+        font-weight: 700;
+        color: #1F2041;
+        font-size: 12px;
+        }
+    .footer__nav {
         display: flex;
-        span {
-            font-weight: 700;
-            color: #1F2041;
-            font-size: 12px;
-            }
         a {
             color: rgba(31, 32, 65, 0.5);
             &:hover {
@@ -80,6 +80,21 @@
                     }
                 }
             }
+        }
+    }
+    .footer__responsive-nav {
+        display: none;
+    }
+}
+
+//MEDIA
+@media (max-width: 1270px) {
+    .top__footer {
+        .footer__nav-disappear {
+            display: none;
+        }
+        .footer__responsive-nav {
+            display: block;
         }
     }
 }
