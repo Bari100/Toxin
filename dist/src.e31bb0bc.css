@@ -509,7 +509,7 @@ body ul {
 }
 .header__box .header__modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 71px;
   right: 0;
   width: 15%;
@@ -632,6 +632,41 @@ body ul {
 }
 .top__footer .footer__responsive-nav {
   display: none;
+  /*.column-2__footer:hover .footer__dropdown-content { 
+      display: block;
+      max-height: 150px;
+      .footer__dropdown-content {
+          ul {
+              max-height: 150px;
+          }
+      }
+  }*/
+}
+.top__footer .footer__responsive-nav .column-2__footer {
+  position: relative;
+}
+.top__footer .footer__responsive-nav .footer__dropdown-content {
+  display: none;
+  position: absolute;
+  right: 180px;
+  top: -2px;
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.top__footer .footer__responsive-nav .footer__dropdown-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1.4s linear;
+}
+.top__footer .footer__responsive-nav .column-2__footer:hover .footer__dropdown-content {
+  display: block;
+  max-height: 150px;
+}
+.top__footer .footer__responsive-nav .column-2__footer:hover .footer__dropdown-content ul {
+  max-height: 150px;
 }
 
 @media (max-width: 1270px) {
@@ -640,6 +675,12 @@ body ul {
   }
   .top__footer .footer__responsive-nav {
     display: block;
+  }
+  .top__footer .footer__responsive-nav ul {
+    margin: 4px 0 0 0;
+  }
+  .top__footer .footer__responsive-nav li {
+    margin-bottom: 36px;
   }
 }
 .bottom__footer {
@@ -905,7 +946,7 @@ body ul {
   justify-content: space-between;
   margin-bottom: 11px;
 }
-.reviews-room__reviews .reviews-room__title span {
+.reviews-room__reviews .reviews-room__title .reviews-room__title-num {
   font-size: 14px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
@@ -991,7 +1032,24 @@ body ul {
   line-height: 24px;
 }
 
+@media (max-width: 1215px) {
+  .reviews-room__reviews {
+    /*.reviews-room__title {
+        width: 440px;
+    }*/
+  }
+  .reviews-room__reviews .reviews-room__comment-text {
+    max-width: 42%;
+  }
+  .reviews-room__reviews .reviews-room__title-num {
+    display: none;
+  }
+}
 @media (max-width: 810px) {
+  .reviews-room__space {
+    margin-bottom: 60px;
+  }
+
   .info-impressions {
     display: block;
   }
@@ -1000,8 +1058,8 @@ body ul {
     display: block;
   }
 
-  .reviews-room__reviews .reviews-room__comment-text {
-    max-width: 65%;
+  .reviews-room__rules-cancel .reviews-room__rules .reviews-room__title {
+    margin: 0;
   }
 }
 footer.footer .top__footer {

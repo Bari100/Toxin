@@ -11,16 +11,36 @@
 @import'reviews-room__comment/reviews-room__comment.scss';
 @import'reviews-room__rules-cancel/reviews-room__rules-cancel.scss';
 
+
+//MEDIA
+@media(max-width: 1215px) {
+    .reviews-room__reviews {
+        .reviews-room__comment-text {
+            max-width: 42%;
+        }
+        /*.reviews-room__title {
+            width: 440px;
+        }*/
+        .reviews-room__title-num {
+            display: none;
+        }
+    }
+}
 @media(max-width: 810px) {
+    .reviews-room__space {
+        margin-bottom: 60px;
+    }
     .info-impressions {
         display: block;
     }
     .reviews-room__rules-cancel {
         display: block;
     }
-    .reviews-room__reviews {
-        .reviews-room__comment-text {
-            max-width: 65%;
+    .reviews-room__rules-cancel {
+        .reviews-room__rules {
+            .reviews-room__title {
+                margin: 0;
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 .reviews-room
     .info-impressions
-        .reviews-room__info
+        .reviews-room__info.reviews-room__space
             h2.reviews-room__title Сведения о номере
             img.reviews-room__info-emoticon(src='img/reviews-room__info/emoticon.png' alt='emoticon')
             p.reviews-room__info-text-b Комфорт
@@ -13,7 +13,7 @@
             img.reviews-room__info-shot(src='img/reviews-room__info/shot.png' alt='shot')
             p.reviews-room__info-text-b Уют
             p.reviews-room__info-text Номер оснащён камином
-        .reviews-room__impressions
+        .reviews-room__impressions.reviews-room__space
             h2.reviews-room__title Впечатления от номера
             .circle-list
                 include __circle/__circle.pug
@@ -22,8 +22,8 @@
                     li <span>Хорошо
                     li <span>Удовлетворительно
                     li <span>Разочарован
-    .reviews-room__reviews
-        h2.reviews-room__title Отзывы посетителей номера <span>2 отзыва
+    .reviews-room__reviews.reviews-room__space
+        h2.reviews-room__title Отзывы посетителей номера <span class="reviews-room__title-num">2 отзыва
         .reviews-room__comment
             .reviews-room__comment-images
                 img.reviews-room__comment-avatar(src='img/reviews-room__comment/avatar.png' alt='avatar')
@@ -39,12 +39,12 @@
                 p.reviews-room__comment-name Патрисия Стёклышкова <span>Неделю назад
                 p.reviews-room__comment-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
     .reviews-room__rules-cancel
-        .reviews-room__rules
+        .reviews-room__rules.reviews-room__space
             h2.reviews-room__title Правила
             ul.reviews-room__rules-list
                 li Нельзя с питомцами
                 li Без вечеринок и мероприятий
                 li Время прибытия — после 13:00, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;а выезд до 12:00
-        .reviews-room__cancel
+        .reviews-room__cancel.reviews-room__space
             h2.reviews-room__title Отмена
             p.reviews-room__cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.        
