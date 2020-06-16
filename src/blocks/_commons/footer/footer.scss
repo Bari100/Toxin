@@ -84,27 +84,68 @@
     }
     .footer__responsive-nav {
         .column-2__footer, .column-3__footer, .column-4__footer {
-            //background-color:red;
             .fr {
                 position:relative;
                 z-index: 2;
+                cursor: pointer;
                 &:hover ul {
-                    min-width:150px;
-                    display: block;
+                    max-width:300px;
+                    max-height: 350px;
                 }
                 .tr {
-                    display: none;
                     z-index: 1;
-                    background-color: rgba(255, 255, 255, 0.534);
+                    background-color: rgba(255, 255, 255, 0.95);
                     position:absolute;
-                    text-align:left;
+                    text-align:center;
                     top:-5px;
-                    left:110px;
+                    left:150px;
+                    max-height: 0;
                     max-width:0px;
                     overflow:hidden;
-                    -webkit-transition:min-width 0.4s linear;
-                    -moz-transition:min-width 0.4s linear;
-                    transition:min-width 0.4s linear;
+                    -webkit-transition:max-width 0.3s linear;
+                    -moz-transition:max-width 0.3s linear;
+                    transition:max-width 0.3s linear;
+                    li {
+                        margin: 0;
+                        padding: 15px 80px;
+                        border: 1px solid;
+                        border-color: rgba(255, 255, 255, 0.95) rgba(255, 255, 255, 0.95) rgba(31, 32, 65, 0.212) rgba(255, 255, 255, 0.95);
+                        &:last-child {
+                            border-color: rgba(255, 255, 255, 0.95);
+                        }
+                    }   
+                    a {
+                        color: rgba(31, 32, 65, 0.5);
+                    }
+                }
+            }
+        }
+        .column-2__footer {
+            .fr {
+                .tr {
+                    left:150px;
+                    top: -20px;
+                }
+            }
+        }
+        .column-3__footer {
+            .fr {
+                .tr {
+                    left:150px;
+                    top: -70px;
+                }
+            }
+        }
+        .column-4__footer {
+            .fr {
+                .tr {
+                    left:150px;
+                    top: -125px;
+                    li {
+                        &:last-child {
+                            padding-bottom: 40px;
+                        }
+                    }
                 }
             }
         }
@@ -163,7 +204,12 @@
                 margin: 4px 0 0 0;
             }
             li {
-                margin-bottom: 36px;
+                padding-bottom: 36px;
+            }
+        }
+        .column-4__footer {
+            li {
+                padding-bottom: 0;
             }
         }
     }
