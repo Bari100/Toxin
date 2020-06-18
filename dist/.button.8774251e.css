@@ -1,28 +1,35 @@
 .button {
   color: #8BA4F9;
-  background-color: transparent;
+  background: transparent;
   font-weight: 600;
   font-size: 12px;
-  border: 2px solid #8BA4F9;
+  border: 2px solid #BC9CFF;
   border-radius: 100px;
   padding: 7px 19px;
+  border-radius: 22px;
 }
 .button:hover {
-  background-color: rgba(139, 164, 249, 0.68);
+  background: rgba(139, 164, 249, 0.68);
   color: white;
   border: 2px solid #8BA4F9;
 }
 .button:focus {
-  background-color: #8ba4f9;
+  background: #8ba4f9;
 }
 
 .button-color {
   color: white;
-  background-color: #8BA4F9;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 .button-color:focus {
-  background-color: white;
+  background: white;
   color: #8BA4F9;
+}
+
+.button-pay {
+  width: 320px;
+  height: 44px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=/.button.8774251e.css.map */

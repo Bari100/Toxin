@@ -10,20 +10,29 @@ html(lang="en")
         .sign-up-content
             form.sign-up-form
                 .sign-up-form__container
-                    h1 Регистрация аккаунта
-                    input(type="text" placeholder="Имя" name="name" required)
-                    input(type="text" placeholder="Фамилия" name="surname" required)
-                    input(type="radio" name="sex" value="male")
-                    p Мужчина
-                    input(type="radio" name="sex" value="female")
-                    p Женщина
+                    h2 Регистрация аккаунта
+                    .sign-up-form__name-surname
+                        input(type="text" placeholder="Имя" name="name" required)
+                        input(type="text" placeholder="Фамилия" name="surname" required)
+                    .sign-up-form__sex
+                        .sign-up-form__male
+                            input(type="radio" name="sex" value="male")
+                            p Мужчина
+                        .sign-up-form__female
+                            input(type="radio" name="sex" value="female")
+                            p Женщина
                     h3 дата рождения
                     input(type="date" placeholder="ДД.ММ.ГГГГ" name="date" required)
                     h3 данные для входа в сервис
-                    input(type="email" placeholder="Email" name="email" required)
-                    input(type="password" placeholder="Пароль" name="password" required)
-                    input(type="checkbox")
-                    p Получать спецпредложения
-                    button.button.button-color перейти к оплате
+                    .sign-up-form__email-pass
+                        input(type="email" placeholder="Email" name="email" required)
+                        input(type="password" placeholder="Пароль" name="password" required)
+                    .sign-up-form__checkbox
+                        input(type="checkbox")
+                        p Получать спецпредложения
+                    button.button.button-color.button-pay перейти к оплате
+                    .sign-up-form__sign-in
+                        p Уже есть аккаунт на Toxin
+                        a(href='').button ВОЙТИ
         include blocks/_commons/footer/footer.pug
         //script(src='index.js')
