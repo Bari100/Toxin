@@ -41,10 +41,11 @@
     .sign-up-form__sex, .sign-up-form__male, .sign-up-form__female, .sign-up-form__sign-in {
         display: flex;
         .sign-up-form__male, .sign-up-form__female {
-            position: relative;
             align-items: center;
+            label {
+                color: rgba(31, 32, 65, 0.5);
+            }
             input {
-                position: absolute;
                 opacity: 0;
             }
             .sign-up-form__fake-radio {
@@ -68,10 +69,49 @@
                 background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
                 border-radius: 10px;
                 opacity: 0;
+                transition: 0.4s;
             }
             input:checked + .sign-up-form__fake-radio:before {
                 opacity: 1;
             }
+            input:focus ~ .sign-up-form__span-male, .sign-up-form__span-male:focus {
+                color: rgba(31, 32, 65, 0.75);
+                
+            }
+        }
+    }
+    .sign-up-form__checkbox {
+        input {
+            opacity: 0;
+        }
+        .sign-up-form__fake-checkbox {
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 10px;
+            position: relative;
+        }
+        .sign-up-form__fake-checkbox:before {
+            content: '';
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: rgba(31, 32, 65, 0.25);
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+        input:checked + .sign-up-form__fake-checkbox:before {
+            transform: translate(20px);
+            background-color: #fff;
+        }
+        input:checked + .sign-up-form__fake-checkbox {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border: 1px solid #BC9CFF;
         }
     }
     .sign-up-form__sign-in {

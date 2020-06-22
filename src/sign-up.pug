@@ -16,13 +16,15 @@ html(lang="en")
                         input(type="text" placeholder="Фамилия" name="surname" required)
                     .sign-up-form__sex
                         .sign-up-form__male
-                            label Мужчина
+                            label
                                 input(type="radio" name="sex" value="male")
                                 span.sign-up-form__fake-radio
+                                span.sign-up-form__span-male Мужчина
                         .sign-up-form__female
-                            label Женщина
+                            label
                                 input(type="radio" name="sex" value="female")
                                 span.sign-up-form__fake-radio
+                                span.sign-up-form__span-male Женщина
                     h3 дата рождения
                     input(type="date" placeholder="ДД.ММ.ГГГГ" name="date" required)
                     h3 данные для входа в сервис
@@ -32,6 +34,7 @@ html(lang="en")
                     .sign-up-form__checkbox
                         label Получать спецпредложения
                             input(type="checkbox")
+                            span.sign-up-form__fake-checkbox
                     button.button.button-color.button-pay перейти к оплате
                     .sign-up-form__sign-in
                         p Уже есть аккаунт на Toxin
