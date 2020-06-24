@@ -417,7 +417,7 @@ body ul {
   text-align: right;
   line-height: 23px;
   margin-bottom: 7px;
-  color: rgba(31, 32, 65, 0.75);
+  color: red;
 }
 
 .sign-up-content {
@@ -483,7 +483,6 @@ body ul {
   font-weight: 600;
   font-size: 12px;
   border: 2px solid #BC9CFF;
-  border-radius: 100px;
   padding: 7px 19px;
   border-radius: 22px;
 }
@@ -802,6 +801,26 @@ body ul {
   margin-top: 19px;
   background-color: #fff;
 }
+.sign-up-content .sign-up-form .sign-up-form__container input {
+  color: black;
+  outline: none;
+}
+.sign-up-content .sign-up-form .sign-up-form__container .sign-up-form__date input {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 16px;
+  appearance: none;
+}
+.sign-up-content .sign-up-form .sign-up-form__container .sign-up-form__date input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.sign-up-content .sign-up-form .sign-up-form__container .button.button-color.button-pay {
+  position: relative;
+}
+.sign-up-content .sign-up-form .sign-up-form__container .sign-up-form__button-pay-img {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
 
 .sign-up-form {
   width: 380px;
@@ -823,19 +842,17 @@ body ul {
 .sign-up-form input::placeholder {
   color: rgba(31, 32, 65, 0.25);
 }
-.sign-up-form input {
+.sign-up-form .sign-up-form__name-surname input, .sign-up-form .sign-up-form__date input, .sign-up-form .sign-up-form__email-pass input {
   color: rgba(31, 32, 65, 0.25);
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   margin-bottom: 10px;
   display: inline-block;
-  padding: 13px 137px 13px 13px;
+  width: 264px;
+  padding: 13px 40px 13px 13px;
 }
 .sign-up-form .sign-up-form__sex, .sign-up-form .sign-up-form__male, .sign-up-form .sign-up-form__female, .sign-up-form .sign-up-form__sign-in {
   display: flex;
-}
-.sign-up-form .sign-up-form__sex .sign-up-form__male, .sign-up-form .sign-up-form__sex .sign-up-form__female, .sign-up-form .sign-up-form__male .sign-up-form__male, .sign-up-form .sign-up-form__male .sign-up-form__female, .sign-up-form .sign-up-form__female .sign-up-form__male, .sign-up-form .sign-up-form__female .sign-up-form__female, .sign-up-form .sign-up-form__sign-in .sign-up-form__male, .sign-up-form .sign-up-form__sign-in .sign-up-form__female {
-  align-items: center;
 }
 .sign-up-form .sign-up-form__sex .sign-up-form__male label, .sign-up-form .sign-up-form__sex .sign-up-form__female label, .sign-up-form .sign-up-form__male .sign-up-form__male label, .sign-up-form .sign-up-form__male .sign-up-form__female label, .sign-up-form .sign-up-form__female .sign-up-form__male label, .sign-up-form .sign-up-form__female .sign-up-form__female label, .sign-up-form .sign-up-form__sign-in .sign-up-form__male label, .sign-up-form .sign-up-form__sign-in .sign-up-form__female label {
   color: rgba(31, 32, 65, 0.5);
@@ -851,6 +868,7 @@ body ul {
   box-sizing: border-box;
   border-radius: 10px;
   position: relative;
+  left: -14px;
 }
 .sign-up-form .sign-up-form__sex .sign-up-form__male .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__sex .sign-up-form__female .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__male .sign-up-form__male .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__male .sign-up-form__female .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__female .sign-up-form__male .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__female .sign-up-form__female .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__sign-in .sign-up-form__male .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__sign-in .sign-up-form__female .sign-up-form__fake-radio:before {
   content: "";
@@ -869,26 +887,48 @@ body ul {
 .sign-up-form .sign-up-form__sex .sign-up-form__male input:checked + .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__sex .sign-up-form__female input:checked + .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__male .sign-up-form__male input:checked + .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__male .sign-up-form__female input:checked + .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__female .sign-up-form__male input:checked + .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__female .sign-up-form__female input:checked + .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__sign-in .sign-up-form__male input:checked + .sign-up-form__fake-radio:before, .sign-up-form .sign-up-form__sign-in .sign-up-form__female input:checked + .sign-up-form__fake-radio:before {
   opacity: 1;
 }
-.sign-up-form .sign-up-form__sex .sign-up-form__male input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__sex .sign-up-form__male .sign-up-form__span-male:focus, .sign-up-form .sign-up-form__sex .sign-up-form__female input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__sex .sign-up-form__female .sign-up-form__span-male:focus, .sign-up-form .sign-up-form__male .sign-up-form__male input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__male .sign-up-form__male .sign-up-form__span-male:focus, .sign-up-form .sign-up-form__male .sign-up-form__female input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__male .sign-up-form__female .sign-up-form__span-male:focus, .sign-up-form .sign-up-form__female .sign-up-form__male input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__female .sign-up-form__male .sign-up-form__span-male:focus, .sign-up-form .sign-up-form__female .sign-up-form__female input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__female .sign-up-form__female .sign-up-form__span-male:focus, .sign-up-form .sign-up-form__sign-in .sign-up-form__male input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__sign-in .sign-up-form__male .sign-up-form__span-male:focus, .sign-up-form .sign-up-form__sign-in .sign-up-form__female input:focus ~ .sign-up-form__span-male, .sign-up-form .sign-up-form__sign-in .sign-up-form__female .sign-up-form__span-male:focus {
+.sign-up-form .sign-up-form__sex .sign-up-form__male input:checked ~ .sign-up-form__span-male-female, .sign-up-form .sign-up-form__sex .sign-up-form__female input:checked ~ .sign-up-form__span-male-female, .sign-up-form .sign-up-form__male .sign-up-form__male input:checked ~ .sign-up-form__span-male-female, .sign-up-form .sign-up-form__male .sign-up-form__female input:checked ~ .sign-up-form__span-male-female, .sign-up-form .sign-up-form__female .sign-up-form__male input:checked ~ .sign-up-form__span-male-female, .sign-up-form .sign-up-form__female .sign-up-form__female input:checked ~ .sign-up-form__span-male-female, .sign-up-form .sign-up-form__sign-in .sign-up-form__male input:checked ~ .sign-up-form__span-male-female, .sign-up-form .sign-up-form__sign-in .sign-up-form__female input:checked ~ .sign-up-form__span-male-female {
   color: rgba(31, 32, 65, 0.75);
+}
+.sign-up-form .sign-up-form__sex .sign-up-form__male .sign-up-form__span-male-female, .sign-up-form .sign-up-form__sex .sign-up-form__female .sign-up-form__span-male-female, .sign-up-form .sign-up-form__male .sign-up-form__male .sign-up-form__span-male-female, .sign-up-form .sign-up-form__male .sign-up-form__female .sign-up-form__span-male-female, .sign-up-form .sign-up-form__female .sign-up-form__male .sign-up-form__span-male-female, .sign-up-form .sign-up-form__female .sign-up-form__female .sign-up-form__span-male-female, .sign-up-form .sign-up-form__sign-in .sign-up-form__male .sign-up-form__span-male-female, .sign-up-form .sign-up-form__sign-in .sign-up-form__female .sign-up-form__span-male-female {
+  display: block;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: -21px;
+  margin-bottom: 15px;
+}
+.sign-up-form .sign-up-form__date h3, .sign-up-form .sign-up-form__email-pass h3 {
+  margin-bottom: 6px;
+}
+.sign-up-form .sign-up-form__date input, .sign-up-form .sign-up-form__email-pass input {
+  height: 16px;
+}
+.sign-up-form .sign-up-form__email-pass {
+  margin-bottom: 1px;
+}
+.sign-up-form .sign-up-form__checkbox {
+  margin-bottom: 25px;
 }
 .sign-up-form .sign-up-form__checkbox input {
   opacity: 0;
 }
 .sign-up-form .sign-up-form__checkbox .sign-up-form__fake-checkbox {
-  display: inline-block;
+  display: block;
+  float: left;
   width: 40px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 10px;
   position: relative;
+  top: -1px;
+  margin-right: -2px;
 }
 .sign-up-form .sign-up-form__checkbox .sign-up-form__fake-checkbox:before {
   content: "";
   position: absolute;
-  left: 10%;
-  top: 20%;
+  left: 9%;
+  top: 19%;
   display: block;
   width: 12px;
   height: 12px;
@@ -904,8 +944,23 @@ body ul {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border: 1px solid #BC9CFF;
 }
+.sign-up-form .sign-up-form__checkbox .sign-up-form__span-checkbox {
+  color: rgba(31, 32, 65, 0.75);
+}
 .sign-up-form .sign-up-form__sign-in {
+  width: 320px;
   justify-content: space-between;
+}
+.sign-up-form .sign-up-form__sign-in .button {
+  width: 99px;
+  height: 44px;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 13px;
+}
+.sign-up-form .button-pay {
+  margin-bottom: 31px;
 }
 
 .photo-room {
