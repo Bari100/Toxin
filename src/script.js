@@ -9,4 +9,8 @@ $(document).ready(function(){
 			div.hide(); // скрываем его
 		}
     });
+    $(".sign-up-form__button-act").focus(function(){
+        $(".sign-in-form").show(),
+        $(".sign-up-form").hide();
+    });
 });

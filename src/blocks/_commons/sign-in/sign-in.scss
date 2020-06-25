@@ -1,0 +1,12 @@
+.sign-up-in-content {
+    .sign-in-form {
+        display: none;
+        width: 380px;
+        height: 358px;
+        margin-top: 162px;
+        .sign-in-form__email-pass {
+            margin-bottom: 10px;
+        }
+    }
+}
+//Большая часть кода находится в sign-up.scss

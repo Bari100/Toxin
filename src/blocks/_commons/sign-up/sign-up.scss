@@ -1,10 +1,10 @@
-.sign-up-content {
+.sign-up-in-content {
     display: flex;
     justify-content: center;
-    .sign-up-form {
+    .sign-up-form, .sign-in-form {
         margin-top: 19px;
         background-color: #fff;
-        .sign-up-form__container {
+        .sign-up-form__container, .sign-in-form__container {
             input {
                 color: black;
                 outline: none;
@@ -19,10 +19,10 @@
                     display: none;
                 }
             }
-            .button.button-color.button-pay {
+            .button.button-color.sign-up-form__button-pay, .sign-in-form__button-sign-in {
                 position: relative;
             }
-            .sign-up-form__button-pay-img {
+            .sign-up-form__button-pay-img, .sign-in-form__button-sign-in-img {
                 position: absolute;
                 right: 12px;
                 bottom: 10px;
@@ -31,7 +31,7 @@
     }
 }
 
-.sign-up-form {
+.sign-up-form, .sign-in-form {
     width: 380px;
     height: 646px;
     padding: 23px 20px 20px 30px;
@@ -52,7 +52,7 @@
     input::placeholder {
         color: rgba(31, 32, 65, 0.25);
     }
-    .sign-up-form__name-surname, .sign-up-form__date, .sign-up-form__email-pass {
+    .sign-up-form__name-surname, .sign-up-form__date, .sign-up-form__email-pass, .sign-in-form__email-pass {
         input {
             color: rgba(31, 32, 65, 0.25);
             border: 1px solid rgba(31, 32, 65, 0.25);
@@ -163,20 +163,19 @@
             color: rgba(31, 32, 65, 0.75);
         }
     }
-    .sign-up-form__sign-in {
+    .sign-up-form__sign-in, .sign-in-form__sign-up {
+        display: flex;
         width: 320px;
         justify-content: space-between;
         .button {
             width: 99px;
             height: 44px;
-            padding: 0;
             box-sizing: border-box;
             text-align: center;
             padding-top: 13px;
         }
     }
-    .button-pay {
+    .sign-up-form__button-pay, .sign-in-form__button-sign-in {
         margin-bottom: 31px;
     }
 }
-

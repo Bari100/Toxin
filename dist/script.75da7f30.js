@@ -132,6 +132,9 @@ $(document).ready(function () {
       div.hide(); // скрываем его
     }
   });
+  $(".sign-up-form__button-act").focus(function () {
+    $(".sign-in-form").show(), $(".sign-up-form").hide();
+  });
 });
 },{}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -161,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63161" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55679" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
