@@ -961,6 +961,7 @@ body ul {
 }
 .sign-up-form .sign-up-form__button-pay, .sign-up-form .sign-in-form__button-sign-in, .sign-in-form .sign-up-form__button-pay, .sign-in-form .sign-in-form__button-sign-in {
   margin-bottom: 31px;
+  outline: none;
 }
 
 .sign-up-in-content .sign-in-form {
@@ -971,6 +972,10 @@ body ul {
 }
 .sign-up-in-content .sign-in-form .sign-in-form__email-pass {
   margin-bottom: 10px;
+}
+.sign-up-in-content .sign-in-form .sign-in-form__button-act {
+  text-transform: uppercase;
+  padding-left: 17px;
 }
 
 .photo-room {
@@ -1313,6 +1318,46 @@ body ul {
   .reviews-room__rules-cancel .reviews-room__rules .reviews-room__title {
     margin: 0;
   }
+}
+.number-rate-container {
+  width: 270px;
+  height: 257px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  color: rgba(31, 32, 65, 0.5);
+}
+.number-rate-container .number-rate__photo-slider {
+  height: 157px;
+}
+.number-rate-container .number-rate__number-price-rating-reviews {
+  width: 233px;
+  height: 67px;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price {
+  display: flex;
+  justify-content: space-between;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number {
+  font-weight: 800;
+  font-size: 16px;
+  color: #1F2041;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__price, .number-rate-container .number-rate__number-price-rating-reviews .number-rate__reviews {
+  font-weight: 800;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__price-24 {
+  font-weight: 400;
+  font-size: 12px;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__reviews-rev {
+  font-weight: 400;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__rating-reviews {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

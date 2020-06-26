@@ -1,0 +1,40 @@
+.number-rate-container {
+    width: 270px;
+    height: 257px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    color: rgba(31, 32, 65, 0.5);
+    .number-rate__photo-slider {
+        height: 157px;
+    }
+    .number-rate__number-price-rating-reviews {
+        width: 233px;
+        height: 67px;
+        .number-rate__number-price {
+            display: flex;
+            justify-content: space-between;
+            .number-rate__number {
+                font-weight: 800;
+                font-size: 16px;
+                color: #1F2041;
+            }
+        }
+        .number-rate__price, .number-rate__reviews {
+            font-weight: 800;
+        }
+        .number-rate__price-24 {
+            font-weight: 400;
+            font-size: 12px;
+        }
+        .number-rate__reviews-rev {
+            font-weight: 400;
+        }
+        .number-rate__rating-reviews {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
