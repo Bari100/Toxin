@@ -1326,24 +1326,34 @@ body ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aliceblue;
   color: rgba(31, 32, 65, 0.5);
 }
 .number-rate-container .number-rate__photo-slider {
+  background-image: url("/.number-rate__photo-slider.be05a6f4.png");
   height: 157px;
+  margin-bottom: 20.12px;
 }
 .number-rate-container .number-rate__number-price-rating-reviews {
-  width: 233px;
+  width: 227px;
   height: 67px;
+  position: relative;
 }
 .number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price {
   display: flex;
   justify-content: space-between;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number {
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number-number {
   font-weight: 800;
-  font-size: 16px;
+  font-size: 14px;
   color: #1F2041;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number-number .number-rate__number {
+  font-size: 16px;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number-lux {
+  font-size: 12px;
+  color: #BC9CFF;
+  text-transform: uppercase;
 }
 .number-rate-container .number-rate__number-price-rating-reviews .number-rate__price, .number-rate-container .number-rate__number-price-rating-reviews .number-rate__reviews {
   font-weight: 800;
@@ -1351,6 +1361,13 @@ body ul {
 .number-rate-container .number-rate__number-price-rating-reviews .number-rate__price-24 {
   font-weight: 400;
   font-size: 12px;
+}
+.number-rate-container .number-rate__number-price-rating-reviews .number-rate__line {
+  position: absolute;
+  width: 230px;
+  height: 2px;
+  border: none;
+  background: rgba(31, 32, 65, 0.05);
 }
 .number-rate-container .number-rate__number-price-rating-reviews .number-rate__reviews-rev {
   font-weight: 400;
