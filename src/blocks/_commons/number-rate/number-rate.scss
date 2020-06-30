@@ -6,19 +6,33 @@
     flex-direction: column;
     align-items: center;
     color: rgba(31, 32, 65, 0.5);
-    .number-rate__photo-slider {
+    .number-rate__photo-slider{
+        .number-rate__btn-previous, .number-rate__btn-next {
+            cursor: pointer;
+            border: none;
+            width: 42px;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        }
+        .number-rate__btn-previous:focus, .number-rate__btn-next:focus {
+            outline: transparent;
+        }
+        .number-rate__btn-next {
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
         background-image: url(../img/.number-rate__photo-slider.png);
-        width: 324px;
-        height: 157px;
-        margin-bottom: 20.12px;
+        width: 270px;
+        height: 151px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
     }
     .number-rate__number-price-rating-reviews {
         width: 227px;
-        height: 67px;
         position: relative;
         .number-rate__number-price {
             display: flex;
             justify-content: space-between;
+            margin-bottom: -3px;
             .number-rate__number-number {
                 font-weight: 800;
                 font-size: 14px;
@@ -42,6 +56,7 @@
         }
         .number-rate__line {
             position: absolute;
+            top: 36px;
             width: 230px;
             height: 2px;
             border: none;
