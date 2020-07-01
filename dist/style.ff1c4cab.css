@@ -1328,7 +1328,12 @@ body ul {
   align-items: center;
   color: rgba(31, 32, 65, 0.5);
 }
+.number-rate-container .number-rate__photo-slider:hover .number-rate__btn-previous, .number-rate-container .number-rate__photo-slider:hover .number-rate__btn-next {
+  opacity: 1;
+  transition: 0.4s;
+}
 .number-rate-container .number-rate__photo-slider {
+  cursor: pointer;
   background-image: url(/.number-rate__photo-slider.34136de7.png);
   width: 270px;
   height: 151px;
@@ -1337,6 +1342,7 @@ body ul {
   justify-content: space-between;
 }
 .number-rate-container .number-rate__photo-slider .number-rate__btn-previous, .number-rate-container .number-rate__photo-slider .number-rate__btn-next {
+  opacity: 0;
   cursor: pointer;
   border: none;
   width: 42px;
@@ -1391,6 +1397,13 @@ body ul {
 .number-rate-container .number-rate__number-price-rating-reviews .number-rate__rating-reviews {
   display: flex;
   justify-content: space-between;
+}
+
+.search-room-room-list__rooms {
+  display: grid;
+  grid-template-rows: 8px 8px 8px;
+  grid-template-columns: 12px 12px 12px;
+  grid-gap: 14vw;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

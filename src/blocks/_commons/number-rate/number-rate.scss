@@ -6,8 +6,16 @@
     flex-direction: column;
     align-items: center;
     color: rgba(31, 32, 65, 0.5);
-    .number-rate__photo-slider{
+    .number-rate__photo-slider:hover {
         .number-rate__btn-previous, .number-rate__btn-next {
+            opacity: 1;
+            transition: 0.4s;
+        }
+    }
+    .number-rate__photo-slider{
+        cursor: pointer;
+        .number-rate__btn-previous, .number-rate__btn-next {
+            opacity: 0;
             cursor: pointer;
             border: none;
             width: 42px;
