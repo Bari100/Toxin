@@ -1,24 +1,25 @@
 doctype html
 html(lang="en")
+mixin number-rate__name-price-rating-reviews(name, price, reviews)
     head
-        title тест
-        link(rel='stylesheet' href='styles/style.scss')
     body
         .number-rate-container
             .number-rate__photo-slider
                 button.number-rate__btn-previous
-                    img(src='img/.number-rate__btn.svg')
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path class = "number-rate__btn-svg" d="M7.42188 11.0928L6.01563 12.499L0.0156253 6.49902L6.01563 0.499024L7.42188 1.90527L2.82813 6.49902L7.42188 11.0928Z" fill="white"/></svg>
+                    //-img(src='img/.number-rate__btn.svg')
                 button.number-rate__btn-next
-                    img(src='img/.number-rate__btn.svg')
-            .number-rate__number-price-rating-reviews
-                .number-rate__number-price
-                    p.number-rate__number-number №
-                        span.number-rate__number &nbsp;888
-                        span.number-rate__number-lux &nbsp;люкс
-                    p.number-rate__price 9 990₽
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path class = "number-rate__btn-svg" d="M7.42188 11.0928L6.01563 12.499L0.0156253 6.49902L6.01563 0.499024L7.42188 1.90527L2.82813 6.49902L7.42188 11.0928Z" fill="white"/></svg>
+                    //-img(src='img/.number-rate__btn.svg')
+            .number-rate__name-price-rating-reviews
+                .number-rate__name-price
+                    p.number-rate__name-number №
+                        span.number-rate__name= name
+                        span.number-rate__name-lux &nbsp;люкс
+                    p.number-rate__price= price
                         span.number-rate__price-24 &nbsp;в сутки
                 hr.number-rate__line
                 .number-rate__rating-reviews
                     img(src='img/stars.svg').number-rate__rating
-                    p.number-rate__reviews 145
+                    p.number-rate__reviews= reviews
                         span.number-rate__reviews-rev &nbsp;Отзывов

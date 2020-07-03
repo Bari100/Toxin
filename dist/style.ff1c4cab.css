@@ -1322,11 +1322,12 @@ body ul {
 .number-rate-container {
   width: 270px;
   height: 257px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
   color: rgba(31, 32, 65, 0.5);
+  border-radius: 4px;
 }
 .number-rate-container .number-rate__photo-slider:hover .number-rate__btn-previous, .number-rate-container .number-rate__photo-slider:hover .number-rate__btn-next {
   opacity: 1;
@@ -1334,6 +1335,8 @@ body ul {
 }
 .number-rate-container .number-rate__photo-slider {
   cursor: pointer;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   background-image: url(/.number-rate__photo-slider.34136de7.png);
   width: 270px;
   height: 151px;
@@ -1348,42 +1351,51 @@ body ul {
   width: 42px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
 }
+.number-rate-container .number-rate__photo-slider .number-rate__btn-previous:hover, .number-rate-container .number-rate__photo-slider .number-rate__btn-next:hover {
+  transition: 0.4s;
+  opacity: 0.7;
+}
+.number-rate-container .number-rate__photo-slider .number-rate__btn-previous:hover .number-rate__btn-svg, .number-rate-container .number-rate__photo-slider .number-rate__btn-next:hover .number-rate__btn-svg {
+  transition: 0.8s;
+  fill: #cdced6;
+  stroke: white;
+}
 .number-rate-container .number-rate__photo-slider .number-rate__btn-previous:focus, .number-rate-container .number-rate__photo-slider .number-rate__btn-next:focus {
   outline: transparent;
 }
 .number-rate-container .number-rate__photo-slider .number-rate__btn-next {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-.number-rate-container .number-rate__number-price-rating-reviews {
+.number-rate-container .number-rate__name-price-rating-reviews {
   width: 227px;
   position: relative;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__name-price {
   display: flex;
   justify-content: space-between;
   margin-bottom: -3px;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number-number {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__name-price .number-rate__name-number {
   font-weight: 800;
   font-size: 14px;
   color: #1F2041;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number-number .number-rate__number {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__name-price .number-rate__name-number .number-rate__name {
   font-size: 16px;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__number-price .number-rate__number-lux {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__name-price .number-rate__name-lux {
   font-size: 12px;
   color: #BC9CFF;
   text-transform: uppercase;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__price, .number-rate-container .number-rate__number-price-rating-reviews .number-rate__reviews {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__price, .number-rate-container .number-rate__name-price-rating-reviews .number-rate__reviews {
   font-weight: 800;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__price-24 {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__price-24 {
   font-weight: 400;
   font-size: 12px;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__line {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__line {
   position: absolute;
   top: 36px;
   width: 230px;
@@ -1391,19 +1403,30 @@ body ul {
   border: none;
   background: rgba(31, 32, 65, 0.05);
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__reviews-rev {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__reviews-rev {
   font-weight: 400;
 }
-.number-rate-container .number-rate__number-price-rating-reviews .number-rate__rating-reviews {
+.number-rate-container .number-rate__name-price-rating-reviews .number-rate__rating-reviews {
   display: flex;
   justify-content: space-between;
 }
 
-.search-room-room-list__rooms {
+.search-room .search-room__filter {
+  width: 266px;
+  margin-right: 60px;
+}
+.search-room .search-room__room-list {
+  margin-top: 11px;
+}
+.search-room .search-room__room-list .search-room__room-list-text {
+  font-size: 24px;
+}
+.search-room .search-room-room-list__rooms {
   display: grid;
   grid-template-rows: 8px 8px 8px;
   grid-template-columns: 12px 12px 12px;
   grid-gap: 14vw;
+  margin-top: 22px;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

@@ -1,6 +1,19 @@
-.search-room-room-list__rooms {
-    display: grid;
-    grid-template-rows: 8px 8px 8px;
-    grid-template-columns: 12px 12px 12px;
-    grid-gap: 14vw;
+.search-room {
+    .search-room__filter {
+        width: 266px;
+        margin-right: 60px;
+    }
+    .search-room__room-list {
+        margin-top: 11px;
+        .search-room__room-list-text {
+            font-size: 24px;
+        }
+    }
+    .search-room-room-list__rooms {
+        display: grid;
+        grid-template-rows: 8px 8px 8px;
+        grid-template-columns: 12px 12px 12px;
+        grid-gap: 14vw;
+        margin-top: 22px;
+    }
 }

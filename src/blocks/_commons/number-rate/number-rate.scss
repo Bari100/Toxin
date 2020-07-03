@@ -1,11 +1,12 @@
 .number-rate-container {
     width: 270px;
     height: 257px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgba(31, 32, 65, 0.5);
+    border-radius: 4px;
     .number-rate__photo-slider:hover {
         .number-rate__btn-previous, .number-rate__btn-next {
             opacity: 1;
@@ -14,12 +15,24 @@
     }
     .number-rate__photo-slider{
         cursor: pointer;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
         .number-rate__btn-previous, .number-rate__btn-next {
             opacity: 0;
             cursor: pointer;
             border: none;
             width: 42px;
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        }
+        .number-rate__btn-previous:hover, .number-rate__btn-next:hover {
+            //background: linear-gradient(90deg, rgba(49, 49, 49, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+            transition: 0.4s;
+            opacity: 0.7;
+            .number-rate__btn-svg {
+                transition: 0.8s;
+                fill: rgb(205, 206, 214);
+                stroke: white;
+            }
         }
         .number-rate__btn-previous:focus, .number-rate__btn-next:focus {
             outline: transparent;
@@ -34,22 +47,22 @@
         display: flex;
         justify-content: space-between;
     }
-    .number-rate__number-price-rating-reviews {
+    .number-rate__name-price-rating-reviews {
         width: 227px;
         position: relative;
-        .number-rate__number-price {
+        .number-rate__name-price {
             display: flex;
             justify-content: space-between;
             margin-bottom: -3px;
-            .number-rate__number-number {
+            .number-rate__name-number {
                 font-weight: 800;
                 font-size: 14px;
                 color: #1F2041;
-                .number-rate__number {
+                .number-rate__name {
                     font-size: 16px;
                 }
             }
-            .number-rate__number-lux {
+            .number-rate__name-lux {
                 font-size: 12px;
                 color: #BC9CFF;
                 text-transform: uppercase;

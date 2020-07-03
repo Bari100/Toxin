@@ -1,24 +1,37 @@
 doctype html
 html(lang="en")
     head
-        title Toxin
+        title Номера
     body
         include blocks/_commons/header/header.pug
-        .search-room
+        .search-room.wrap
             .search-room__filter
             .search-room__room-list
+                h2.search-room__room-list-text Номера, которые мы для вас подобрали
                 .search-room-room-list__rooms
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('888', '9 990₽', '145')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('840', '9 900₽', '65')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('980', '8 500₽', '35')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('856', '7 300₽', '19')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('740', '6 000₽', '44')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('982', '5 800₽', '56')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('678', '5 500₽', '45')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('450', '5 300₽', '39')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('350', '5 000₽', '77')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('666', '5 000₽', '25')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('444', '5 000₽', '15')
                     include blocks/_commons/number-rate/number-rate.pug
+                    +number-rate__name-price-rating-reviews('352', '5 000₽', '55')
         include blocks/_commons/footer/footer.pug
         script(src='index.js')
