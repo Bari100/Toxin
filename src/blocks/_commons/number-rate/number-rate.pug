@@ -1,25 +1,24 @@
 doctype html
 html(lang="en")
-mixin number-rate__name-price-rating-reviews(name, price, reviews)
+mixin number-rate__name-price-rating-reviews(name, price, reviews, lux, img, rating)
     head
     body
         .number-rate-container
             .number-rate__photo-slider
+                img.number-rate__img(src= img)
                 button.number-rate__btn-previous
-                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path class = "number-rate__btn-svg" d="M7.42188 11.0928L6.01563 12.499L0.0156253 6.49902L6.01563 0.499024L7.42188 1.90527L2.82813 6.49902L7.42188 11.0928Z" fill="white"/></svg>
-                    //-img(src='img/.number-rate__btn.svg')
+                    img(src='img/.number-rate__btn.svg')
                 button.number-rate__btn-next
-                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path class = "number-rate__btn-svg" d="M7.42188 11.0928L6.01563 12.499L0.0156253 6.49902L6.01563 0.499024L7.42188 1.90527L2.82813 6.49902L7.42188 11.0928Z" fill="white"/></svg>
-                    //-img(src='img/.number-rate__btn.svg')
+                    img(src='img/.number-rate__btn.svg')
             .number-rate__name-price-rating-reviews
                 .number-rate__name-price
-                    p.number-rate__name-number №
+                    p.number-rate__name-number №&nbsp;
                         span.number-rate__name= name
-                        span.number-rate__name-lux &nbsp;люкс
+                        span.number-rate__name-lux= lux
                     p.number-rate__price= price
                         span.number-rate__price-24 &nbsp;в сутки
                 hr.number-rate__line
                 .number-rate__rating-reviews
-                    img(src='img/stars.svg').number-rate__rating
+                    img.number-rate__rating(src= rating)
                     p.number-rate__reviews= reviews
                         span.number-rate__reviews-rev &nbsp;Отзывов

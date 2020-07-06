@@ -1337,12 +1337,16 @@ body ul {
   cursor: pointer;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-image: url(/.number-rate__photo-slider.34136de7.png);
   width: 270px;
   height: 151px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.number-rate-container .number-rate__photo-slider .number-rate__img {
+  position: absolute;
+  z-index: -1;
 }
 .number-rate-container .number-rate__photo-slider .number-rate__btn-previous, .number-rate-container .number-rate__photo-slider .number-rate__btn-next {
   opacity: 0;
