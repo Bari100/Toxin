@@ -422,9 +422,9 @@ body ul {
 
 .sign-up-in-content {
   background-image: url(/image_4.1.98b3ba54.png);
+  background-position: center -70px;
   width: 1440px;
-  height: 702px;
-  margin: 0 auto;
+  height: 684px;
 }
 
 @media (max-width: 1055px) {
@@ -432,52 +432,52 @@ body ul {
     padding-right: 15px;
   }
 }
-.header__box {
+.header .header__box {
   display: flex;
   justify-content: space-between;
 }
-.header__box .header__logo {
+.header .header__box .header__logo {
   margin: 15px 0 13px 0;
 }
-.header__box .header__navs {
+.header .header__box .header__navs {
   display: flex;
   margin-top: 13px;
 }
-.header__box .header__nav-bar {
+.header .header__box .header__nav-bar {
   display: flex;
   justify-content: space-between;
 }
-.header__box .header__nav-bar .vacancy {
+.header .header__box .header__nav-bar .vacancy {
   margin-left: 45px;
 }
-.header__box .header__nav-bar .header__nav {
+.header .header__box .header__nav-bar .header__nav {
   color: rgba(31, 32, 65, 0.5);
   margin: 0 0 0 1px;
 }
-.header__box .header__nav-bar .header__nav:hover {
+.header .header__box .header__nav-bar .header__nav:hover {
   color: rgba(31, 32, 65, 0.75);
 }
-.header__box .header__nav-bar .header__nav:focus {
+.header .header__box .header__nav-bar .header__nav:focus {
   color: rgba(31, 32, 65, 0.99);
 }
-.header__box .header__nav-bar li {
+.header .header__box .header__nav-bar li {
   margin-left: 19px;
   position: relative;
 }
-.header__box .header__nav-bar li img {
+.header .header__box .header__nav-bar li img {
   position: absolute;
   bottom: 10px;
 }
-.header__box .header__sign {
+.header .header__box .header__sign {
   display: flex;
 }
-.header__box .header__sign .sign-in {
+.header .header__box .header__sign .sign-in {
   margin-left: 5px;
 }
-.header__box .header__sign .sign-up {
+.header .header__box .header__sign .sign-up {
   margin-left: 18px;
 }
-.header__box .header__sign .button {
+.header .header__box .header__sign .button {
   color: #8BA4F9;
   background: transparent;
   font-weight: 600;
@@ -486,28 +486,28 @@ body ul {
   padding: 7px 19px;
   border-radius: 22px;
 }
-.header__box .header__sign .button:hover {
+.header .header__box .header__sign .button:hover {
   background: rgba(139, 164, 249, 0.68);
   color: white;
   border: 2px solid #8BA4F9;
 }
-.header__box .header__sign .button:focus {
+.header .header__box .header__sign .button:focus {
   background: #8ba4f9;
 }
-.header__box .header__sign .button-color {
+.header .header__box .header__sign .button-color {
   color: white;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
-.header__box .header__sign .button-color:focus {
+.header .header__box .header__sign .button-color:focus {
   background: white;
   color: #8BA4F9;
 }
-.header__box .header__sign .sign-up-form__button-pay, .header__box .header__sign .sign-in-form__button-sign-in {
+.header .header__box .header__sign .sign-up-form__button-pay, .header .header__box .header__sign .sign-in-form__button-sign-in {
   width: 320px;
   height: 44px;
   text-transform: uppercase;
 }
-.header__box .header__sign .btn-menu {
+.header .header__box .header__sign .btn-menu {
   display: none;
   width: 30px;
   height: 30px;
@@ -516,10 +516,10 @@ body ul {
   border: none;
   background-color: transparent;
 }
-.header__box .header__sign .btn-menu:focus {
+.header .header__box .header__sign .btn-menu:focus {
   outline: none;
 }
-.header__box .header__modal {
+.header .header__box .header__modal {
   display: none;
   position: absolute;
   top: 71px;
@@ -528,41 +528,38 @@ body ul {
   background-color: rgba(255, 255, 255, 0.95);
 }
 @media (max-width: 1055px) {
-  .header__box .header__nav-bar {
+  .header .header__box .header__nav-bar {
     display: none;
   }
-  .header__box .header__sign .btn-menu {
+  .header .header__box .header__sign .btn-menu {
     display: block;
   }
-  .header__box .header__sign .sign-up {
+  .header .header__box .header__sign .sign-up {
     margin-right: 8px;
   }
-  .header__box .header__modal .header__nav-bar {
+  .header .header__box .header__modal .header__nav-bar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
     padding: 10px 0 0 10px;
   }
-  .header__box .header__modal .header__nav-bar li {
+  .header .header__box .header__modal .header__nav-bar li {
     margin: 0 0 22px 0;
     padding: 0 0 0 0;
   }
-  .header__box .header__modal .header__nav-bar li img {
+  .header .header__box .header__modal .header__nav-bar li img {
     bottom: -4px;
   }
 }
 @media (min-width: 1056px) {
-  .header__box .header__modal .header__nav-bar {
+  .header .header__box .header__modal .header__nav-bar {
     display: none;
   }
 }
 
-.wrap {
-  display: flex;
-}
-
 .top__footer {
+  display: flex;
   width: 1440px;
   margin: 0 auto;
   padding-top: 100px;
@@ -796,6 +793,8 @@ body ul {
 .sign-up-in-content {
   display: flex;
   justify-content: center;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 .sign-up-in-content .sign-up-form, .sign-up-in-content .sign-in-form {
   margin-top: 19px;
@@ -1335,8 +1334,6 @@ body ul {
 }
 .number-rate-container .number-rate__photo-slider {
   cursor: pointer;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
   width: 270px;
   height: 151px;
   margin-bottom: 10px;
@@ -1347,6 +1344,8 @@ body ul {
 .number-rate-container .number-rate__photo-slider .number-rate__img {
   position: absolute;
   z-index: -1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .number-rate-container .number-rate__photo-slider .number-rate__btn-previous, .number-rate-container .number-rate__photo-slider .number-rate__btn-next {
   opacity: 0;
@@ -1415,9 +1414,13 @@ body ul {
   justify-content: space-between;
 }
 
+.search-room {
+  display: flex;
+}
 .search-room .search-room__filter {
   width: 266px;
   margin-right: 60px;
+  background-color: aliceblue;
 }
 .search-room .search-room__room-list {
   margin-top: 11px;
@@ -1429,8 +1432,25 @@ body ul {
   display: grid;
   grid-template-rows: 8px 8px 8px;
   grid-template-columns: 12px 12px 12px;
-  grid-gap: 14vw;
+  grid-gap: 270px;
   margin-top: 22px;
+}
+
+@media (max-width: 1240px) {
+  .search-room .search-room-room-list__rooms {
+    grid-template-rows: 8px 8px 8px 8px 8px;
+    grid-template-columns: 12px 12px;
+    grid-gap: 265px;
+  }
+}
+@media (max-width: 935px) {
+  .search-room {
+    display: block;
+  }
+
+  .search-room__filter {
+    width: 1160px;
+  }
 }
 footer.footer .top__footer {
   padding-top: 98px;

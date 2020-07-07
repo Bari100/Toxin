@@ -15,8 +15,6 @@
     }
     .number-rate__photo-slider{
         cursor: pointer;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
         width: 270px;
         height: 151px;
         margin-bottom: 10px;
@@ -26,6 +24,8 @@
         .number-rate__img {
             position: absolute;
             z-index: -1;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
         }
         .number-rate__btn-previous, .number-rate__btn-next {
             opacity: 0;

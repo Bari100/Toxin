@@ -1,7 +1,9 @@
 .search-room {
+    display: flex;
     .search-room__filter {
         width: 266px;
         margin-right: 60px;
+        background-color: aliceblue;
     }
     .search-room__room-list {
         margin-top: 11px;
@@ -13,7 +15,25 @@
         display: grid;
         grid-template-rows: 8px 8px 8px;
         grid-template-columns: 12px 12px 12px;
-        grid-gap: 14vw;
+        grid-gap: 270px;
         margin-top: 22px;
+    }
+}
+@media(max-width: 1240px) {
+    .search-room {
+        .search-room-room-list__rooms {
+            grid-template-rows: 8px 8px 8px 8px 8px;
+            grid-template-columns: 12px 12px;
+            grid-gap: 265px;
+        }
+    }
+}
+
+@media(max-width: 935px) {
+    .search-room {
+        display: block;
+    }
+    .search-room__filter {
+        width: 1160px;
     }
 }
