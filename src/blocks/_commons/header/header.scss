@@ -1,7 +1,4 @@
 .header {
-    // .wrap {
-    //     padding-left: 0;
-    // }
     .header__box {
         display: flex;
         justify-content: space-between;
@@ -69,14 +66,22 @@
         }
     
         //MEDIA
-// @media (max-width: 565px) {
-//     .header__logo {
-//         margin: 0;
-//     }
-//     .wrap {
-//         padding-left: 0;
-//     }
-// }
+@media (max-width: 565px) {
+    .header__sign {
+        padding: 0;
+        display: flex;
+        .sign-in {
+            margin-left: 0;
+        }
+        .sign-up {
+            margin-left: 8px;
+        }
+    }
+    // .header__logo {
+    //     .wrap {
+    //         padding-left: 0;
+    //     } --- перемещен в styles.scss
+}
         @media (max-width: 1055px) {
             .header__nav-bar {
                 display: none;

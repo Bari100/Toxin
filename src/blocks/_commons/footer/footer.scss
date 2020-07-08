@@ -10,7 +10,7 @@
     .logo__footer {
         margin-bottom: 15px;
     }
-    p.text__footer {
+    .text__footer {
         width: 260px;
         color: rgba(31, 32, 65, 0.75);
         line-height: 24px;
@@ -148,6 +148,9 @@
             }
         }
     }
+    .footer__responsive-columns {
+        display: flex;
+    }
     /*.footer__responsive-nav {
         display: none;
         .column-2__footer {
@@ -191,6 +194,23 @@
 }
 
 //MEDIA
+@media (max-width: 860px) {
+    .top__footer {
+        display: flex;
+        flex-direction: column;
+        // padding-top: 1px; --- перемещено в index.scss
+        .footer__responsive-columns {
+            display: flex;
+        }
+    }
+    .column-1__footer {
+        display: flex;
+        align-items: center;
+        .text__footer {
+            width: 70vw;
+        }
+    }
+}
 @media (max-width: 1270px) {
     .top__footer {
         .footer__nav-disappear {
