@@ -31,9 +31,41 @@
 
 @media(max-width: 935px) {
     .search-room {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; //позволяет флексам занять несколько строк при сужении страницы. удобно т.к. 'flex-direction: column' почему-то не позволяет разместить элементы по середине страницы
     }
     .search-room__filter {
         width: 1160px;
+    }
+}
+
+@media(max-width: 630px) {
+    .search-room {
+        .search-room-room-list__rooms {
+            grid-template-rows: 8px 8px 8px 8px 8px;
+            grid-template-columns: 12px 12px;
+            grid-gap: 44vw;
+        }
+    }
+    .wrap {
+        padding-left: 5%;
+    }
+    .number-rate-container {
+        width: 225px;
+        height: 213px;
+        .number-rate__photo-slider {
+            width: 225px;
+            margin-bottom: 0;
+        }
+        .number-rate__img {
+            width: 225px;
+        }
+        .number-rate__name-price-rating-reviews {
+            width: 220px;
+            .number-rate__line {
+                width: 220px;
+            }
+        }
     }
 }

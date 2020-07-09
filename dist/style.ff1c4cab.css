@@ -745,38 +745,35 @@ body ul {
   display: flex;
 }
 
-@media (max-width: 860px) {
-  .top__footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .top__footer .footer__responsive-columns {
-    display: flex;
-  }
-
-  .column-1__footer {
-    display: flex;
-    align-items: center;
-  }
-  .column-1__footer .text__footer {
-    width: 70vw;
-  }
-}
 @media (max-width: 1270px) {
-  .top__footer .footer__nav-disappear {
+  .footer .wrap {
+    padding: 0;
+  }
+  .footer .top__footer {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer .top__footer .footer__nav {
+    margin-right: 100px;
+  }
+  .footer .top__footer .footer__nav-disappear {
     display: none;
   }
-  .top__footer .footer__responsive-nav {
+  .footer .top__footer .footer__responsive-nav {
     display: block;
   }
-  .top__footer .footer__responsive-nav ul {
+  .footer .top__footer .footer__responsive-nav ul {
     margin: 4px 0 0 0;
   }
-  .top__footer .footer__responsive-nav li {
+  .footer .top__footer .footer__responsive-nav li {
     padding-bottom: 36px;
   }
-  .top__footer .column-4__footer li {
+  .footer .top__footer .column-4__footer li {
     padding-bottom: 0;
+  }
+
+  .bottom__footer .wrap {
+    padding: 0 54px 0 54px;
   }
 }
 @media (min-width: 1270px) {
@@ -1477,15 +1474,46 @@ body ul {
 }
 @media (max-width: 935px) {
   .search-room {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .search-room__filter {
     width: 1160px;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 630px) {
+  .search-room .search-room-room-list__rooms {
+    grid-template-rows: 8px 8px 8px 8px 8px;
+    grid-template-columns: 12px 12px;
+    grid-gap: 44vw;
+  }
+
   .wrap {
+    padding-left: 5%;
+  }
+
+  .number-rate-container {
+    width: 225px;
+    height: 213px;
+  }
+  .number-rate-container .number-rate__photo-slider {
+    width: 225px;
+    margin-bottom: 0;
+  }
+  .number-rate-container .number-rate__img {
+    width: 225px;
+  }
+  .number-rate-container .number-rate__name-price-rating-reviews {
+    width: 220px;
+  }
+  .number-rate-container .number-rate__name-price-rating-reviews .number-rate__line {
+    width: 220px;
+  }
+}
+@media (max-width: 565px) {
+  .header .wrap {
     padding-left: 3%;
   }
 }

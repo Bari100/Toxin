@@ -194,41 +194,75 @@
 }
 
 //MEDIA
-@media (max-width: 860px) {
-    .top__footer {
-        display: flex;
-        flex-direction: column;
-        // padding-top: 1px; --- перемещено в index.scss
-        .footer__responsive-columns {
-            display: flex;
-        }
-    }
-    .column-1__footer {
-        display: flex;
-        align-items: center;
-        .text__footer {
-            width: 70vw;
-        }
-    }
-}
+// @media (max-width: 860px) {
+//     .footer {
+//         .wrap {
+//             padding-left: 2%;
+//         }
+//         .top__footer {
+//             display: flex;
+//             flex-direction: column;
+//             // padding-top: 1px; --- перемещено в index.scss
+//             .logo__footer {
+//                 margin-right: 1%;
+//             }
+//             .footer__responsive-columns {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 width: 71vw;
+//                 padding-top: 40px;
+//             }
+//             .footer__nav, .footer__responsive-nav {
+//                 ul {
+//                     padding-left: 10%;
+//                 }
+//             }
+//         }
+//         .column-1__footer {
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             width: 84vw;
+//             .text__footer {
+//                 width: 45vw;
+//                 text-align: right;
+//             }
+//         }
+//     }
+// }
 @media (max-width: 1270px) {
-    .top__footer {
-        .footer__nav-disappear {
-            display: none;
+    .footer {
+        .wrap {
+            padding: 0;
         }
-        .footer__responsive-nav {
-            display: block;
-            ul {
-                margin: 4px 0 0 0;
+        .top__footer {
+            width: 100%;
+            justify-content: space-around;
+            .footer__nav {
+                margin-right: 100px;
             }
-            li {
-                padding-bottom: 36px;
+            .footer__nav-disappear {
+                display: none;
+            }
+            .footer__responsive-nav {
+                display: block;
+                ul {
+                    margin: 4px 0 0 0;
+                }
+                li {
+                    padding-bottom: 36px;
+                }
+            }
+            .column-4__footer {
+                li {
+                    padding-bottom: 0;
+                }
             }
         }
-        .column-4__footer {
-            li {
-                padding-bottom: 0;
-            }
+    }
+    .bottom__footer {
+        .wrap {
+            padding: 0 54px 0 54px;
         }
     }
 }
