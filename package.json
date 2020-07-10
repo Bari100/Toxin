@@ -12,8 +12,10 @@
     "sass": "^1.26.7"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "assemble": "^0.3.83",
     "grunt": "^0.4.5",
+    "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "styles": "^0.2.1"
   }

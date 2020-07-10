@@ -742,25 +742,40 @@ body ul {
   padding-bottom: 40px;
 }
 .top__footer .footer__responsive-columns {
-  display: flex;
+  display: none;
 }
 
 @media (max-width: 1270px) {
+  .footer .footer__responsive-columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer .footer__responsive-columns .column-1__footer {
+    text-align: center;
+  }
+  .footer .footer__responsive-columns .column-1__footer .logo__footer {
+    margin-right: 30px;
+  }
+  .footer .footer__responsive-columns .column-1__footer .text__footer {
+    text-align: center;
+  }
   .footer .wrap {
     padding: 0;
   }
   .footer .top__footer {
     width: 100%;
-    justify-content: space-around;
   }
   .footer .top__footer .footer__nav {
-    margin-right: 100px;
+    margin-right: 150px;
   }
   .footer .top__footer .footer__nav-disappear {
     display: none;
   }
   .footer .top__footer .footer__responsive-nav {
     display: block;
+    text-align: right;
+    margin-right: 30px;
   }
   .footer .top__footer .footer__responsive-nav ul {
     margin: 4px 0 0 0;
