@@ -327,4 +327,11 @@
             height: 34px;
         }
     }
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 22px;
+        background-color: red;
+        box-shadow: 2px 11px 20px 5px rgba(0,0,0,1);
+    }
 }
