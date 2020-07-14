@@ -79,7 +79,6 @@
   .datepicker--cell.-range-from-.-range-to- {
     border-radius: 22px; }
   .datepicker--cell.-range-from-.-selected- {
-    /* box-shadow: 5px 0px 0px 0px rgba(188,156,255,0.25); */
     position: relative;
   }
   .datepicker--cell.-range-from-.-selected-::after {
@@ -92,8 +91,15 @@
     height: 32px;
     width: 40%;
   }
-  .datepicker--cell.-range-to-.-selected- {
-    box-shadow: -9px 0px 0px 0px rgba(0,0,0,1);
+  .datepicker--cell.-range-to-.-selected-::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(188,156,255,0.25);
+    bottom: 0;
+    right: 20.6px;
+    height: 32px;
+    width: 40%;
   }
   .datepicker--cell.-selected- {
     color: #fff;

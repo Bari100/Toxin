@@ -119,6 +119,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"../node_modules/air-datepicker/dist/js/datepicker.js":[function(require,module,exports) {
 ;(function (window, $, undefined) { ;(function () {
+    var div = document.createElement('div');
+    div.className = "thing";
     var VERSION = '2.2.3',
         pluginName = 'datepicker',
         autoInitSelector = '.datepicker-here',
@@ -132,7 +134,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             '</div>',
         defaults = {
             classes: '',
-            inline: false,
+            inline: true,
             language: 'ru',
             startDate: new Date(),
             firstDay: '',
@@ -140,7 +142,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             dateFormat: '',
             altField: '',
             altFieldDateFormat: '@',
-            toggleSelected: true,
+            toggleSelected: false,
             keyboardNav: true,
 
             position: 'bottom left',
@@ -1617,7 +1619,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
         days:'' +
         '<div class="datepicker--days datepicker--body">' +
         '<div class="datepicker--days-names"></div>' +
+        '<div class="thing"></div>' +
         '<div class="datepicker--cells datepicker--cells-days"></div>' +
+        
         '</div>',
         months: '' +
         '<div class="datepicker--months datepicker--body">' +
@@ -1719,6 +1723,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             if (opts.range) {
                 if (dp.isSame(minRange, date, type)) classes += ' -range-from-';
                 if (dp.isSame(maxRange, date, type)) classes += ' -range-to-';
+                if (
+                    (dp.bigger(minRange, date) && dp.less(parent.focused, date)) ||
+                    (dp.less(maxRange, date) && dp.bigger(parent.focused, date)))
+                {   $(".thing").css({display:"block", width:"240px", height:"100px", backgroundColor:"black"})
+                    // $(".datepicker--cell.-range-from-.-selected-::after").css({
+                    //                                                         content: '""',
+                    //                                                         display: 'block',
+                    //                                                         position: 'absolute',
+                    //                                                         backgroundColor: 'rgba(188,156,255,0.25)',
+                    //                                                         bottom: '0',
+                    //                                                         left: '20.6px',
+                    //                                                         height: '32px',
+                    //                                                         width: '40%'});
+                }
 
                 if (parent.selectedDates.length == 1 && parent.focused) {
                     if (
@@ -2382,7 +2400,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52343" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62238" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
