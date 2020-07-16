@@ -833,13 +833,6 @@ body ul {
   width: 24px;
   height: 34px;
 }
-.bottom__footer .circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 22px;
-  background-color: red;
-  box-shadow: 2px 11px 20px 5px black;
-}
 
 .sign-up-in-content {
   display: flex;

@@ -81,23 +81,25 @@
   .datepicker--cell.-range-from-.-selected- {
     position: relative;
   }
-  .datepicker--cell.-range-from-.-selected-::after {
+  .datepicker--cell.-range-from-.-selected_2-::after {
     content: "";
     display: block;
     position: absolute;
     background-color: rgba(188,156,255,0.25);
     bottom: 0;
-    left: 20.6px;
+    left: 20.7px;
+    z-index: -3;
     height: 32px;
     width: 40%;
   }
-  .datepicker--cell.-range-to-.-selected-::after {
+  .datepicker--cell.-range-to-.-selected_2-::after {
     content: "";
     display: block;
     position: absolute;
     background-color: rgba(188,156,255,0.25);
     bottom: 0;
     right: 20.6px;
+    z-index: -3;
     height: 32px;
     width: 40%;
   }

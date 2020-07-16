@@ -1235,6 +1235,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
                     this.timepicker.update();
                 }
             }
+            if (this.lastSelectedDate = alreadySelected && $(".-selected-").length == 1) {
+                $(".datepicker--cell.-selected-").css({'background':'linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)'});
+                $(".datepicker--cell.-range-from-.-range-to-.-selected_2-").removeClass('-selected_2-');
+            }
         },
 
         _onShowEvent: function (e) {
@@ -1619,7 +1623,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
         days:'' +
         '<div class="datepicker--days datepicker--body">' +
         '<div class="datepicker--days-names"></div>' +
-        '<div class="thing"></div>' +
         '<div class="datepicker--cells datepicker--cells-days"></div>' +
         
         '</div>',
@@ -1723,20 +1726,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             if (opts.range) {
                 if (dp.isSame(minRange, date, type)) classes += ' -range-from-';
                 if (dp.isSame(maxRange, date, type)) classes += ' -range-to-';
-                if (
-                    (dp.bigger(minRange, date) && dp.less(parent.focused, date)) ||
-                    (dp.less(maxRange, date) && dp.bigger(parent.focused, date)))
-                {   $(".thing").css({display:"block", width:"240px", height:"100px", backgroundColor:"black"})
-                    // $(".datepicker--cell.-range-from-.-selected-::after").css({
-                    //                                                         content: '""',
-                    //                                                         display: 'block',
-                    //                                                         position: 'absolute',
-                    //                                                         backgroundColor: 'rgba(188,156,255,0.25)',
-                    //                                                         bottom: '0',
-                    //                                                         left: '20.6px',
-                    //                                                         height: '32px',
-                    //                                                         width: '40%'});
-                }
+                // if (
+                //     (dp.bigger(minRange, date) && dp.less(parent.selected, date)) ||
+                //     (dp.less(maxRange, date) && dp.bigger(parent.focused, date)))
+                // {   $(".datepicker--cell.-range-from-.-selected_2-").removeClass('-selected_2-');
+                // }
 
                 if (parent.selectedDates.length == 1 && parent.focused) {
                     if (
@@ -1764,6 +1758,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             if (dp.isSame(currentDate, date, type)) classes += ' -current-';
             if (parent.focused && dp.isSame(date, parent.focused, type)) classes += ' -focus-';
             if (parent._isSelected(date, type)) classes += ' -selected-';
+            if (parent._isSelected(date, type)) classes += ' -selected_2-';
+            // if (dp.bigger(minRange, date) && dp.less(maxRange, date)) classes += ' -selected_2-';
             if (!parent._isInRange(date, type) || render.disabled) classes += ' -disabled-';
 
             return {
@@ -2400,7 +2396,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62238" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55446" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
