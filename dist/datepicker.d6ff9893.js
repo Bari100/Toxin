@@ -175,8 +175,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
             // navigation
             monthsField: 'monthsShort',
-            prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-            nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+            prevHtml: '<img src="arrow_forward.b453ccca.svg">',
+            nextHtml: '<img src="arrow_forward.04b75f4b.svg">',
             navTitles: {
                 days: 'MM, <i>yyyy</i>',
                 months: 'yyyy',
@@ -1602,7 +1602,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
             daysShort: ['Вос','Пон','Вто','Сре','Чет','Пят','Суб'],
             daysMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-            months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', '<h2>Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
             monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
             today: 'Сегодня',
             clear: 'Очистить',
@@ -2396,7 +2396,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55446" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64285" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

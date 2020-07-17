@@ -1,0 +1,22 @@
+head
+    link(href="blocks/search-room/search-room__filter/search-room__filter-price/search-room__filter-price.scss" rel="stylesheet")
+body
+    <div class="filter__block filter__block--slider">
+        <div class="filter__head">цена изделия</div>
+        <div class="filter__slider">
+            <div class="range__zero">0</div>
+            <div id="filter__range"></div>
+        </div>
+        <div class="filter__cost table">
+            <div class="table-cell"> <span>от</span></div>
+            <div class="table-cell">
+                <input id="priceMin" type="text" value="5000" class="form-control">
+            </div>
+            <div class="table-cell"><span>до</span></div>
+            <div class="table-cell">
+                <input id="priceMax" type="text" value="15000" class="form-control">
+            </div>
+            <div class="table-cell"><span>руб</span></div>
+        </div>
+    </div>
+    script(src="search-room__filter-price.js")

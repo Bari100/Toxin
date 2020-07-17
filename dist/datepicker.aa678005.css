@@ -1,3 +1,31 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/montserrat-v14-cyrillic_latin-regular.e74ff5ad.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("/montserrat-v14-cyrillic_latin-regular.e74ff5ad.eot?#iefix") format("embedded-opentype"), url("/montserrat-v14-cyrillic_latin-regular.67fcefcd.woff2") format("woff2"), url("/montserrat-v14-cyrillic_latin-regular.61ead990.woff") format("woff"), url("/montserrat-v14-cyrillic_latin-regular.e2a9b171.ttf") format("truetype"), url("/montserrat-v14-cyrillic_latin-regular.e8c2a464.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/montserrat-v14-cyrillic_latin-600.5f7a4f8e.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("/montserrat-v14-cyrillic_latin-600.5f7a4f8e.eot?#iefix") format("embedded-opentype"), url("/montserrat-v14-cyrillic_latin-600.e4855cee.woff2") format("woff2"), url("/montserrat-v14-cyrillic_latin-600.021f36ba.woff") format("woff"), url("/montserrat-v14-cyrillic_latin-600.23d588a7.ttf") format("truetype"), url("/montserrat-v14-cyrillic_latin-600.8684382d.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("/montserrat-v14-latin_cyrillic-700.85da606a.woff2") format("woff2"), url("/montserrat-v14-latin_cyrillic-700.c3040b57.woff") format("woff"), url("/montserrat-v14-latin_cyrillic-700.45f4a2cd.ttf") format("truetype"), url("/montserrat-v14-latin_cyrillic-700.383d4152.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
   color: #dedede; }
   .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
@@ -125,7 +153,7 @@
   margin: 8px 0 3px; }
 
 .datepicker--day-name {
-  color: #FF9A19;
+  color: #BC9CFF;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -139,8 +167,8 @@
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  text-transform: uppercase;
-  font-size: .8em; }
+  font-style: 'Montserrat';
+  font-weight: 800; }
 
 .datepicker--cell-day {
   width: 14.28571%; }
@@ -198,11 +226,12 @@
   border: 1px solid #dbdbdb;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  box-sizing: content-box;
-  font-family: Tahoma, sans-serif;
-  font-size: 14px;
-  color: #4a4a4a;
-  width: 250px;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  color: rgba(31, 32, 65, 0.5);
+  width: 320px;
+  padding: 20px 13px;
   position: absolute;
   left: -100000px;
   opacity: 0;
@@ -292,7 +321,7 @@
     display: block; }
 
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
-  color: #dedede; }
+  color: rgba(31, 32, 65, 0.5); }
   .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
     color: #c5c5c5; }
   .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
@@ -329,6 +358,7 @@
 
 .datepicker--nav-title,
 .datepicker--nav-action {
+  color: #1F2041;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -351,6 +381,9 @@
     background: #f0f0f0; }
   .datepicker--nav-action.-disabled- {
     visibility: hidden; }
+  .datepicker--nav-action[data-action="prev"] img {
+    transform: scale(-1, -1);
+    }
   .datepicker--nav-action svg {
     width: 32px;
     height: 32px; }
@@ -364,7 +397,7 @@
   padding: 0 8px; }
   .datepicker--nav-title i {
     font-style: normal;
-    color: #9c9c9c;
+    color: #1F2041;
     margin-left: 5px; }
   .datepicker--nav-title:hover {
     background: #f0f0f0; }
