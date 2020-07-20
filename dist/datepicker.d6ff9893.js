@@ -167,8 +167,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             multipleDatesSeparator: ',',
             range: false,
 
-            todayButton: false,
-            clearButton: false,
+            todayButton: true,
+            clearButton: true,
 
             showEvent: 'focus',
             autoClose: false,
@@ -699,15 +699,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             })
         },
 
-        today: function () {
-            this.silent = true;
-            this.view = this.opts.minView;
-            this.silent = false;
-            this.date = new Date();
-
-            if (this.opts.todayButton instanceof Date) {
-                this.selectDate(this.opts.todayButton)
-            }
+        today: function(){
+            $(".datepicker").hide();
         },
 
         clear: function () {
@@ -1604,8 +1597,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             daysMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
             months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', '<h2>Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
             monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-            today: 'Сегодня',
-            clear: 'Очистить',
+            today: 'ПРИМЕНИТЬ',
+            clear: 'ОЧИСТИТЬ',
             dateFormat: 'dd.mm.yyyy',
             timeFormat: 'hh:ii',
             firstDay: 1
@@ -1977,11 +1970,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
         },
 
         _addButtonsIfNeed: function () {
-            if (this.opts.todayButton) {
-                this._addButton('today')
-            }
             if (this.opts.clearButton) {
                 this._addButton('clear')
+            }
+            if (this.opts.todayButton) {
+                this._addButton('today')
             }
         },
 
@@ -2396,7 +2389,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64285" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50678" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1527,6 +1527,12 @@ body ul {
     width: 220px;
   }
 }
+.search-room__filter-titles {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
 @media (max-width: 565px) {
   .header .wrap {
     padding-left: 3%;
