@@ -1,0 +1,24 @@
+head
+    link(href="blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.scss" rel="stylesheet" type="text/css")
+    //- link(href="styles/bootstrap.css" rel="stylesheet" type="text/css")
+    //- link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous")
+body
+    .btn-group
+        button(type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            Action
+        .dropdown-menu
+            .bedroom__number
+                span.convenience-amount__minus -
+                input(type="text" value="1" size="5")
+                span.convenience-amount__plus +
+            .bed__number
+                span.convenience-amount__minus -
+                input(type="text" value="1" size="5")
+                span.convenience-amount__plus +
+            .bathroom__number
+                span.convenience-amount__minus -
+                input(type="text" value="1" size="5")
+                span.convenience-amount__plus +
+    script(src="blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.js")
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous")
+    //- script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous")

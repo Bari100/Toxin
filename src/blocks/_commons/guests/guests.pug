@@ -1,0 +1,23 @@
+head
+    //- link(href="styles/bootstrap.css" rel="stylesheet" type="text/css")
+    link(href="blocks/_commons/guests/guests.scss" rel="stylesheet" type="text/css")
+body
+    .btn-group
+        button(type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            Action
+        .dropdown-menu
+            .adults__number
+                span.guests__minus -
+                input(type="text" value="1" size="5")
+                span.guests__plus +
+            .kids__number
+                span.guests__minus -
+                input(type="text" value="1" size="5")
+                span.guests__plus +
+            .baby__number
+                span.guests__minus -
+                input(type="text" value="1" size="5")
+                span.guests__plus +
+    script(src="blocks/_commons/guests/guests.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous")

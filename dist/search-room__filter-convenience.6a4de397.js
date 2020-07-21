@@ -117,23 +117,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"script.js":[function(require,module,exports) {
+})({"blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.js":[function(require,module,exports) {
 $(document).ready(function () {
-  $(".btn-menu").click(function () {
-    $(".header__modal").show();
+  $('.convenience-amount__minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
   });
-  $(document).mouseup(function (e) {
-    // событие клика по веб-документу
-    var div = $(".header__modal"); // тут указываем ID элемента
-
-    if (!div.is(e.target) // если клик был не по нашему блоку
-    && div.has(e.target).length === 0) {
-      // и не по его дочерним элементам
-      div.hide(); // скрываем его
-    }
-  });
-  $(".sign-up-form__button-act").focus(function () {
-    $(".sign-in-form").show(), $(".sign-up-form").hide();
+  $('.convenience-amount__plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
   });
 });
 },{}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -340,5 +338,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
-//# sourceMappingURL=/script.75da7f30.js.map
+},{}]},{},["C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.js"], null)
+//# sourceMappingURL=/search-room__filter-convenience.6a4de397.js.map
