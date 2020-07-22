@@ -1,0 +1,174 @@
+
+.guests__dropdown-menu {
+	padding-inline-start: 0;
+	margin-left: 10px;
+	.guests__dropdown-content {
+		margin-top: 13px;
+	}
+	.guests__amount {
+		margin-right: 15px;
+	}
+	.guests__number {
+		margin-bottom: 17px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.guests__input {
+		border: none;
+		width: 54px;
+		background-color: transparent;
+		text-align: center;
+		font-weight: 800;
+		color: #1F2041;
+	}
+	.guests__minus, .guests__plus {
+		font-size: 18px;
+		font-weight: 400;
+		color: rgba(31, 32, 65, 0.5);
+	}
+	.guests__circle {
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		border-radius: 22px;
+		background-color: transparent;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+	}
+	.guests__minus {
+		position: relative;
+	}
+	.guests__circle-minus {
+		position: absolute;
+		top: -5px;
+		left: -11px;
+	}
+	.guests__plus {
+		position: relative;
+	}
+	.guests__circle-plus {
+		position: absolute;
+		top: -5px;
+		left: -10px;
+	}
+}
+
+.text-center {
+  text-align: center;
+}
+
+*, *:before, *:after {
+	-webkit-border-sizing: border-box;
+	-moz-border-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.guests__container {
+	width: 100%;
+	// margin: 50px auto;
+  
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+}
+
+// =============================================================================
+//	Mixins and Variables
+// =============================================================================
+
+$blue: #2980B9;
+$gray: #EEE;
+
+@mixin ul-nostyle {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+@mixin hover-style($color) {
+	&:hover {
+		background: lighten($color, 3%);
+	}
+}
+
+@mixin animation($content) {
+  animation: $content;
+  -moz-animation: $content;
+  -webkit-animation: $content;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-webkit-keyframes #{$name} { @content; }
+}
+
+// =============================================================================
+//	Classes
+// =============================================================================
+
+.title {
+  font-family: 'Pacifico';
+  font-weight: norma;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.4;
+  color: $blue;
+}
+
+.guests__dropdown {
+	a {
+		text-decoration: none;
+	}
+
+	[data-toggle="dropdown"] {
+		position: relative;
+		display: block;
+		color: white;
+		background: $blue;
+		padding: 10px;
+
+	}
+	.icon-arrow {
+		position: absolute;
+		display: block;
+		font-size: 0.7em;
+		color: #fff;
+		top: 14px;
+		right: 10px;
+
+		
+
+		&:before {
+			content: '\25BC';
+		}
+	}
+
+	.guests__dropdown-menu {
+		max-height: 0;
+		overflow: hidden;
+
+		li {
+			padding: 0;
+
+			a {
+				display: block;
+				color: darken($gray, 50%);
+				background: $gray;
+				padding: 10px 10px;
+			}
+		}
+	}
+
+	.show {
+		display: block;
+		max-height: 9999px;
+	}
+
+	.hide {
+		max-height: 0;
+	}
+}
