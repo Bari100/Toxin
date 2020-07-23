@@ -1,41 +1,37 @@
 head
-    //- link(href="styles/bootstrap.css" rel="stylesheet" type="text/css")
     link(href="blocks/_commons/guests/guests.scss" rel="stylesheet" type="text/css")
 body
     .dropdown
-        //- button(type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
-        .title.pointerCursor
-        .menu.pointerCursor.hide
-        <div class="guests__container">
-            <ul>
-                <li class="guests__dropdown">
-                <a id="guests__text" href="#" data-toggle="dropdown">0 гостей<span class="guests__text-baby"></span></a>
-                ul.guests__dropdown-menu
-                    .guests__dropdown-content
-                        li.adults__number.guests__number
-                            span.guests_title взрослые
-                            .guests__amount
-                                span.guests__minus.guests__click-minus -
-                                    .guests__circle.guests__circle-minus
-                                input.guests__input(type="text" value="0" size="5")
-                                span.guests__plus.guests__click +
-                                    .guests__circle.guests__circle-plus
-                        li.kids__number.guests__number
-                            span.guests_title дети
-                            .guests__amount
-                                span.guests__minus.guests__click-minus -
-                                    .guests__circle.guests__circle-minus
-                                input.guests__input(type="text" value="0" size="5")
-                                span.guests__plus.guests__click +
-                                    .guests__circle.guests__circle-plus
-                        li.baby__number.guests__number
-                            span.guests_title младенцы
-                            .guests__amount
-                                span.guests__minus.guests__click-baby-minus -
-                                    .guests__circle.guests__circle-minus
-                                input.guests__input(type="text" value="0" size="5")
-                                span.guests__plus.guests__click-baby +
-                                    .guests__circle.guests__circle-plus
+        .guests__container
+            ul
+                li.guests__dropdown
+                    .guests__adults-baby
+                        a#guests__text(href="#" data-toggle="dropdown") 0 гостей
+                        span.guests__text-baby
+                    ul.guests__dropdown-menu
+                        .guests__dropdown-content
+                            li.adults__number.guests__number
+                                span.guests_title взрослые
+                                .guests__amount
+                                    span.guests__minus.guests__click-minus -
+                                        .guests__circle.guests__circle-minus
+                                    input.guests__input(type="text" value="0" size="5" readonly)
+                                    span.guests__plus.guests__click +
+                                        .guests__circle.guests__circle-plus
+                            li.kids__number.guests__number
+                                span.guests_title дети
+                                .guests__amount
+                                    span.guests__minus.guests__click-minus -
+                                        .guests__circle.guests__circle-minus
+                                    input.guests__input(type="text" value="0" size="5" readonly)
+                                    span.guests__plus.guests__click +
+                                        .guests__circle.guests__circle-plus
+                            li.baby__number.guests__number
+                                span.guests_title младенцы
+                                .guests__amount
+                                    span.guests__minus.guests__click-baby-minus -
+                                        .guests__circle.guests__circle-minus
+                                    input.guests__input(type="text" value="0" size="5" readonly)
+                                    span.guests__plus.guests__click-baby +
+                                        .guests__circle.guests__circle-plus
     script(src="blocks/_commons/guests/guests.js")
-    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous")
-    //- script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous")

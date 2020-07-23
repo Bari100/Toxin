@@ -1,8 +1,16 @@
+var guestsTextBaby = document.getElementsByClassName('guests__text-baby');
+var iBaby = -1;
+var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
+function getMessageBaby() {
+	return objectBaby[iBaby];
+}
+
+
 $(document).ready(function() {
     $('.guests__minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 0 : count;
+		count = count < 1 ? 0 : count;
         $input.val(count);
         $input.change();
         return false;
@@ -12,6 +20,23 @@ $(document).ready(function() {
         $input.val(parseInt($input.val()) + 1);
         $input.change();
         return false;
+    });
+});
+
+$(document).ready(function() {
+    $('.guests__click-baby-minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+		if(count < 0) {
+			$(guestsTextBaby).hide(getMessageBaby());
+		}
+    });
+    $('.guests__click-baby').click(function () {
+		var $input = $(this).parent().find('input');
+		var count = parseInt($input.val()) - 1;
+		if (count >= 0) {
+			$(guestsTextBaby).show(getMessageBaby());
+		}
     });
 });
 
@@ -90,4 +115,8 @@ $(function(){
 		// 	i=-1;
 		// }
 	});
+	// var objectBabyZero = [""];
+	// if(count < 0) {
+	// 	$(guestsTextBaby).remove(getMessageBaby());
+	// }
 });

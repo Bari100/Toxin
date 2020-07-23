@@ -1,5 +1,5 @@
 $( function() {
-  $( "#slider-range" ).slider({
+  $( "#search-room__filter-price-slider-range" ).slider({
     range: true,
     min: 0,
     max: 18000,
@@ -8,6 +8,6 @@ $( function() {
       $( "#amount" ).val( ui.values[ 0 ] + "₽" + " - " + ui.values[ 1 ] + "₽" );
     }
   });
-  $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + "₽" + " - " +
-    $( "#slider-range" ).slider( "values", 1 ) + "₽" );
+  $( "#amount" ).val( $( "#search-room__filter-price-slider-range" ).slider( "values", 0 ) + "₽" + " - " +
+    $( "#search-room__filter-price-slider-range" ).slider( "values", 1 ) + "₽" );
 } );

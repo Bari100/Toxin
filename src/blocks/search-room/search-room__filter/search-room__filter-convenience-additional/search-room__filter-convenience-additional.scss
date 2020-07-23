@@ -1,65 +1,13 @@
 
-.guests__adults-baby {
-	display: flex;
-	.guests__text-baby {
-		margin-top: 10px;
-	}
-}
-
-.guests__dropdown-menu {
+.search-room__filter-convenience-additional__dropdown-menu {
 	padding-inline-start: 0;
 	margin-left: 10px;
-	.guests__dropdown-content {
+	.search-room__filter-convenience-additional__dropdown-content {
 		margin-top: 13px;
 	}
-	.guests__amount {
-		margin-right: 15px;
-	}
-	.guests__number {
-		margin-bottom: 17px;
-		display: flex;
-		justify-content: space-between;
-	}
-	.guests__input {
-		border: none;
-		width: 54px;
-		background-color: transparent;
-		text-align: center;
-		font-weight: 800;
-		color: #1F2041;
-		outline: none;
-	}
-	.guests__minus, .guests__plus {
-		font-size: 18px;
-		font-weight: 400;
-		color: rgba(31, 32, 65, 0.5);
-	}
-	.guests__circle {
-		cursor: pointer;
-		width: 30px;
-		height: 30px;
-		border-radius: 22px;
-		background-color: transparent;
-		border: 1px solid rgba(31, 32, 65, 0.25);
-	}
-	.guests__minus {
-		position: relative;
-	}
-	.guests__circle-minus {
-		position: absolute;
-		top: -5px;
-		left: -11px;
-	}
-	.guests__plus {
-		position: relative;
-	}
-	.guests__circle-plus {
-		position: absolute;
-		top: -5px;
-		left: -10px;
-	}
-}
+	
 
+}
 .text-center {
   text-align: center;
 }
@@ -70,7 +18,7 @@
 	box-sizing: border-box;
 }
 
-.guests__container {
+.search-room__filter-convenience-additional__container {
 	width: 100%;
 	// margin: 50px auto;
   
@@ -127,7 +75,7 @@ $gray: #EEE;
   color: $blue;
 }
 
-.guests__dropdown {
+.search-room__filter-convenience-additional__dropdown {
 	a {
 		text-decoration: none;
 	}
@@ -136,7 +84,6 @@ $gray: #EEE;
 		position: relative;
 		display: block;
 		color: white;
-		background: $blue;
 		padding: 10px;
 
 	}
@@ -155,7 +102,7 @@ $gray: #EEE;
 		}
 	}
 
-	.guests__dropdown-menu {
+	.search-room__filter-convenience-additional__dropdown-menu {
 		max-height: 0;
 		overflow: hidden;
 
