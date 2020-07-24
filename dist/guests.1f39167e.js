@@ -126,37 +126,119 @@ function getMessageBaby() {
   return objectBaby[iBaby];
 }
 
-$(document).ready(function () {
-  $('.guests__minus').click(function () {
+var tt = ["1 гость", "2 гостя", "3 гостя", "4 гостя", "5 гостей", "6 гостей", "7 гостей"];
+var guestsText = document.getElementById('guests__text');
+$('.guests__minus').attr("disabled", true);
+$(document).ready(function func() {
+  $('.guests__minus-adults').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
     count = count < 1 ? 0 : count;
     $input.val(count);
     $input.change();
+
+    if (count < 1) {
+      $(guestsText).text('0 гостей');
+      $(this).attr("disabled", true);
+    }
+
+    return false;
+  });
+  $('.guests__minus-kids').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 0 : count;
+    $input.val(count);
+    $input.change();
+
+    if (count < 1) {
+      $(guestsText).text('0 гостей');
+      $(this).attr("disabled", true);
+    }
+
+    return false;
+  });
+  $('.guests__click-baby-minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 0 : count;
+    $input.val(count);
+    $input.change();
+
+    if (count < 1) {
+      $(this).attr("disabled", true);
+    }
+
     return false;
   });
   $('.guests__plus').click(function () {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
+    var count = parseInt($input.val()) - 1;
+
+    if (count >= 0) {
+      $('.guests__minus').removeAttr("disabled");
+    }
+
     return false;
   });
 });
 $(document).ready(function () {
+  $('.guests__minus-adults').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val());
+
+    if (count < 1) {
+      $('.guests__circle-minus-adults').css("border-color", "rgba(31, 32, 65, 0.15)");
+      $('.guests__minus-adults').css("color", "rgba(31, 32, 65, 0.25)");
+    }
+  });
+  $('.guests__plus-adults').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val());
+
+    if (count > 0) {
+      $('.guests__circle-minus-adults').css("border-color", "rgba(31, 32, 65, 0.25)");
+      $('.guests__minus-adults').css("color", "rgba(31, 32, 65, 0.5)");
+    }
+  });
+  $('.guests__minus-kids').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val());
+
+    if (count < 1) {
+      $('.guests__circle-minus-kids').css("border-color", "rgba(31, 32, 65, 0.15)");
+      $('.guests__minus-kids').css("color", "rgba(31, 32, 65, 0.25)");
+    }
+  });
+  $('.guests__plus-kids').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val());
+
+    if (count > 0) {
+      $('.guests__circle-minus-kids').css("border-color", "rgba(31, 32, 65, 0.25)");
+      $('.guests__minus-kids').css("color", "rgba(31, 32, 65, 0.5)");
+    }
+  });
   $('.guests__click-baby-minus').click(function () {
     var $input = $(this).parent().find('input');
-    var count = parseInt($input.val()) - 1;
+    var count = parseInt($input.val());
 
-    if (count < 0) {
+    if (count < 1) {
       $(guestsTextBaby).hide(getMessageBaby());
+      $('.guests__circle-minus-baby').css("border-color", "rgba(31, 32, 65, 0.15)");
+      $('.guests__click-baby-minus').css("color", "rgba(31, 32, 65, 0.25)");
     }
   });
   $('.guests__click-baby').click(function () {
     var $input = $(this).parent().find('input');
-    var count = parseInt($input.val()) - 1;
+    var count = parseInt($input.val());
 
-    if (count >= 0) {
+    if (count > 0) {
       $(guestsTextBaby).show(getMessageBaby());
+      $('.guests__circle-minus-baby').css("border-color", "rgba(31, 32, 65, 0.25)");
+      $('.guests__click-baby-minus').css("color", "rgba(31, 32, 65, 0.5)");
     }
   });
 }); // Dropdown Menu
@@ -200,15 +282,11 @@ $(function () {
   var guestsText = document.getElementById('guests__text');
   $(".guests__click").click(function () {
     ++i;
-    $(guestsText).text(getMessage()); // if (i>=tt.length) {
-    // 	i=-1;
-    // }
+    $(guestsText).text(getMessage());
   });
   $(".guests__click-minus").click(function () {
     i--;
-    $(guestsText).text(getMessage()); // if (i<=tt.length) {
-    // 	i=-1;
-    // }
+    $(guestsText).text(getMessage());
   });
 });
 $(function () {
@@ -222,19 +300,12 @@ $(function () {
   var guestsTextBaby = document.getElementsByClassName('guests__text-baby');
   $(".guests__click-baby").click(function () {
     ++iBaby;
-    $(guestsTextBaby).text(getMessageBaby()); // if (i>=tt.length) {
-    // 	i=-1;
-    // }
+    $(guestsTextBaby).text(getMessageBaby());
   });
   $(".guests__click-baby-minus").click(function () {
     iBaby--;
-    $(guestsTextBaby).text(getMessageBaby()); // if (i<=tt.length) {
-    // 	i=-1;
-    // }
-  }); // var objectBabyZero = [""];
-  // if(count < 0) {
-  // 	$(guestsTextBaby).remove(getMessageBaby());
-  // }
+    $(guestsTextBaby).text(getMessageBaby());
+  });
 });
 },{}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -264,7 +335,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61696" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61991" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -13,25 +13,25 @@ body
                             li.adults__number.guests__number
                                 span.guests_title взрослые
                                 .guests__amount
-                                    span.guests__minus.guests__click-minus -
-                                        .guests__circle.guests__circle-minus
+                                    button.guests__minus.guests__click-minus.guests__minus-adults -
+                                        .guests__circle.guests__circle-minus.guests__circle-minus-adults
                                     input.guests__input(type="text" value="0" size="5" readonly)
-                                    span.guests__plus.guests__click +
-                                        .guests__circle.guests__circle-plus
+                                    button.guests__plus.guests__click.guests__plus-adults +
+                                        .guests__circle.guests__circle-plus.guests__circle-plus-adults
                             li.kids__number.guests__number
                                 span.guests_title дети
                                 .guests__amount
-                                    span.guests__minus.guests__click-minus -
-                                        .guests__circle.guests__circle-minus
+                                    button.guests__minus.guests__click-minus.guests__minus-kids -
+                                        .guests__circle.guests__circle-minus.guests__circle-minus-kids
                                     input.guests__input(type="text" value="0" size="5" readonly)
-                                    span.guests__plus.guests__click +
-                                        .guests__circle.guests__circle-plus
+                                    button.guests__plus.guests__click.guests__plus-kids +
+                                        .guests__circle.guests__circle-plus.guests__circle-plus-kids
                             li.baby__number.guests__number
                                 span.guests_title младенцы
                                 .guests__amount
-                                    span.guests__minus.guests__click-baby-minus -
-                                        .guests__circle.guests__circle-minus
+                                    button.guests__minus.guests__click-baby-minus -
+                                        .guests__circle.guests__circle-minus.guests__circle-minus-baby
                                     input.guests__input(type="text" value="0" size="5" readonly)
-                                    span.guests__plus.guests__click-baby +
-                                        .guests__circle.guests__circle-plus
+                                    button.guests__plus.guests__click-baby +
+                                        .guests__circle.guests__circle-plus.guests__circle-plus-baby
     script(src="blocks/_commons/guests/guests.js")

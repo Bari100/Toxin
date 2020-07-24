@@ -1,8 +1,16 @@
 
 .guests__adults-baby {
 	display: flex;
+	position: relative;
 	.guests__text-baby {
 		margin-top: 10px;
+		position: absolute;
+		left: 60px;
+		top: 1px;
+		color: rgba(31, 32, 65, 0.75);
+		font-weight: normal;
+		text-transform: none;
+		font-size: 14px;
 	}
 }
 
@@ -33,6 +41,9 @@
 		font-size: 18px;
 		font-weight: 400;
 		color: rgba(31, 32, 65, 0.5);
+		border: none;
+		background-color: transparent;
+		outline: none;
 	}
 	.guests__circle {
 		cursor: pointer;
@@ -45,10 +56,14 @@
 	.guests__minus {
 		position: relative;
 	}
+	.guests__minus-adults, .guests__circle-minus-adults, .guests__minus-kids, .guests__circle-minus-kids, .guests__click-baby-minus, .guests__circle-minus-baby {
+		color: rgba(31, 32, 65, 0.25);
+		border-color: rgba(31, 32, 65, 0.15);
+	}
 	.guests__circle-minus {
 		position: absolute;
-		top: -5px;
-		left: -11px;
+		top: -4px;
+		left: -5.5px;
 	}
 	.guests__plus {
 		position: relative;
@@ -56,7 +71,7 @@
 	.guests__circle-plus {
 		position: absolute;
 		top: -5px;
-		left: -10px;
+		left: -4px;
 	}
 }
 
@@ -133,12 +148,17 @@ $gray: #EEE;
 	}
 
 	[data-toggle="dropdown"] {
+		font-weight: normal;
+		font-size: 14px;
 		position: relative;
 		display: block;
-		color: white;
-		background: $blue;
+		color: rgba(31, 32, 65, 0.75);
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		border-radius: 4px;
+		width: 266px;
+		height: 44px;
 		padding: 10px;
-
+		text-transform: none;
 	}
 	.icon-arrow {
 		position: absolute;
