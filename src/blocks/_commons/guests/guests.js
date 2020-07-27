@@ -44,13 +44,33 @@ $(document).ready(function func() {
 		}
 		return false;
     });
-    $('.guests__plus').click(function () {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-		$input.change();
-		var count = parseInt($input.val()) - 1;
-		if(count >= 0) {
-			$('.guests__minus').removeAttr("disabled");
+    $('.guests__plus-adults').click(function () {
+        var $inputAdults = $(this).parent().find('input');
+        $inputAdults.val(parseInt($inputAdults.val()) + 1);
+		$inputAdults.change();
+		var countAdults = parseInt($inputAdults.val()) - 1;
+		if(countAdults >= 0) {
+			$('.guests__minus-adults').removeAttr("disabled");
+		}
+        return false;
+	});
+	$('.guests__plus-kids').click(function () {
+        var $inputKids = $(this).parent().find('input');
+        $inputKids.val(parseInt($inputKids.val()) + 1);
+		$inputKids.change();
+		var countKids = parseInt($inputKids.val()) - 1;
+		if(countKids >= 0) {
+			$('.guests__minus-kids').removeAttr("disabled");
+		}
+        return false;
+	});
+	$('.guests__click-baby').click(function () {
+        var $inputBaby = $(this).parent().find('input');
+        $inputBaby.val(parseInt($inputBaby.val()) + 1);
+		$inputBaby.change();
+		var countBaby = parseInt($inputBaby.val()) - 1;
+		if(countBaby >= 0) {
+			$('.guests__click-baby-minus').removeAttr("disabled");
 		}
         return false;
     });
@@ -147,7 +167,15 @@ $(function(){
 	function getMessage() {
 		return tt[i];
 	}
-	var guestsText = document.getElementById('guests__text'); 
+	var guestsText = document.getElementById('guests__text');
+	
+	var iBaby = -1;
+	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
+	function getMessageBaby() {
+		return objectBaby[iBaby];
+	}
+	var guestsTextBaby = document.getElementsByClassName('guests__text-baby');
+	 
 	$(".guests__click").click(function () {
 		++i;
 		$(guestsText).text(getMessage());
@@ -156,15 +184,8 @@ $(function(){
 		i--;
 		$(guestsText).text(getMessage());
 	});
-});
 
-$(function(){
-	var iBaby = -1;
-	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
-	function getMessageBaby() {
-		return objectBaby[iBaby];
-	}
-	var guestsTextBaby = document.getElementsByClassName('guests__text-baby'); 
+ 
 	$(".guests__click-baby").click(function () {
 		++iBaby;
 		$(guestsTextBaby).text(getMessageBaby());
@@ -174,3 +195,20 @@ $(function(){
 		$(guestsTextBaby).text(getMessageBaby());
 	});
 });
+
+// $(function(){
+// 	var iBaby = -1;
+// 	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
+// 	function getMessageBaby() {
+// 		return objectBaby[iBaby];
+// 	}
+// 	var guestsTextBaby = document.getElementsByClassName('guests__text-baby'); 
+// 	$(".guests__click-baby").click(function () {
+// 		++iBaby;
+// 		$(guestsTextBaby).text(getMessageBaby());
+// 	});
+// 	$(".guests__click-baby-minus").click(function () {
+// 		iBaby--;
+// 		$(guestsTextBaby).text(getMessageBaby());
+// 	});
+// });

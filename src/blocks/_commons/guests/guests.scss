@@ -4,9 +4,9 @@
 	position: relative;
 	.guests__text-baby {
 		margin-top: 10px;
-		position: absolute;
-		left: 60px;
-		top: 1px;
+		// position: absolute;
+		// left: 60px;
+		// top: 1px;
 		color: rgba(31, 32, 65, 0.75);
 		font-weight: normal;
 		text-transform: none;
@@ -147,7 +147,7 @@ $gray: #EEE;
 		text-decoration: none;
 	}
 
-	[data-toggle="dropdown"] {
+	.guests__adults-baby {
 		font-weight: normal;
 		font-size: 14px;
 		position: relative;

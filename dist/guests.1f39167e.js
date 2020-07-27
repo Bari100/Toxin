@@ -171,14 +171,38 @@ $(document).ready(function func() {
 
     return false;
   });
-  $('.guests__plus').click(function () {
-    var $input = $(this).parent().find('input');
-    $input.val(parseInt($input.val()) + 1);
-    $input.change();
-    var count = parseInt($input.val()) - 1;
+  $('.guests__plus-adults').click(function () {
+    var $inputAdults = $(this).parent().find('input');
+    $inputAdults.val(parseInt($inputAdults.val()) + 1);
+    $inputAdults.change();
+    var countAdults = parseInt($inputAdults.val()) - 1;
 
-    if (count >= 0) {
-      $('.guests__minus').removeAttr("disabled");
+    if (countAdults >= 0) {
+      $('.guests__minus-adults').removeAttr("disabled");
+    }
+
+    return false;
+  });
+  $('.guests__plus-kids').click(function () {
+    var $inputKids = $(this).parent().find('input');
+    $inputKids.val(parseInt($inputKids.val()) + 1);
+    $inputKids.change();
+    var countKids = parseInt($inputKids.val()) - 1;
+
+    if (countKids >= 0) {
+      $('.guests__minus-kids').removeAttr("disabled");
+    }
+
+    return false;
+  });
+  $('.guests__click-baby').click(function () {
+    var $inputBaby = $(this).parent().find('input');
+    $inputBaby.val(parseInt($inputBaby.val()) + 1);
+    $inputBaby.change();
+    var countBaby = parseInt($inputBaby.val()) - 1;
+
+    if (countBaby >= 0) {
+      $('.guests__click-baby-minus').removeAttr("disabled");
     }
 
     return false;
@@ -280,16 +304,6 @@ $(function () {
   }
 
   var guestsText = document.getElementById('guests__text');
-  $(".guests__click").click(function () {
-    ++i;
-    $(guestsText).text(getMessage());
-  });
-  $(".guests__click-minus").click(function () {
-    i--;
-    $(guestsText).text(getMessage());
-  });
-});
-$(function () {
   var iBaby = -1;
   var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
 
@@ -298,6 +312,14 @@ $(function () {
   }
 
   var guestsTextBaby = document.getElementsByClassName('guests__text-baby');
+  $(".guests__click").click(function () {
+    ++i;
+    $(guestsText).text(getMessage());
+  });
+  $(".guests__click-minus").click(function () {
+    i--;
+    $(guestsText).text(getMessage());
+  });
   $(".guests__click-baby").click(function () {
     ++iBaby;
     $(guestsTextBaby).text(getMessageBaby());
@@ -306,7 +328,22 @@ $(function () {
     iBaby--;
     $(guestsTextBaby).text(getMessageBaby());
   });
-});
+}); // $(function(){
+// 	var iBaby = -1;
+// 	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
+// 	function getMessageBaby() {
+// 		return objectBaby[iBaby];
+// 	}
+// 	var guestsTextBaby = document.getElementsByClassName('guests__text-baby'); 
+// 	$(".guests__click-baby").click(function () {
+// 		++iBaby;
+// 		$(guestsTextBaby).text(getMessageBaby());
+// 	});
+// 	$(".guests__click-baby-minus").click(function () {
+// 		iBaby--;
+// 		$(guestsTextBaby).text(getMessageBaby());
+// 	});
+// });
 },{}],"C:/Users/user/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -335,7 +372,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61991" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55591" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
