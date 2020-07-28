@@ -200,3 +200,25 @@ $gray: #EEE;
 		max-height: 0;
 	}
 }
+.guests__buttons {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 18px;
+	padding: 6px 4px 25px; }
+  
+  .guests__button {
+	font-weight: 800;
+	color: #BC9CFF;
+	cursor: pointer;
+	border-radius: 4px;
+	display: inline-flex;
+	align-items: center;
+	height: 0; }
+	.guests__button[data-action="clear"] {
+	  color: rgba(31, 32, 65, 0.5);
+	}
+	.guests__button:hover {
+	  color: rgba(31, 32, 65, 0.5);
+	  background: #f8f8f8; }

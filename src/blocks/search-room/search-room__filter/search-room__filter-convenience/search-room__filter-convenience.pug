@@ -2,19 +2,18 @@ head
     link(href="blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.scss" rel="stylesheet" type="text/css")
 body
     .dropdown
-        <div class="convenience__container">
-            <ul>
-                <li class="convenience__dropdown">
+        .convenience__container
+            ul
+                li.convenience__dropdown
                 .convenience__bedroom-bed
-                    <a id="convenience__text" href="#" data-toggle="dropdown">0 гостей</a>
-                    <span class="convenience__text-bathroom"></span>
+                    a#convenience__text(href="#" data-toggle="dropdown") 0<span class="convenience__text-bathroom"></span>     
                 ul.convenience__dropdown-menu
                     .convenience__dropdown-content
                         li.convenience__number
                             span.convenience__title спальни
                             .convenience__amount.bedroom__number
                                 span.convenience__minus.convenience__minus-bedroom -
-                                    .convenience__circle.convenience__circle-minus
+                                    .convenience__circle.convenience__circle-minus.convenience__circle-minus-bedroom
                                 input.convenience__input(type="text" value="1" size="5")
                                 span.convenience__plus.convenience__plus-bedroom +
                                     .convenience__circle.convenience__circle-plus
@@ -22,7 +21,7 @@ body
                             span.convenience__title кровати
                             .convenience__amount.bed__number
                                 span.convenience__minus.convenience__minus-bed -
-                                    .convenience__circle.convenience__circle-minus
+                                    .convenience__circle.convenience__circle-minus.convenience__circle-minus-bed
                                 input.convenience__input(type="text" value="1" size="5")
                                 span.convenience__plus.convenience__plus-bed +
                                     .convenience__circle.convenience__circle-plus
@@ -30,7 +29,7 @@ body
                             span.convenience__title ванные комнаты
                             .convenience__amount.bathroom__number
                                 span.convenience__minus.convenience__minus-bathroom -
-                                    .convenience__circle.convenience__circle-minus
+                                    .convenience__circle.convenience__circle-minus.convenience__circle-minus-bathroom
                                 input.convenience__input(type="text" value="1" size="5")
                                 span.convenience__plus.convenience__plus-bathroom +
                                     .convenience__circle.convenience__circle-plus

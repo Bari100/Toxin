@@ -155,8 +155,16 @@ dropdownArray.forEach(function(el){
 			event.preventDefault();
 		}
 	};
-});
 
+// BUTTONS APPLY
+	$('.guests__button[data-action="apply"]').click(function(){
+		if(menu.hasClass('show')){
+			menu.classList.remove('show');
+			menu.classList.add('hide');
+			event.preventDefault();
+		}
+	});
+});
 Element.prototype.hasClass = function(className) {
     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
 };
@@ -168,6 +176,8 @@ $(function(){
 		return tt[i];
 	}
 	var guestsText = document.getElementById('guests__text');
+	var a = $('a');
+	var guestsTextSpan = a.find('span');
 	
 	var iBaby = -1;
 	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
@@ -179,12 +189,13 @@ $(function(){
 	$(".guests__click").click(function () {
 		++i;
 		$(guestsText).text(getMessage());
+		$(guestsText).append(guestsTextSpan);
 	});
 	$(".guests__click-minus").click(function () {
 		i--;
 		$(guestsText).text(getMessage());
+		$(guestsText).append(guestsTextSpan);
 	});
-
  
 	$(".guests__click-baby").click(function () {
 		++iBaby;
@@ -194,21 +205,23 @@ $(function(){
 		iBaby--;
 		$(guestsTextBaby).text(getMessageBaby());
 	});
-});
 
-// $(function(){
-// 	var iBaby = -1;
-// 	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
-// 	function getMessageBaby() {
-// 		return objectBaby[iBaby];
-// 	}
-// 	var guestsTextBaby = document.getElementsByClassName('guests__text-baby'); 
-// 	$(".guests__click-baby").click(function () {
-// 		++iBaby;
-// 		$(guestsTextBaby).text(getMessageBaby());
-// 	});
-// 	$(".guests__click-baby-minus").click(function () {
-// 		iBaby--;
-// 		$(guestsTextBaby).text(getMessageBaby());
-// 	});
-// });
+// BUTTON CLEAR
+	$('.guests__button[data-action="clear"]').click(function(){
+		$('.guests__plus-adults').parent().find('input').val(0);
+		$('.guests__plus-kids').parent().find('input').val(0);
+		$('.guests__click-baby').parent().find('input').val(0);
+		iBaby = -1;
+		i = -1;
+		$(guestsText).text('0 гостей');
+		$(guestsTextSpan).text('');
+		$(guestsText).append(guestsTextSpan);
+		$('.guests__minus').attr("disabled", true);
+		$('.guests__circle-minus-adults').css("border-color", "rgba(31, 32, 65, 0.15)");
+		$('.guests__minus-adults').css("color", "rgba(31, 32, 65, 0.25)");
+		$('.guests__circle-minus-kids').css("border-color", "rgba(31, 32, 65, 0.15)");
+		$('.guests__minus-kids').css("color", "rgba(31, 32, 65, 0.25)");
+		$('.guests__circle-minus-baby').css("border-color", "rgba(31, 32, 65, 0.15)");
+		$('.guests__click-baby-minus').css("color", "rgba(31, 32, 65, 0.25)");
+	}); 
+});
