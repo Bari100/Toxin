@@ -11,19 +11,20 @@ html(lang="en")
         .search-room.wrap
             .search-room__filter
                 .search-room__filter-dates
-                    h3.search-room__filter-titles даты пребывания в отеле
-                    //- input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
+                    h3.search-room__filter-titles.search-room__filter-titles-dates даты пребывания в отеле
+                    input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
                 .guests
-                    h3.search-room__filter-titles гости
+                    h3.search-room__filter-titles.search-room__filter-titles-guests гости
+                        .search-room__filter-guests-space
                         include blocks/_commons/guests/guests.pug
                 .search-room__filter-price
                     .search-room__title-input-price
-                        h3.search-room__filter-titles <nobr class="search-room__filter-titles-nobr">диапазон цены</nobr>
+                        h3.search-room__filter-titles.search-room__filter-titles-price <nobr class="search-room__filter-titles-nobr">диапазон цены</nobr>
                         <input class="search-room__filter-price-input" type="text" id="amount" readonly>
                     include blocks/search-room/search-room__filter/search-room__filter-price/search-room__filter-price.pug
                     p.search-room__filter-price-clarification Стоимость за сутки пребывания в номере
                 .search-room__filter-checkbox
-                    h3.search-room__filter-titles Checkbox Buttons
+                    h3.search-room__filter-titles.search-room__filter-titles-checkbox Checkbox Buttons
                     label
                         input(type="checkbox" name="smoke")
                         span.search-room__filter-fake-checkbox
@@ -37,26 +38,27 @@ html(lang="en")
                         span.search-room__filter-fake-checkbox
                         span.search-room__filter-span-checkbox Можно пригласить гостей <br>(до 10 человек)
                 .search-room__filter-accessibility
-                    h3.search-room__filter-titles доступность
+                    h3.search-room__filter-titles.search-room__filter-titles-accessibility доступность
                     label
                         input(type="checkbox" name="corridor")
                         span.search-room__filter-fake-checkbox
                         span.search-room__filter-span-accessibility Широкий коридор
-                    p.search-room__filter-clarification-accessibility Ширина коридоров в номере не менее 91 см.
+                    p.search-room__filter-clarification-accessibility Ширина коридоров в номере не&nbspменее 91 см.
                     label
                         input(type="checkbox" name="disabled-assistant")
                         span.search-room__filter-fake-checkbox
                         span.search-room__filter-span-accessibility Помощник для инвалидов
-                    p.search-room__filter-clarification-accessibility На 1 этаже вас встретит специалист и проводит до номера.
+                    p.search-room__filter-clarification-accessibility На 1 этаже вас встретит специалист<br>и проводит до номера.
                 .search-room__filter-convenience
-                    h3.search-room__filter-titles удобства номера
+                    h3.search-room__filter-titles.search-room__filter-titles-convenience удобства номера
+                        .search-room__filter-convenience-space
                         include blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.pug
                 .search-room__filter-convenience-additional
                     .dropdown
                         .search-room__filter-convenience-additional__container
                             ul
                                 li.search-room__filter-convenience-additional__dropdown
-                                    a#search-room__filter-convenience-additional__text(href="#" data-toggle="dropdown") <h3 class="search-room__filter-titles">дополнительные удобства</h3>
+                                    a#search-room__filter-convenience-additional__text(href="#" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">дополнительные удобства</h3>
                                     ul.search-room__filter-convenience-additional__dropdown-menu
                                         .search-room__filter-convenience-additional__dropdown-content
                                             li.search-room__filter-convenience-additional__number

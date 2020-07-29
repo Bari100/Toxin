@@ -34,6 +34,9 @@
   font-size: 18px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 .convenience__dropdown-menu .convenience__circle {
   cursor: pointer;
@@ -45,6 +48,10 @@
 }
 .convenience__dropdown-menu .convenience__minus {
   position: relative;
+}
+.convenience__dropdown-menu .convenience__minus-bedroom, .convenience__dropdown-menu .convenience__circle-minus-bedroom, .convenience__dropdown-menu .convenience__minus-bed, .convenience__dropdown-menu .convenience__circle-minus-bed, .convenience__dropdown-menu .convenience__minus-bathroom, .convenience__dropdown-menu .convenience__circle-minus-bathroom {
+  color: rgba(31, 32, 65, 0.25);
+  border-color: rgba(31, 32, 65, 0.15);
 }
 .convenience__dropdown-menu .convenience__circle-minus {
   position: absolute;
@@ -91,12 +98,18 @@
 .convenience__dropdown a {
   text-decoration: none;
 }
-.convenience__dropdown [data-toggle=dropdown] {
+.convenience__dropdown .convenience__bedroom-bed {
+  font-weight: normal;
+  font-size: 14px;
   position: relative;
   display: block;
-  color: white;
-  background: #2980B9;
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 266px;
+  height: 44px;
   padding: 10px;
+  text-transform: none;
 }
 .convenience__dropdown .icon-arrow {
   position: absolute;

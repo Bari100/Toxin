@@ -91,15 +91,6 @@
   margin: 0 0 20px 0;
 }
 
-.title {
-  font-family: "Pacifico";
-  font-weight: norma;
-  font-size: 40px;
-  text-align: center;
-  line-height: 1.4;
-  color: #2980B9;
-}
-
 .guests__dropdown a {
   text-decoration: none;
 }

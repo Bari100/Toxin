@@ -177,7 +177,7 @@ $(function(){
 	}
 	var guestsText = document.getElementById('guests__text');
 	var a = $('a');
-	var guestsTextSpan = a.find('span');
+	var guestsTextSpan = a.find('span.guests__text-baby');
 	
 	var iBaby = -1;
 	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];

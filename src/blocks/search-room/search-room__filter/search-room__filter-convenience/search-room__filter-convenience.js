@@ -1,11 +1,17 @@
 var convenienceTextBathroom = document.getElementsByClassName('convenience__text-bathroom');
 var iBathroom = -1;
+var iBed = -1;
 var objectBathroom = [", 1 ванная комната", ", 2 ванные комнаты", ", 3 ванные комнаты"];
 function getMessageBathroom() {
 	return objectBathroom[iBathroom];
 }
+function getMessageBed() {
+	return objectBed[iBed];
+}
 var objectBedroom = ["1 спальня", "2 спальни", "3 спальни"];
 var convenienceText = document.getElementById('convenience__text');
+var convenienceTextBed = document.getElementsByClassName('convenience__text-bed');
+var convenienceTextBathroom = document.getElementsByClassName('convenience__text-bathroom');
 $('.convenience__minus').attr("disabled", true);
 var objectBed = [", 1 кровать", ", 2 кровати", ", 3 кровати", ", 4 кровати", ", 5 кроватей", ", 6 кроватей", ", 7 кроватей", ", 8 кроватей", ", 9 кроватей"];
 
@@ -29,7 +35,7 @@ $(document).ready(function func() {
         $input.val(count);
 		$input.change();
 		if(count < 1) {
-			$(convenienceText).text('0 кроватей');
+			$(convenienceTextBed).text('0 кроватей');
 			$(this).attr("disabled", true);
 		}
 		return false;
@@ -110,12 +116,30 @@ $(document).ready(function() {
 			$('.convenience__circle-minus-bed').css("border-color", "rgba(31, 32, 65, 0.25)");
 			$('.convenience__minus-bed').css("color", "rgba(31, 32, 65, 0.5)");
 		}
+	});
+	$('.convenience__minus-bed').click(function () {
+        var $input = $(this).parent().find('input');
+		var count = parseInt($input.val());
+		if(count < 1) {
+			$(convenienceTextBed).hide(getMessageBed());
+			$('.convenience__circle-minus-bathroom').css("border-color", "rgba(31, 32, 65, 0.15)");
+			$('.convenience__minus-bathroom').css("color", "rgba(31, 32, 65, 0.25)");
+		}
+    });
+    $('.convenience__plus-bed').click(function () {
+		var $input = $(this).parent().find('input');
+		var count = parseInt($input.val());
+		if (count > 0) {
+			$(convenienceTextBed).show(getMessageBed());
+			$('.convenience__circle-minus-bathroom').css("border-color", "rgba(31, 32, 65, 0.25)");
+			$('.convenience__minus-bathroom').css("color", "rgba(31, 32, 65, 0.5)");
+		}
     });
     $('.convenience__minus-bathroom').click(function () {
         var $input = $(this).parent().find('input');
 		var count = parseInt($input.val());
 		if(count < 1) {
-			$(guestsTextBaby).hide(getMessageBaby());
+			$(convenienceTextBathroom).hide(getMessageBathroom());
 			$('.convenience__circle-minus-bathroom').css("border-color", "rgba(31, 32, 65, 0.15)");
 			$('.convenience__minus-bathroom').css("color", "rgba(31, 32, 65, 0.25)");
 		}
@@ -124,7 +148,7 @@ $(document).ready(function() {
 		var $input = $(this).parent().find('input');
 		var count = parseInt($input.val());
 		if (count > 0) {
-			$(guestsTextBaby).show(getMessageBaby());
+			$(convenienceTextBathroom).show(getMessageBathroom());
 			$('.convenience__circle-minus-bathroom').css("border-color", "rgba(31, 32, 65, 0.25)");
 			$('.convenience__minus-bathroom').css("color", "rgba(31, 32, 65, 0.5)");
 		}
@@ -164,37 +188,56 @@ Element.prototype.hasClass = function(className) {
 $(function(){
 	var iBedroom = -1;
 	var objectBedroom = ["1 спальня", "2 спальни", "3 спальни"];
-	function getMessage() {
+	function getMessageBedroom() {
 		return objectBedroom[iBedroom];
 	}
-	var convenienceText = document.getElementById('guests__text');
-	var a = $('a');
-	var guestsTextSpan = a.find('span');
-	
-	var iBaby = -1;
-	var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 младенца", ", 4 младенца", ", 5 младенцев", ", 6 младенцев", ", 7 младенцев"];
-	function getMessageBaby() {
-		return objectBaby[iBaby];
+	var convenienceText = document.getElementById('convenience__text');
+	var convenienceA = $('a#convenience__text');
+	var convenienceTextSpanBed = convenienceA.find('span.convenience__text-bed');
+	var convenienceTextSpanBathroom = convenienceA.find('span.convenience__text-bathroom');
+
+	var iBed = -1;
+	var objectBed = [", 1 кровать", ", 2 кровати", ", 3 кровати", ", 4 кровати", ", 5 кроватей", ", 6 кроватей", ", 7 кроватей", ", 8 кроватей", ", 9 кроватей"];
+	function getMessageBed() {
+		return objectBed[iBed];
 	}
-	var guestsTextBaby = document.getElementsByClassName('guests__text-baby');
+	var convenienceTextBed = document.getElementsByClassName('convenience__text-bed');
+
+	var iBathroom = -1;
+	var objectBathroom = [", 1 ванная комната", ", 2 ванные комнаты", ", 3 ванные комнаты"];
+	function getMessageBathroom() {
+		return objectBathroom[iBathroom];
+	}
+	var convenienceTextBathroom = document.getElementsByClassName('convenience__text-bathroom');
 	 
-	$(".guests__click").click(function () {
-		++i;
-		$(convenienceText).text(getMessage());
-		$(convenienceText).append(guestsTextSpan);
+	$(".convenience__plus-bedroom").click(function () {
+		++iBedroom;
+		$(convenienceText).text(getMessageBedroom());
+		$(convenienceText).append(convenienceTextSpanBed);
+		$(convenienceText).append(convenienceTextSpanBathroom);
 	});
-	$(".guests__click-minus").click(function () {
-		i--;
-		$(convenienceText).text(getMessage());
-		$(convenienceText).append(guestsTextSpan);
+	$(".convenience__minus-bedroom").click(function () {
+		iBedroom--;
+		$(convenienceText).text(getMessageBedroom());
+		$(convenienceText).append(convenienceTextSpanBed);
+		$(convenienceText).append(convenienceTextSpanBathroom);
+	});
+
+	$(".convenience__plus-bed").click(function () {
+		++iBed;
+		$(convenienceTextBed).text(getMessageBed());
+	});
+	$(".convenience__minus-bed").click(function () {
+		iBed--;
+		$(convenienceTextBed).text(getMessageBed());
 	});
  
 	$(".convenience__plus-bathroom").click(function () {
-		++iBaby;
-		$(guestsTextBaby).text(getMessageBaby());
+		++iBathroom;
+		$(convenienceTextBathroom).text(getMessageBathroom());
 	});
 	$(".convenience__minus-bathroom").click(function () {
-		iBaby--;
-		$(guestsTextBaby).text(getMessageBaby());
+		iBathroom--;
+		$(convenienceTextBathroom).text(getMessageBathroom());
 	});
 });
