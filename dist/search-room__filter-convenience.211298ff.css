@@ -55,8 +55,8 @@
 }
 .convenience__dropdown-menu .convenience__circle-minus {
   position: absolute;
-  top: -5px;
-  left: -11px;
+  top: -4px;
+  left: -6px;
 }
 .convenience__dropdown-menu .convenience__plus {
   position: relative;
@@ -64,17 +64,11 @@
 .convenience__dropdown-menu .convenience__circle-plus {
   position: absolute;
   top: -5px;
-  left: -10px;
+  left: -4px;
 }
 
 .text-center {
   text-align: center;
-}
-
-*, *:before, *:after {
-  -webkit-border-sizing: border-box;
-  -moz-border-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .convenience__container {

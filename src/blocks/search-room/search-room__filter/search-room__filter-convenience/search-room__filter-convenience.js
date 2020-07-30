@@ -215,29 +215,65 @@ $(function(){
 		$(convenienceText).text(getMessageBedroom());
 		$(convenienceText).append(convenienceTextSpanBed);
 		$(convenienceText).append(convenienceTextSpanBathroom);
+		// ***button + off & style change***
+		if(iBedroom >= 2) {
+			$('.convenience__plus-bedroom').attr("disabled", true);
+			$('.convenience__circle-plus-bedroom').css("border-color", "rgba(31, 32, 65, 0.15)");
+			$('.convenience__plus-bedroom').css("color", "rgba(31, 32, 65, 0.25)");
+		}
 	});
 	$(".convenience__minus-bedroom").click(function () {
 		iBedroom--;
 		$(convenienceText).text(getMessageBedroom());
 		$(convenienceText).append(convenienceTextSpanBed);
 		$(convenienceText).append(convenienceTextSpanBathroom);
+		// ***button + on & style change***
+		if(iBedroom < 2) {
+			$('.convenience__plus-bedroom').removeAttr("disabled");
+			$('.convenience__circle-plus-bedroom').css("border-color", "rgba(31, 32, 65, 0.25)");
+			$('.convenience__plus-bedroom').css("color", "rgba(31, 32, 65, 0.5)");
+		}
 	});
 
 	$(".convenience__plus-bed").click(function () {
 		++iBed;
 		$(convenienceTextBed).text(getMessageBed());
+		// ***button + off & style change***
+		if(iBed >= 8) {
+			$('.convenience__plus-bed').attr("disabled", true);
+			$('.convenience__circle-plus-bed').css("border-color", "rgba(31, 32, 65, 0.15)");
+			$('.convenience__plus-bed').css("color", "rgba(31, 32, 65, 0.25)");
+		}
 	});
 	$(".convenience__minus-bed").click(function () {
 		iBed--;
 		$(convenienceTextBed).text(getMessageBed());
+		// ***button + on & style change***
+		if(iBed < 8) {
+			$('.convenience__plus-bed').removeAttr("disabled");
+			$('.convenience__circle-plus-bed').css("border-color", "rgba(31, 32, 65, 0.25)");
+			$('.convenience__plus-bed').css("color", "rgba(31, 32, 65, 0.5)");
+		}
 	});
  
 	$(".convenience__plus-bathroom").click(function () {
 		++iBathroom;
 		$(convenienceTextBathroom).text(getMessageBathroom());
+		// ***button + off & style change***
+		if(iBathroom >= 2) {
+			$('.convenience__plus-bathroom').attr("disabled", true);
+			$('.convenience__circle-plus-bathroom').css("border-color", "rgba(31, 32, 65, 0.15)");
+			$('.convenience__plus-bathroom').css("color", "rgba(31, 32, 65, 0.25)");
+		}
 	});
 	$(".convenience__minus-bathroom").click(function () {
 		iBathroom--;
 		$(convenienceTextBathroom).text(getMessageBathroom());
+		// ***button + on & style change***
+		if(iBathroom < 2) {
+			$('.convenience__plus-bathroom').removeAttr("disabled");
+			$('.convenience__circle-plus-bathroom').css("border-color", "rgba(31, 32, 65, 0.25)");
+			$('.convenience__plus-bathroom').css("color", "rgba(31, 32, 65, 0.5)");
+		}
 	});
 });

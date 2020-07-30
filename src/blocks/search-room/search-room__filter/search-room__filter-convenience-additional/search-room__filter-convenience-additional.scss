@@ -1,9 +1,9 @@
 
 .search-room__filter-convenience-additional__dropdown-menu {
 	padding-inline-start: 0;
-	margin-left: 10px;
+	margin-left: 0;
 	.search-room__filter-convenience-additional__dropdown-content {
-		margin-top: 13px;
+		margin-top: 11px;
 	}
 	
 
@@ -12,15 +12,8 @@
   text-align: center;
 }
 
-*, *:before, *:after {
-	-webkit-border-sizing: border-box;
-	-moz-border-sizing: border-box;
-	box-sizing: border-box;
-}
-
 .search-room__filter-convenience-additional__container {
 	width: 100%;
-	// margin: 50px auto;
   
   & > ul {
     list-style: none;

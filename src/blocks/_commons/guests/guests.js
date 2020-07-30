@@ -4,20 +4,24 @@ var objectBaby = [", 1 младенец", ", 2 младенца", ", 3 млад�
 function getMessageBaby() {
 	return objectBaby[iBaby];
 }
+var i = -1;
 var tt = ["1 гость", "2 гостя", "3 гостя", "4 гостя", "5 гостей", "6 гостей", "7 гостей"];
 var guestsText = document.getElementById('guests__text');
 $('.guests__minus').attr("disabled", true);
 
 $(document).ready(function func() {
     $('.guests__minus-adults').click(function () {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
+        var $inputAdults = $(this).parent().find('input');
+        var count = parseInt($inputAdults.val()) - 1;
 		count = count < 1 ? 0 : count;
-        $input.val(count);
-		$input.change();
+        $inputAdults.val(count);
+		$inputAdults.change();
 		if(count < 1) {
 			$(guestsText).text('0 гостей');
 			$(this).attr("disabled", true);
+		}
+		if($inputAdults.val() < 7) {
+			$('.guests__plus-adults').removeAttr("disabled");
 		}
 		return false;
 	});
@@ -51,6 +55,10 @@ $(document).ready(function func() {
 		var countAdults = parseInt($inputAdults.val()) - 1;
 		if(countAdults >= 0) {
 			$('.guests__minus-adults').removeAttr("disabled");
+		}
+		if($inputAdults.val() >= 7) {
+			$inputAdults.val(7);
+			$(this).attr("disabled", true);
 		}
         return false;
 	});
@@ -190,20 +198,50 @@ $(function(){
 		++i;
 		$(guestsText).text(getMessage());
 		$(guestsText).append(guestsTextSpan);
+		// ***button + off & style change***
+		if(i >= 6) {
+			$('.guests__plus-adults').attr("disabled", true);
+			$('.guests__plus-kids').attr("disabled", true);
+			$('.guests__circle-plus-adults').css("border-color", "rgba(31, 32, 65, 0.15)");
+			$('.guests__circle-plus-kids').css("border-color", "rgba(31, 32, 65, 0.15)");
+			$('.guests__plus-adults').css("color", "rgba(31, 32, 65, 0.25)");
+			$('.guests__plus-kids').css("color", "rgba(31, 32, 65, 0.25)");
+		}
 	});
 	$(".guests__click-minus").click(function () {
 		i--;
 		$(guestsText).text(getMessage());
 		$(guestsText).append(guestsTextSpan);
+		// ***button + on & style change***
+		if(i < 6) {
+			$('.guests__plus-adults').removeAttr("disabled");
+			$('.guests__plus-kids').removeAttr("disabled");
+			$('.guests__circle-plus-adults').css("border-color", "rgba(31, 32, 65, 0.25)");
+			$('.guests__plus-adults').css("color", "rgba(31, 32, 65, 0.5)");
+			$('.guests__circle-plus-kids').css("border-color", "rgba(31, 32, 65, 0.25)");
+			$('.guests__plus-kids').css("color", "rgba(31, 32, 65, 0.5)");
+		}
 	});
  
 	$(".guests__click-baby").click(function () {
 		++iBaby;
 		$(guestsTextBaby).text(getMessageBaby());
+		// ***button baby + off & style change***
+		if(iBaby >= 6) {
+			$('.guests__click-baby').attr("disabled", true);
+			$('.guests__circle-plus-baby').css("border-color", "rgba(31, 32, 65, 0.15)");
+			$('.guests__click-baby').css("color", "rgba(31, 32, 65, 0.25)");
+		}
 	});
 	$(".guests__click-baby-minus").click(function () {
 		iBaby--;
 		$(guestsTextBaby).text(getMessageBaby());
+		// ***button + on & style change***
+		if(i < 6) {
+			$('.guests__click-baby').removeAttr("disabled");
+			$('.guests__circle-plus-baby').css("border-color", "rgba(31, 32, 65, 0.25)");
+			$('.guests__click-baby').css("color", "rgba(31, 32, 65, 0.5)");
+		}
 	});
 
 // BUTTON CLEAR

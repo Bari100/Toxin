@@ -1466,6 +1466,11 @@ body ul {
   width: 266px;
   margin-right: 60px;
 }
+.search-room .search-room__filter *, .search-room .search-room__filter *:before, .search-room .search-room__filter *:after {
+  -webkit-border-sizing: border-box;
+  -moz-border-sizing: border-box;
+  box-sizing: border-box;
+}
 .search-room .search-room__room-list {
   margin-top: 11px;
 }
@@ -1568,7 +1573,9 @@ body ul {
 }
 
 .search-room__filter-titles-convenience-additional {
-  margin-top: 1px;
+  margin-top: 2px;
+  margin-left: -10px;
+  margin-bottom: -1px;
 }
 
 .search-room__title-input-price {

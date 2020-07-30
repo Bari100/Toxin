@@ -4,6 +4,11 @@
         margin-top: 30px;
         width: 266px;
         margin-right: 60px;
+        *, *:before, *:after {
+            -webkit-border-sizing: border-box;
+            -moz-border-sizing: border-box;
+            box-sizing: border-box;
+        }
     }
     .search-room__room-list {
         margin-top: 11px;
