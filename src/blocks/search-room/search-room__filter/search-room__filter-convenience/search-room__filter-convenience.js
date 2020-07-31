@@ -160,12 +160,13 @@ $(document).ready(function() {
 var dropdown = document.querySelectorAll('.convenience__dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
 dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
+	var button = el.querySelector('.convenience__bedroom-bed'),
 			menu = el.querySelector('.convenience__dropdown-menu'),
 			arrow = button.querySelector('i.icon-arrow');
 
 	button.onclick = function(event) {
 		if(!menu.hasClass('show')) {
+			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
 			menu.classList.add('show');
 			menu.classList.remove('hide');
 			arrow.classList.add('open');
@@ -173,6 +174,7 @@ dropdownArray.forEach(function(el){
 			event.preventDefault();
 		}
 		else {
+			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
 			menu.classList.remove('show');
 			menu.classList.add('hide');
 			arrow.classList.remove('open');

@@ -120,3 +120,17 @@ $gray: #EEE;
 		max-height: 0;
 	}
 }
+.search-room__filter-convenience-additional {
+    overflow: hidden;
+    .search-room__filter-fake-checkbox {
+        float: none;
+    }
+}
+#search-room__filter-convenience-additional__text {
+	position: relative;
+}
+.search-room__filter-convenience-additional__arrow-down {
+	position: absolute;
+	bottom: 3px;
+	right: 10px;
+}

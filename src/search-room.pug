@@ -12,7 +12,7 @@ html(lang="en")
             .search-room__filter
                 .search-room__filter-dates
                     h3.search-room__filter-titles.search-room__filter-titles-dates даты пребывания в отеле
-                    input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
+                    input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" readonly)
                 .guests
                     h3.search-room__filter-titles.search-room__filter-titles-guests гости
                         .search-room__filter-guests-space
@@ -59,6 +59,7 @@ html(lang="en")
                             ul
                                 li.search-room__filter-convenience-additional__dropdown
                                     a#search-room__filter-convenience-additional__text(href="#" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">дополнительные удобства</h3>
+                                        img.search-room__filter-convenience-additional__arrow-down(src="img/arrow_down.svg")
                                     ul.search-room__filter-convenience-additional__dropdown-menu
                                         .search-room__filter-convenience-additional__dropdown-content
                                             li.search-room__filter-convenience-additional__number

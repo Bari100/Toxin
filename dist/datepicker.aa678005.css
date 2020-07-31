@@ -691,6 +691,13 @@
 		padding: 10px;
     text-transform: none;
     background: transparent;
+    cursor: pointer;
+    background-image: url(/arrow_down.3d6b8982.svg);
+    background-position: 231px 11px;
+    background-repeat: no-repeat;
+  }
+  .datepicker-here:focus {
+    outline: none;
   }
 
 /*# sourceMappingURL=/datepicker.aa678005.css.map */

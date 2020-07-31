@@ -119,9 +119,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"../node_modules/air-datepicker/dist/js/datepicker.js":[function(require,module,exports) {
 ;(function (window, $, undefined) { ;(function () {
-    // $(".datepicker-here").click(function () {
-    //     $(".datepicker").show();
-    // });
     var div = document.createElement('div');
     div.className = "thing";
     var VERSION = '2.2.3',
@@ -1727,11 +1724,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             if (opts.range) {
                 if (dp.isSame(minRange, date, type)) classes += ' -range-from-';
                 if (dp.isSame(maxRange, date, type)) classes += ' -range-to-';
-                // if (
-                //     (dp.bigger(minRange, date) && dp.less(parent.selected, date)) ||
-                //     (dp.less(maxRange, date) && dp.bigger(parent.focused, date)))
-                // {   $(".datepicker--cell.-range-from-.-selected_2-").removeClass('-selected_2-');
-                // }
 
                 if (parent.selectedDates.length == 1 && parent.focused) {
                     if (
@@ -2397,7 +2389,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56262" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54582" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

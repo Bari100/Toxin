@@ -143,7 +143,7 @@ $(document).ready(function() {
 var dropdown = document.querySelectorAll('.guests__dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
 dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
+	var button = el.querySelector('.guests__adults-baby'),
 			menu = el.querySelector('.guests__dropdown-menu'),
 			arrow = button.querySelector('i.icon-arrow');
 

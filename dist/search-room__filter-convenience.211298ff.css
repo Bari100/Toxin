@@ -1,6 +1,19 @@
 @charset "UTF-8";
+.convenience__arrow-down {
+  position: absolute;
+  bottom: 8px;
+  right: 9px;
+}
+
 .convenience__bedroom-bed {
   display: flex;
+  cursor: pointer;
+}
+.convenience__bedroom-bed #convenience__text {
+  color: rgba(31, 32, 65, 0.75);
+}
+.convenience__bedroom-bed #convenience__text:active {
+  color: rgba(31, 32, 65, 0.75);
 }
 .convenience__bedroom-bed .convenience__text-bathroom {
   margin-top: 10px;
