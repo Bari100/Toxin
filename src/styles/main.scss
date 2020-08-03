@@ -25,8 +25,8 @@ body {
 
 .content {
     display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-image: url(../img/1.png);
     background-position: -42px -128px;
     background-repeat: no-repeat;

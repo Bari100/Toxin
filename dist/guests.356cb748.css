@@ -3,6 +3,7 @@
   display: flex;
   position: relative;
   cursor: pointer;
+  box-sizing: border-box;
 }
 .guests__adults-baby #guests__text {
   color: rgba(31, 32, 65, 0.75);
