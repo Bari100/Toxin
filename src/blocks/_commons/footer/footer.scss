@@ -1,12 +1,15 @@
+.top__footer-container {
+    border: 1px solid;
+    border-color: rgba(31, 32, 65, 0.25) #fff rgba(31, 32, 65, 0.1) #fff;
+    width: 1440px;
+    margin: 0 auto;
+}
 .top__footer {
     display: flex;
     width: 1440px;
-    margin: 0 auto;
     padding-top: 100px;
-    padding-bottom: 77px;
+    padding-bottom: 62px;
     margin-bottom: 14px;
-    border: 1px solid;
-    border-color: rgba(31, 32, 65, 0.25) #fff rgba(31, 32, 65, 0.1) #fff;
     .logo__footer {
         margin-bottom: 15px;
     }
@@ -290,6 +293,7 @@
     }
 }    
 .bottom__footer {
+    padding-top: 13px;
     .wrap {
         display: flex;
         justify-content: space-between;

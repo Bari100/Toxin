@@ -8,10 +8,15 @@ html
                 .main-search__dates-titles
                     h3.main-search__dates-title прибытие
                     h3.main-search__dates-title выезд
-                input(type="text" data-range="true" data-multiple-dates-separator="                          " class="datepicker-here" readonly)
+                input.main-search__input(type="text" data-range="true" placeholder="ДД.ММ.ГГГГ                       ДД.ММ.ГГГГ" data-multiple-dates-separator="                          " class="datepicker-here" readonly)
                 .main-search__input-fake-split-left
                 .main-search__input-fake-split
                 .main-search__input-fake-split-right
             .main-search__guests
+                h3.main-search__guests-title гости
                 include ../guests/guests.pug
-            button.button.button-color подобрать номер
+            <a href="search-room.pug">
+                button.button.button-color.main-search__button подобрать номер
+                    img.main-search__arrow-forward(src="../src/img/arrow_forward-white.svg")
+            </a>
+                

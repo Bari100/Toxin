@@ -31,7 +31,9 @@ body {
     background-position: -42px -128px;
     background-repeat: no-repeat;
     background-size: 106%;
-    height: 830px;
+    height: 760px;
+    padding-top: 70px;
+    position: relative;
 }
 
 .content__text {
@@ -39,8 +41,12 @@ body {
     text-align: right;
     line-height: 23px;
     margin-bottom: 7px;
-    //color: rgba(31, 32, 65, 0.75);
-    color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 15px;
+    right: 133px;
+    .content__text-string {
+        color: rgba(31, 32, 65, 0.75);
+    }
 }
 
 .sign-up-in-content {
@@ -51,10 +57,21 @@ body {
 }
 
 //MEDIA
+@media (max-width: 1462px) {
+    .content {
+        background-size: 1530px;
+        background-position: 50% -128px;
+    }
+}
 @media (max-width: 1055px) {
     header.header {
         .wrap {
             padding-right: 15px;
         }
+    }
+}
+@media (max-width: 723px) {
+    .content__text {
+        right: 5%;
     }
 }

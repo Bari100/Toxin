@@ -1,1 +1,1 @@
-{"version":3,"sources":["styles\\index.scss"],"names":[],"mappings":"AACI;EACI;EACA;EACA","file":"styles.434540e1.css","sourceRoot":"..\\src","sourcesContent":[".footer {\r\n    .top__footer {\r\n        padding-top: 98px;\r\n        border: 1px solid;\r\n        border-color:  #fff #fff rgba(31, 32, 65, 0.1) #fff;\r\n    }\r\n    // @media (max-width: 860px) {\r\n    //     .top__footer {\r\n    //         padding-top: 1px;\r\n    //     }  \r\n    // }\r\n}"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"styles.434540e1.css","sourceRoot":"..\\src"}

@@ -1,21 +1,32 @@
 .main-search__container {
     width: 380px;
-    height: 374px;
     background-color: #fff;
-    padding: 40px 30px 30px 30px;
+    padding: 39px 30px 30px 30px;
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: #1F2041;
+    display: inline-block; //ПОЗВОЛЯЕТ КОНТЕЙНЕРУ РАСШИРЯТЬСЯ В ЗАВИСИМОСТИ ОТ СОДЕРЖИМОГО
     .main-search__title {
-        margin: 0;
+        font-family: 'Open Sans';
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 0;
+        margin-left: 0.9px;
+        margin-bottom: 10px;
     }
     .main-search__dates {
         position: relative;
         .main-search__dates-titles {
             display: flex;
             justify-content: space-between;
-            margin-right: 95px;
+            margin-right: 102px;
             text-transform: uppercase;
             font-size: 10px;
+            .main-search__dates-title {
+                margin-bottom: 5px;
+                letter-spacing: 0.3px;
+            }
         }
         .main-search__input-fake-split {
             position: absolute;
@@ -49,6 +60,16 @@
             box-sizing: border-box;
         }
     }
+    .main-search__guests {
+        margin-top: 20px;
+        .guests__adults-baby {
+            width: 320px;
+        }
+    }
+    .main-search__guests-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
     .datepicker-here {
         width: 320px;
         height: 44px;
@@ -59,5 +80,19 @@
         padding-left: 16px;
         background-image: url(../img/arrow_down.svg), url(../img/arrow_down.svg);
         background-position: 116px 10px, 286px 10px;
+    }
+    .main-search__button {
+        width: 320px;
+        height: 44px;
+        outline: none;
+        cursor: pointer;
+        margin-top: 11px;
+        position: relative;
+        text-transform: uppercase;
+        .main-search__arrow-forward {
+            position: absolute;
+            right: 11px;
+            bottom: 11px;
+        }
     }
 }
