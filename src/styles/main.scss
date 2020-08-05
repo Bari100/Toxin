@@ -56,6 +56,10 @@ body {
     height: 684px;
 }
 
+.room-content {
+    display: flex;
+}
+
 //MEDIA
 @media (max-width: 1462px) {
     .content {

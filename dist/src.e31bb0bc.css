@@ -474,6 +474,10 @@ body ul {
   height: 684px;
 }
 
+.room-content {
+  display: flex;
+}
+
 @media (max-width: 1462px) {
   .content {
     background-size: 1530px;
@@ -1524,6 +1528,144 @@ body ul {
     margin: 0;
   }
 }
+.reservation__container {
+  width: 380px;
+  background-color: #fff;
+  padding: 39px 30px 30px 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #1F2041;
+  display: inline-block;
+}
+.reservation__container .datepicker-here {
+  background-repeat: no-repeat;
+}
+.reservation__container .reservation__name-price {
+  display: flex;
+  justify-content: space-between;
+}
+.reservation__container .reservation__name-price .reservation__name-number {
+  font-weight: 800;
+  font-size: 14px;
+  color: #1F2041;
+}
+.reservation__container .reservation__name-price .reservation__name-number .reservation__name {
+  font-size: 16px;
+}
+.reservation__container .reservation__name-price .reservation__name-lux {
+  font-size: 12px;
+  color: #BC9CFF;
+  text-transform: uppercase;
+}
+.reservation__container .reservation__price {
+  font-weight: 800;
+}
+.reservation__container .reservation__price-24 {
+  font-weight: 400;
+  font-size: 12px;
+}
+.reservation__container .reservation__dates {
+  position: relative;
+}
+.reservation__container .reservation__dates .reservation__dates-titles {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 102px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.reservation__container .reservation__dates .reservation__dates-titles .reservation__dates-title {
+  margin-bottom: 5px;
+  letter-spacing: 0.3px;
+}
+.reservation__container .reservation__dates .reservation__input-fake-split {
+  position: absolute;
+  width: 22px;
+  height: 44px;
+  background-color: transparent;
+  bottom: 0;
+  left: 150px;
+  z-index: 2;
+}
+.reservation__container .reservation__dates .reservation__input-fake-split-left {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.reservation__container .reservation__dates .reservation__input-fake-split-right {
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  background-color: transparent;
+  bottom: 0;
+  left: 171px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.reservation__container .reservation__guests {
+  margin-top: 20px;
+}
+.reservation__container .reservation__guests .guests__adults-baby {
+  width: 320px;
+}
+.reservation__container .reservation__guests-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.reservation__container .datepicker-here {
+  width: 320px;
+  height: 44px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+  padding-left: 16px;
+  background-image: url(/arrow_down.3d6b8982.svg), url(/arrow_down.3d6b8982.svg);
+  background-position: 116px 10px, 286px 10px;
+}
+.reservation__container .reservation__calculate-days, .reservation__container .reservation__calculate-services, .reservation__container .reservation__calculate-add-services, .reservation__container .reservation__calculate-sum {
+  display: flex;
+  justify-content: space-between;
+}
+.reservation__container .reservation__calculate-services, .reservation__container .reservation__calculate-add-services {
+  position: relative;
+}
+.reservation__container .reservation__calculate-services-sale-ellipse, .reservation__container .reservation__calculate-add-services-txt-ellipse {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  right: 81px;
+  top: 10px;
+  padding-left: 7px;
+  padding-top: 1px;
+}
+.reservation__container .reservation__button {
+  width: 320px;
+  height: 44px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 11px;
+  position: relative;
+  text-transform: uppercase;
+}
+.reservation__container .reservation__button .reservation__arrow-forward {
+  position: absolute;
+  right: 11px;
+  bottom: 11px;
+}
+
 .number-rate-container {
   width: 270px;
   height: 257px;
@@ -1639,6 +1781,11 @@ body ul {
 .search-room .search-room__room-list .search-room__room-list-text {
   font-size: 24px;
 }
+.search-room .search-room__room-list .search-room__room-list-pagination {
+  padding: 0 290px;
+  margin-top: 40px;
+  margin-bottom: 75px;
+}
 .search-room .search-room-room-list__rooms {
   display: grid;
   grid-template-rows: 8px 8px 8px;
@@ -1694,6 +1841,88 @@ body ul {
     width: 220px;
   }
 }
+.pagination {
+  width: 241px;
+  font-size: 12px;
+}
+
+.pagination__main {
+  margin-bottom: 14px;
+}
+
+.pagination__text {
+  font-size: 13.7px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.pagination__first {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  padding-top: 13px;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+.pagination__second {
+  margin-right: 15px;
+  color: rgba(31, 32, 65, 0.5);
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pagination__third {
+  margin-right: 23px;
+  color: rgba(31, 32, 65, 0.5);
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pagination__dots {
+  margin-right: 24px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.pagination__fifteenth {
+  margin-right: 8px;
+  color: rgba(31, 32, 65, 0.5);
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pagination__next {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.pagination__img {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+}
+
 .search-room__filter-titles {
   font-size: 12px;
   text-transform: uppercase;

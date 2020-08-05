@@ -1,0 +1,44 @@
+html
+    head
+        link(rel='stylesheet' href='blocks/_commons/button/.button.scss')
+    body
+        .reservation__container
+            .reservation__name-price
+                p.reservation__name-number №
+                    span.reservation__name 888
+                    span.reservation__name-lux ЛЮКС
+                p.reservation__price 9 990р
+                    span.reservation__price-24  в сутки
+            .reservation__dates
+                .reservation__dates-titles
+                    h3.reservation__dates-title прибытие
+                    h3.reservation__dates-title выезд
+                input.reservation__input(type="text" data-range="true" placeholder="ДД.ММ.ГГГГ                       ДД.ММ.ГГГГ" data-multiple-dates-separator="                          " class="datepicker-here" readonly)
+                .reservation__input-fake-split-left
+                .reservation__input-fake-split
+                .reservation__input-fake-split-right
+            .reservation__guests
+                h3.reservation__guests-title гости
+                include ../guests/guests.pug
+            .reservation__calculate
+                .reservation__calculate-days
+                    p.reservation__calculate-days-mult 9 990₽ х 4 суток
+                    p.reservation__calculate-days-price 39 960₽
+                .reservation__calculate-services
+                    p.reservation__calculate-services-sale Сбор за услуги: скидка 2 179₽
+                        .reservation__calculate-services-sale-ellipse
+                            span.reservation__calculate-services-sale-i i
+                    p.reservation__calculate-services-price 0₽
+                .reservation__calculate-add-services
+                    p.reservation__calculate-add-services-txt Сбор за дополнительные услуги
+                        .reservation__calculate-add-services-txt-ellipse
+                            span.reservation__calculate-add-services-txt-i i
+                    p.reservation__calculate-add-services-price 300₽
+                .reservation__calculate-sum
+                    h2.reservation__calculate-sum-txt Итого
+                    h2.reservation__calculate-sum-price 38 081₽
+            <a href="search-room.pug">
+                button.button.button-color.reservation__button забронировать
+                    img.reservation__arrow-forward(src="../src/img/arrow_forward-white.svg")
+            </a>
+                
