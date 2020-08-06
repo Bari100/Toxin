@@ -1,5 +1,6 @@
 .reservation__container {
     width: 380px;
+    height: 49%;
     background-color: #fff;
     padding: 39px 30px 30px 30px;
     box-sizing: border-box;
@@ -13,6 +14,7 @@
     .reservation__name-price {
         display: flex;
         justify-content: space-between;
+        margin-top: -3px;
         .reservation__name-number {
             font-weight: 800;
             font-size: 14px;
@@ -29,6 +31,7 @@
     }
     .reservation__price {
         font-weight: 800;
+        color: rgba(31, 32, 65, 0.5);
     }
     .reservation__price-24 {
         font-weight: 400;
@@ -45,6 +48,7 @@
             .reservation__dates-title {
                 margin-bottom: 5px;
                 letter-spacing: 0.3px;
+                margin-top: 9px;
             }
         }
         .reservation__input-fake-split {
@@ -81,6 +85,7 @@
     }
     .reservation__guests {
         margin-top: 20px;
+        margin-bottom: 21px;
         .guests__adults-baby {
             width: 320px;
         }
@@ -100,12 +105,26 @@
         background-image: url(../img/arrow_down.svg), url(../img/arrow_down.svg);
         background-position: 116px 10px, 286px 10px;
     }
+    .reservation__calculate {
+        color: rgba(31, 32, 65, 0.75);
+        .reservation__calculate-days-mult, .reservation__calculate-days-price, .reservation__calculate-services-sale, .reservation__calculate-services-price, .reservation__calculate-add-services-txt, .reservation__calculate-add-services-price, .reservation__calculate-sum-txt, .reservation__calculate-sum-price {
+            margin: 0 0 18px 0;
+        }
+        .reservation__calculate-add-services-txt {
+            line-height: 18px;
+            margin-bottom: 31px;
+        }
+    }
     .reservation__calculate-days, .reservation__calculate-services, .reservation__calculate-add-services, .reservation__calculate-sum {
         display: flex;
         justify-content: space-between;
     }
     .reservation__calculate-services, .reservation__calculate-add-services {
         position: relative;
+    }
+    .reservation__calculate-services-sale-i, .reservation__calculate-add-services-txt-i {
+        color: rgba(31, 32, 65, 0.25);
+        font-weight: 800;
     }
     .reservation__calculate-services-sale-ellipse, .reservation__calculate-add-services-txt-ellipse {
         display: inline-block;
@@ -115,10 +134,29 @@
         border-radius: 50%;
         box-sizing: border-box;
         position: absolute;
-        right: 81px;
-        top: 10px;
+        right: 80px;
+        top: -2px;
         padding-left: 7px;
         padding-top: 1px;
+    }
+    .reservation__calculate-sum {
+        color: #1F2041;
+        font-weight: 700;
+        font-size: 19px;
+        .reservation__calculate-sum-txt {
+        font-family: 'Open Sans';
+        margin-bottom: 10px;
+        }
+        .reservation__calculate-sum-dashed {
+            width: 182px;
+            height: 1px;
+            margin-top: 16px;
+            box-sizing: border-box;
+            background-image: url(../img/dashed.svg);
+        }
+        .reservation__calculate-sum-price {
+            margin-bottom: 0;
+        }
     }
     .reservation__button {
         width: 320px;

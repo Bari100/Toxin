@@ -36,7 +36,16 @@
         background: linear-gradient(174deg, rgba(145,145,145,1) 0%, rgba(61,73,117,1) 100%);
     }
 }
-
+.reviews-room__info {
+    .reviews-room__title {
+        margin-top: 0;
+    }
+}
+.reviews-room__impressions {
+    .reviews-room__title {
+        margin-top: 0;
+    }
+}
 .reviews-room__title {
     font-size: 19px;
     letter-spacing: -0.3px;
