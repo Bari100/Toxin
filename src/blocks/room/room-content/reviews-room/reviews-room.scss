@@ -44,3 +44,16 @@
         }
     }
 }
+//MEDIA
+@media(max-width: 1122px) {
+    .room-content {
+        position: relative;
+        .reservation__container {
+            position: absolute;
+            left: 400px;
+            top: 200px;
+            width: 340px;
+            padding: 9px 3px 3px 3px;
+        }
+    }
+}
