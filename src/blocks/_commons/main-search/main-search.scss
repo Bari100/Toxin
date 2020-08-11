@@ -97,3 +97,29 @@
         }
     }
 }
+
+//MEDIA 
+@media(max-width:400px) {
+    .main-search__container {
+        width: 95%;
+        padding: 39px 20px 30px 20px;
+        .main-search__dates {
+            .main-search__dates-titles {
+                justify-content: unset;
+                .main-search__dates-title:first-child {
+                    margin-right: 95px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:390px) {
+    .main-search__container {
+        padding: 39px 14px 30px 11px;
+    }
+}
+@media(max-width:380px) {
+    .main-search__container {
+        padding: 39px 12px 30px 8px;
+    }
+}

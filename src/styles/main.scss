@@ -1,5 +1,16 @@
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    body{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}//НУЖНО, ЧТОБЫ СПАРВА НЕ ПОЯВЛЯЛОСЬ ПУСТОЕ МЕСТО И НЕ ПОЯВЛЯЛСЯ ГОРИЗОНТАЛЬНЫЙ СКРОЛЛ
+
 body {
-    font-family: 'Montserrat'; 
+    font-family: 'Montserrat';
     font-size: 14px;
     a {
         text-decoration: none;
@@ -78,5 +89,39 @@ body {
 @media (max-width: 723px) {
     .content__text {
         right: 5%;
+    }
+}
+@media (max-width: 723px) {
+    body {
+        min-width: 600px;
+    }
+    .content {
+        background-size: 1530px;
+        background-position: 50% -128px;
+    }
+}
+@media (max-width: 636px) {
+    body {
+        .content-wrap {
+            padding: 0;
+            padding-top: 70px;
+            .main-search__container {
+                margin: 0 auto;
+            }
+        }
+    }
+    .content {
+        background-size: 1530px;
+        background-position: 50% -128px;
+    }
+}
+@media (max-width: 554px) {
+    body {
+        min-width: 400px;//НЕ ПОЗВОЛЯЕТ ПОЯВИТЬСЯ ПРОКРУТКЕ И ДАЕТ СУЖАТЬСЯ СТРАНИЦЕ
+    }
+}
+@media (max-width: 390px) {
+    body {
+        min-width: 300px;//НЕ ПОЗВОЛЯЕТ ПОЯВИТЬСЯ ПРОКРУТКЕ И ДАЕТ СУЖАТЬСЯ СТРАНИЦЕ
     }
 }
