@@ -1140,7 +1140,19 @@ body ul {
 }
 @media (max-width: 650px) {
   .footer .column-1__footer-850px .text__footer {
-    width: 505px;
+    width: 60vw;
+  }
+
+  .top__footer .footer__nav-span {
+    font-size: 2vw;
+  }
+
+  .top__footer .text__footer {
+    font-size: 2vw;
+  }
+
+  .top__footer .footer__nav .column-5__footer li input {
+    width: 38vw;
   }
 }
 .sign-up-in-content {
