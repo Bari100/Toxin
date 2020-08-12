@@ -3,4 +3,4 @@ dist/
 node_modules/
 *
 !*/
-!node_modules/air-datepicker/
+!node_modules/air-datepicker/src
