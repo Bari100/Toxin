@@ -41,25 +41,72 @@
 
 @media(max-width: 935px) {
     .search-room {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; //позволяет флексам занять несколько строк при сужении страницы. удобно т.к. 'flex-direction: column' почему-то не позволяет разместить элементы по середине страницы
-    }
-    .search-room__filter {
-        width: 1160px;
-    }
-}
-
-@media(max-width: 630px) {
-    .search-room {
         .search-room-room-list__rooms {
             grid-template-rows: 8px 8px 8px 8px 8px;
             grid-template-columns: 12px 12px;
-            grid-gap: 44vw;
+            grid-gap: 25vw;
         }
     }
-    .wrap {
-        padding-left: 5%;
+    .number-rate-container {
+        width: 225px;
+        height: 213px;
+        .number-rate__photo-slider {
+            width: 225px;
+            margin-bottom: 0;
+            height: 123px;
+        }
+        .number-rate__img {
+            width: 225px;
+        }
+        .number-rate__name-price-rating-reviews {
+            width: 220px;
+            .number-rate__line {
+                width: 220px;
+            }
+        }
+    }
+    .search-room__room-list-text {
+        width: 50vw;
+    }
+    .search-room__room-list {
+        min-width: 550px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 858px) {
+    .search-room {
+        .search-room-room-list__rooms {
+            grid-template-rows: 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px;
+            grid-template-columns: 12px;
+            grid-gap: 250px;
+        }
+    }
+    .number-rate-container {
+        width: 270px;
+        height: 257px;
+        .number-rate__photo-slider {
+            width: 270px;
+            margin-bottom: 10px;
+            height: 151px;
+        }
+        .number-rate__img {
+            width: 270px;
+        }
+        .number-rate__name-price-rating-reviews {
+            width: 220px;
+            .number-rate__line {
+                width: 220px;
+            }
+        }
+    }
+}
+@media(max-width: 630px) {
+    .search-room {
+        .search-room-room-list__rooms {
+            grid-template-rows: 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px;
+            grid-template-columns: 12px;
+            grid-gap: 220px;
+        }
     }
     .number-rate-container {
         width: 225px;
@@ -77,5 +124,19 @@
                 width: 220px;
             }
         }
+    }
+    .wrap {
+        padding-left: 5%;
+    }
+    .search-room {
+        .search-room__filter {
+            margin-right: 0;
+        }
+    }
+}
+@media(max-width: 522px) {
+    .search-room {
+        display: flex;
+        flex-wrap: wrap; //позволяет флексам занять несколько строк при сужении страницы. удобно т.к. 'flex-direction: column' почему-то не позволяет разместить элементы по середине страницы
     }
 }

@@ -15,9 +15,6 @@
 //MEDIA
 @media(max-width: 1215px) {
     .reviews-room__reviews {
-        .reviews-room__comment-text {
-            max-width: 42%;
-        }
         /*.reviews-room__title {
             width: 440px;
         }*/
@@ -28,6 +25,11 @@
 }
 
 @media(max-width: 1122px) {
+    .reviews-room__reviews {
+        .reviews-room__comment-text {
+            max-width: 42%;
+        }
+    }
     .room-content {
         position: relative;
         .reservation__container {
@@ -83,6 +85,7 @@
             width: 340px;
             height: 465px;
             padding: 9px 3px 3px 3px;
+            margin-left: 15vw;
         }
     }
     .reviews-room__reviews {
