@@ -21,3 +21,9 @@
     width: 459px;
     height: 242px;
 }
+
+@media(max-width: 760px) {
+    .photo-room {
+        margin-bottom: 18px;
+    }
+}
