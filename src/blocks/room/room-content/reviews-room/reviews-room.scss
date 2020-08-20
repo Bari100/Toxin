@@ -114,6 +114,9 @@
 
 @media(max-width: 580px) {
     .room-content {
+        .reviews-room {
+            margin-right: 80px;
+        }
         .reservation__container {
             margin-left: 10vw;
         }
@@ -124,7 +127,7 @@
         margin: 0 auto;
     }
     .info-impressions {
-        margin-bottom: 200px;
+        margin-bottom: 150px;
     }
     .reviews-room__reviews {
         display: block;
@@ -132,6 +135,24 @@
         margin: 0 auto;
         .reviews-room__comment-text {
             width: 100%;
+        }
+    }
+    .reviews-room__impressions {
+        margin-bottom: 0;
+        .circle-list {
+            .reviews-room__circle {
+                left: 5px;
+            }
+            .reviews-room__list {
+                left: -30px;
+            }
+        }
+    }
+}
+@media(max-width: 555px) {
+    .room-content {
+        .reviews-room {
+            margin-right: 0;
         }
     }
 }
