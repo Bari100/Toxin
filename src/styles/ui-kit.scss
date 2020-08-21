@@ -1,0 +1,19 @@
+.ui-kit {
+    display: grid;
+    // grid-template-rows: 400px 500px;
+    grid-template-rows: auto;
+    grid-template-columns: 120px 120px 120px;
+    grid-gap: 10px 280px;
+    grid-template-areas: 
+    "ui-kit_main-search ui-kit_reservation ui-kit_datepicker"
+    "ui-kit_sign-up . ui-kit_sign-in"
+    "ui-kit_number-rate";
+    .sign-up-form, .sign-in-form {
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+    .sign-in-form {
+        height: 358px;
+    }
+}
