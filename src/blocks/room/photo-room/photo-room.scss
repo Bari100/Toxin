@@ -22,8 +22,22 @@
     height: 242px;
 }
 
+.photo-room__4 {
+    background-image: url(../img/room/room.png);
+    width: 459px;
+    height: 242px;
+    display: none;
+}
+
 @media(max-width: 760px) {
     .photo-room {
         margin-bottom: 18px;
+        .photo-room__1 {
+            display: none;
+        }
+        .photo-room__4 {
+            display: block;
+            background-size: cover;
+        }
     }
 }

@@ -28,24 +28,30 @@
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-left: 5px;
+	margin-top: 3px;
 }
 .guests__dropdown-menu {
 	padding-inline-start: 0;
-	margin-left: 10px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	width: 308px;
+	padding-left: 10px;
 	.guests__dropdown-content {
-		margin-top: 13px;
+		margin-top: 10px;
+		margin-bottom: 26px;
 	}
 	.guests__amount {
-		margin-right: 15px;
+		width: 92px;
 	}
 	.guests__number {
-		margin-bottom: 17px;
+		margin-bottom: 15px;
 		display: flex;
 		justify-content: space-between;
 	}
 	.guests__input {
 		border: none;
-		width: 54px;
+		width: 39px;
 		background-color: transparent;
 		text-align: center;
 		font-weight: 800;
@@ -62,8 +68,8 @@
 	}
 	.guests__circle {
 		cursor: pointer;
-		width: 30px;
-		height: 30px;
+		width: 28px;
+		height: 28px;
 		border-radius: 22px;
 		background-color: transparent;
 		border: 1px solid rgba(31, 32, 65, 0.25);
@@ -186,6 +192,8 @@ $gray: #EEE;
 	.guests__dropdown-menu {
 		max-height: 0;
 		overflow: hidden;
+		display: none;
+		border: 1px solid rgba(31, 32, 65, 0.5);
 
 		li {
 			padding: 0;
@@ -205,7 +213,8 @@ $gray: #EEE;
 	}
 
 	.hide {
-		max-height: 0;
+		// max-height: 0;
+		display: none;
 	}
 }
 .guests__buttons {
@@ -214,7 +223,8 @@ $gray: #EEE;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 18px;
-	padding: 6px 4px 25px; }
+	padding: 6px 4px 18px;
+	font-size: 12px; }
   
   .guests__button {
 	font-weight: 800;
@@ -227,6 +237,9 @@ $gray: #EEE;
 	.guests__button[data-action="clear"] {
 	  color: rgba(31, 32, 65, 0.5);
 	}
+	.guests__button[data-action="apply"] {
+		margin-right: 2px;
+	  }
 	.guests__button:hover {
 	  color: rgba(31, 32, 65, 0.5);
 	  background: #f8f8f8; }

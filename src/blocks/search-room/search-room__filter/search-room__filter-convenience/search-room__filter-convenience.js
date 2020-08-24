@@ -161,24 +161,25 @@ var dropdown = document.querySelectorAll('.convenience__dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
 dropdownArray.forEach(function(el){
 	var button = el.querySelector('.convenience__bedroom-bed'),
-			menu = el.querySelector('.convenience__dropdown-menu'),
-			arrow = button.querySelector('i.icon-arrow');
+			menu = el.querySelector('.convenience__dropdown-menu');
 
 	button.onclick = function(event) {
+		button.style.borderBottomRightRadius = "0";
+		button.style.borderBottomLeftRadius = "0";
+		button.style.border = "1px solid rgba(31, 32, 65, 0.5)";
 		if(!menu.hasClass('show')) {
 			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
 			menu.classList.add('show');
 			menu.classList.remove('hide');
-			arrow.classList.add('open');
-			arrow.classList.remove('close');
 			event.preventDefault();
 		}
 		else {
 			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
 			menu.classList.remove('show');
 			menu.classList.add('hide');
-			arrow.classList.remove('open');
-			arrow.classList.add('close');
+			button.style.borderBottomRightRadius = "4px";
+			button.style.borderBottomLeftRadius = "4px";
+			button.style.border = "1px solid rgba(31, 32, 65, 0.25)";
 			event.preventDefault();
 		}
 	};

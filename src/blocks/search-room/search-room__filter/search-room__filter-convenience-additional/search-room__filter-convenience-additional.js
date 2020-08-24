@@ -3,8 +3,7 @@ var dropdown = document.querySelectorAll('.search-room__filter-convenience-addit
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
 dropdownArray.forEach(function(el){
 	var button = el.querySelector('a[data-toggle="dropdown"]'),
-			menu = el.querySelector('.search-room__filter-convenience-additional__dropdown-menu'),
-			arrow = button.querySelector('i.icon-arrow');
+			menu = el.querySelector('.search-room__filter-convenience-additional__dropdown-menu');
 
 	button.onclick = function(event) {
 		if(!menu.hasClass('show')) {
@@ -12,8 +11,6 @@ dropdownArray.forEach(function(el){
 			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
 			menu.classList.add('show');
 			menu.classList.remove('hide');
-			arrow.classList.add('open');
-			arrow.classList.remove('close');
 			event.preventDefault();
 		}
 		else {
@@ -21,8 +18,6 @@ dropdownArray.forEach(function(el){
 			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
 			menu.classList.remove('show');
 			menu.classList.add('hide');
-			arrow.classList.remove('open');
-			arrow.classList.add('close');
 			event.preventDefault();
 		}
 	};

@@ -58,7 +58,7 @@
             prevHtml: '<img src="arrow_forward.b453ccca.svg">',
             nextHtml: '<img src="arrow_forward.04b75f4b.svg">',
             navTitles: {
-                days: 'MM, <i>yyyy</i>',
+                days: 'MM <i>yyyy</i>',
                 months: 'yyyy',
                 years: 'yyyy1 - yyyy2'
             },

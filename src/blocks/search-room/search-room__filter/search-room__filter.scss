@@ -1,3 +1,14 @@
+.guests__dropdown-menu {
+    width: 266px;
+    .guests__circle-plus {
+        top: -4px;
+		left: -3px;
+    }
+    .guests__circle-minus {
+        top: -3px;
+		left: -5px;
+    }
+}
 .search-room__filter-titles {
     font-size: 12px;
     text-transform: uppercase;

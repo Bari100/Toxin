@@ -1,17 +1,47 @@
 .ui-kit {
     display: grid;
-    // grid-template-rows: 400px 500px;
     grid-template-rows: auto;
     grid-template-columns: 120px 120px 120px;
-    grid-gap: 10px 280px;
-    grid-template-areas: 
-    "ui-kit_main-search ui-kit_reservation ui-kit_datepicker"
-    "ui-kit_sign-up . ui-kit_sign-in"
-    "ui-kit_number-rate";
+    grid-gap: 40px 300px;
+    padding-bottom: 150px;
+    background: #F4F4F6;
+    width: 1440px;
+    margin-left: 210px;
+    padding-left: 140px;
+    padding-top: 150px;
+    position: relative;
+    z-index: 0;
+    .ui-kit_sign-up {
+        position: relative;
+        .sign-up-form {
+            position: absolute;
+            top: -136px;
+        }
+    }
+    .ui-kit_number-rate, .ui-kit_number-rate-2 {
+        position: relative;
+        .number-rate-container {
+            position: absolute;
+            top: -140px;
+            margin-bottom: 100px;
+            background-color: #fff;
+            .number-rate__photo-slider {
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+    .ui-kit_number-rate-2 {
+        .number-rate-container {
+            top: -240px;
+            left: 840px;
+        }
+    }
     .sign-up-form, .sign-in-form {
         border: 1px solid rgba(0, 0, 0, 0.12);
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
+        background-color: #fff;
     }
     .sign-in-form {
         height: 358px;
