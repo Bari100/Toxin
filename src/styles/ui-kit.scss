@@ -43,7 +43,206 @@
         border-radius: 4px;
         background-color: #fff;
     }
+    .sign-up-form {
+        .sign-up-form__container {
+            .sign-up-form__date {
+                input {
+                    text-transform: uppercase;
+                }
+                input::-webkit-calendar-picker-indicator {
+                    display: none;
+                }
+            }
+        }
+    }
     .sign-in-form {
         height: 358px;
+    }
+}
+.ui-kit-2 {
+    width: 1440px;
+    margin-left: 210px;
+    padding-left: 140px;
+    padding-top: 150px;
+    z-index: 0;
+    .ui-kit-2-title {
+        font-size: 12px;
+        font-weight: 800;
+        color: #1F2041;
+        margin: 0;
+        margin-bottom: 5px;
+        &:nth-child(9) {
+            margin-top: 25px;
+        }
+        span {
+            font-weight: 400;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
+    .ui-kit-2-column-1 {
+        width: 320px;
+        .ui-kit-2-input {
+            color: rgba(31, 32, 65, 0.25);
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 4px;
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 264px;
+            padding: 13px 40px 13px 13px;
+            outline: none;
+            margin-bottom: 22px;
+        }
+        .ui-kit-2-input:nth-child(4) {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            &::placeholder {
+                color: rgba(31, 32, 65, 0.75);
+            }
+        }
+        .ui-kit-2-input:nth-child(10) {
+            height: 16px;
+            margin-bottom: 31px;
+            text-transform: uppercase;
+            &::-webkit-calendar-picker-indicator {
+                display: none;
+            }
+        }
+        .ui-kit-2-input:nth-child(13) {
+            width: 210px;
+            height: 16px;
+            margin-bottom: 44px;
+            &::placeholder {
+                color: rgba(31, 32, 65, 0.75);
+            }
+        }
+        .ui-kit-2-input:hover, input:focus {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+        .ui-kit-2-input::placeholder {
+            color: rgba(31, 32, 65, 0.25);
+        }
+        .guests__adults-baby {
+            width: 320px;
+        }
+        .main-search__dates {
+            position: relative;
+            margin-bottom: 41px;
+            input {
+                width: 320px;
+                height: 44px;
+                box-sizing: border-box;
+                border: none;
+                background-color: transparent;
+                z-index: 1;
+                padding-left: 16px;
+                background-image: url(../img/arrow_down.svg), url(../img/arrow_down.svg);
+                background-position: 116px 10px, 286px 10px;
+            }
+            .main-search__dates-titles {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 102px;
+                text-transform: uppercase;
+                font-size: 10px;
+                .main-search__dates-title {
+                    margin-bottom: 5px;
+                    letter-spacing: 0.3px;
+                }
+            }
+            .main-search__input-fake-split {
+                position: absolute;
+                width: 22px;
+                height: 44px;
+                background-color: transparent;
+                bottom: 0;
+                left: 150px;
+                z-index: 2;
+            }
+            .main-search__input-fake-split-left {
+                position: absolute;
+                width: 150px;
+                height: 44px;
+                background-color: transparent;
+                bottom: 0;
+                left: 0;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .main-search__input-fake-split-right {
+                position: absolute;
+                width: 150px;
+                height: 44px;
+                background-color: transparent;
+                bottom: 0;
+                left: 171px;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+        }
+        .column-5__footer {
+            margin-bottom: 102px;
+            .column-5__footer-width {
+                position: relative;
+                margin-bottom: 19px;
+                position: relative;
+                p {
+                    margin-bottom: 22px;
+                }
+                input {
+                    width: 208px;
+                    height: 40px;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    border-radius: 4px;
+                    padding-left: 15px;
+                    padding-right: 42px;
+                    outline: none;
+                    &:hover, &:focus {
+                        border: 1px solid rgba(31, 32, 65, 0.5);
+                    }
+                    &::placeholder {
+                        color: rgba(31, 32, 65, 0.25);
+                    }
+                }
+                button {
+                    background-color: transparent;
+                    border-color: transparent;
+                    position: absolute;
+                    right: 59px;
+                    bottom: 7px;
+                    &:focus {
+                        outline: none;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.75;
+                    }
+                }
+            }
+        }
+        .convenience__bedroom-bed {
+            width: 243px;
+            height: 22px;
+        }
+        .convenience__dropdown-content {
+            width: 245px;
+        }
+        .convenience__dropdown-menu {
+            width: 248px;
+        }
+        .ui-kit-2-convenience {
+            margin-top: 21px;
+            .convenience__dropdown-menu {
+                width: 248px;
+                display: block;
+                max-height: 119px;
+                overflow: visible;
+            }
+            .convenience__bedroom-bed {
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border: 1px solid rgba(31, 32, 65, 0.5);
+            }
+        }
     }
 }

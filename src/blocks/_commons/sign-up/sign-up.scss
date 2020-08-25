@@ -70,6 +70,10 @@
             display: inline-block;
             width: 264px;
             padding: 13px 40px 13px 13px;
+            outline: none;
+        }
+        input:hover, input:focus {
+            border: 1px solid rgba(31, 32, 65, 0.5);
         }
     }
     .sign-up-form__sex, .sign-up-form__male, .sign-up-form__female, .sign-up-form__sign-in {

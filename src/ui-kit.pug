@@ -25,3 +25,43 @@ html(lang="en")
             .ui-kit_number-rate-2
                 include blocks/_commons/number-rate/number-rate.pug
                 +number-rate__name-price-rating-reviews('840', '9 900₽', '65', '', 'img/.number-rate__img-2.png', 'img/stars-4.svg')
+        .ui-kit-2
+            .ui-kit-2-column-1
+                p.ui-kit-2-title TEXT FIELD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEFAULT
+                input.ui-kit-2-input(type="email" placeholder="Email" name="email" required)
+                p.ui-kit-2-title TEXT FIELD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOVER / FOCUS
+                input.ui-kit-2-input(type="email" placeholder="This is pretty awesome" name="email" required)
+                p.ui-kit-2-title DROPDOWN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEFAULT
+                include blocks/_commons/guests/guests.pug
+                p.ui-kit-2-title MASKED TEXT FIELD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEFAULT
+                input.ui-kit-2-input(type="date" name="date" required)
+                .main-search__dates
+                    .main-search__dates-titles
+                        h3.main-search__dates-title прибытие
+                        h3.main-search__dates-title выезд
+                    input.main-search__input(type="text" data-range="true" placeholder="ДД.ММ.ГГГГ                       ДД.ММ.ГГГГ" data-multiple-dates-separator="                          " class="datepicker-here" readonly)
+                    script(src="../node_modules/air-datepicker/dist/js/datepicker.js")
+                    .main-search__input-fake-split-left
+                    .main-search__input-fake-split
+                    .main-search__input-fake-split-right
+                p.ui-kit-2-title FILTER DATE DROPDOWN
+                input.ui-kit-2-input(placeholder="19 авг - 23 авг" type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" readonly)
+                p.ui-kit-2-title SUBSCRIPTION TEXT FIELD
+                .column-5__footer
+                    .column-5__footer-width
+                        input(type='email' name='email' placeholder='Email')
+                        button(type='submit')
+                            img(src='img/arrow_forward.svg')
+                p.ui-kit-2-title DROPDOWN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEFAULT
+                include blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.pug
+                .ui-kit-2-convenience
+                    p.ui-kit-2-title DROPDOWN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPANDED
+                    include blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.pug
+            .ui-kit-2-column-2
+            .ui-kit-2-column-3
