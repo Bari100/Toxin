@@ -65,6 +65,9 @@
     padding-left: 140px;
     padding-top: 150px;
     z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     .ui-kit-2-title {
         font-size: 12px;
         font-weight: 800;
@@ -81,6 +84,11 @@
     }
     .ui-kit-2-column-1 {
         width: 320px;
+        .search-room__filter-fake-checkbox {
+            width: 18px;
+            height: 18px;
+            margin-right: -4px;
+        }
         .ui-kit-2-input {
             color: rgba(31, 32, 65, 0.25);
             border: 1px solid rgba(31, 32, 65, 0.25);
@@ -237,11 +245,63 @@
                 display: block;
                 max-height: 119px;
                 overflow: visible;
+                margin-bottom: 44px;
             }
             .convenience__bedroom-bed {
                 border-bottom-right-radius: 0px;
                 border-bottom-left-radius: 0px;
                 border: 1px solid rgba(31, 32, 65, 0.5);
+            }
+        }
+        .search-room__filter-convenience-additional {
+            width: 266px;
+        }
+        .ui-kit-2-convenience-additional {
+            margin-top: 9px;
+            .search-room__filter-convenience-additional__dropdown-menu {
+                max-height: 217px;
+                overflow: visible;
+                margin-bottom: 80px;
+            }
+            .search-room__filter-convenience-additional__arrow-down {
+                transform: rotate(180deg);
+            }
+        }
+        .reviews-room__info-emoticon {
+            margin-top: 15px;
+        }
+    }
+    .ui-kit-2-column-2 {
+        width: 320px;
+        .ui-kit-2-title {
+            margin-bottom: 15px;
+        }
+        .search-room__filter-checkbox {
+            margin-bottom: 31px;
+        }
+        .search-room__filter-fake-checkbox {
+            width: 18px;
+            height: 18px;
+            margin-right: -4px;
+        }
+        .sign-up-form {
+            padding: 0;
+            height: 220px;
+        }
+        .sign-up-form__sex {
+            margin-bottom: 31px;
+        }
+        .sign-up-form__checkbox {
+            margin-bottom: 20px;
+        }
+        .reviews-room__reviews {
+            display: flex;
+            .reviews-room__comment-like {
+                margin: 0;
+            }
+            .reviews-room__comment-images-1, .reviews-room__comment-images-2 {
+                margin-right: 0;
+                padding-top: 2px;
             }
         }
     }

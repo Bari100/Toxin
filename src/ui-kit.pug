@@ -63,5 +63,167 @@ html(lang="en")
                     p.ui-kit-2-title DROPDOWN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPANDED
                     include blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.pug
+                .search-room__filter-convenience-additional
+                    .dropdown
+                        .search-room__filter-convenience-additional__container
+                            ul
+                                li.search-room__filter-convenience-additional__dropdown
+                                    a#search-room__filter-convenience-additional__text(href="#" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">expandable checkbox list</h3>
+                                        img.search-room__filter-convenience-additional__arrow-down(src="img/arrow_down.svg")
+                                    ul.search-room__filter-convenience-additional__dropdown-menu
+                                        .search-room__filter-convenience-additional__dropdown-content
+                                            li.search-room__filter-convenience-additional__number
+                                                label
+                                                    input(type="checkbox" name="breakfast")
+                                                    span.search-room__filter-fake-checkbox
+                                                    span.search-room__filter-span-convenience-additional Завтрак
+                                            li.search-room__filter-convenience-additional__number  
+                                                label
+                                                    input(type="checkbox" name="desk")
+                                                    span.search-room__filter-fake-checkbox
+                                                    span.search-room__filter-span-convenience-additional Письменный стол
+                                            li.search-room__filter-convenience-additional__number
+                                                label
+                                                    input(type="checkbox" name="table")
+                                                    span.search-room__filter-fake-checkbox
+                                                    span.search-room__filter-span-convenience-additional Стул для кормления
+                                            li.search-room__filter-convenience-additional__number
+                                                label
+                                                    input(type="checkbox" name="bed")
+                                                    span.search-room__filter-fake-checkbox
+                                                    span.search-room__filter-span-convenience-additional Кроватка
+                                            li.search-room__filter-convenience-additional__number
+                                                label
+                                                    input(type="checkbox" name="tv")
+                                                    span.search-room__filter-fake-checkbox
+                                                    span.search-room__filter-span-convenience-additional Телевизор
+                                            li.search-room__filter-convenience-additional__number
+                                                label
+                                                    input(type="checkbox" name="shampoo")
+                                                    span.search-room__filter-fake-checkbox
+                                                    span.search-room__filter-span-convenience-additional Шампунь
+                .ui-kit-2-convenience-additional
+                    .search-room__filter-convenience-additional
+                        .dropdown
+                            .search-room__filter-convenience-additional__container
+                                ul
+                                    li.search-room__filter-convenience-additional__dropdown
+                                        a#search-room__filter-convenience-additional__text(href="#" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">expandable checkbox list</h3>
+                                            img.search-room__filter-convenience-additional__arrow-down(src="img/arrow_down.svg")
+                                        ul.search-room__filter-convenience-additional__dropdown-menu
+                                            .search-room__filter-convenience-additional__dropdown-content
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="breakfast")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Завтрак
+                                                li.search-room__filter-convenience-additional__number  
+                                                    label
+                                                        input(type="checkbox" name="desk" checked)
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Письменный стол
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="table" checked)
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Стул для кормления
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="bed" checked)
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Кроватка
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="tv")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Телевизор
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="shampoo")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Шампунь
+                    script(src="blocks/search-room/search-room__filter/search-room__filter-convenience-additional//search-room__filter-convenience-additional.js")
+                .info-impressions
+                    .reviews-room__info.reviews-room__space
+                        img.reviews-room__info-emoticon(src='img/reviews-room__info/emoticon.png' alt='emoticon')
+                        p.reviews-room__info-text-b Комфорт
+                        p.reviews-room__info-text Шумопоглощающие стены
+                        hr.reviews-room__info-line
+                        img.reviews-room__info-city(src='img/reviews-room__info/city.png' alt='city')
+                        p.reviews-room__info-text-b Удобство
+                        p.reviews-room__info-text Окно в каждой из спален
+                        hr.reviews-room__info-line
             .ui-kit-2-column-2
+                .search-room__filter-checkbox
+                    h3.search-room__filter-titles.search-room__filter-titles-checkbox Checkbox Buttons
+                    label
+                        input(type="checkbox" name="smoke")
+                        span.search-room__filter-fake-checkbox
+                        span.search-room__filter-span-checkbox Можно курить
+                    label
+                        input(type="checkbox" name="pets" checked)
+                        span.search-room__filter-fake-checkbox
+                        span.search-room__filter-span-checkbox Можно с питомцами
+                    label
+                        input(type="checkbox" name="guests" checked)
+                        span.search-room__filter-fake-checkbox
+                        span.search-room__filter-span-checkbox Можно пригласить гостей <br>(до 10 человек)
+                .sign-up-form
+                    p.ui-kit-2-title RADIO BUTTONS
+                    .sign-up-form__sex
+                        .sign-up-form__male
+                            label
+                                input(type="radio" name="sex" value="male" checked)
+                                span.sign-up-form__fake-radio
+                                span.sign-up-form__span-male-female Мужчина
+                        .sign-up-form__female
+                            label
+                                input(type="radio" name="sex" value="female")
+                                span.sign-up-form__fake-radio
+                                span.sign-up-form__span-male-female Женщина
+                    p.ui-kit-2-title TOGGLE
+                    .sign-up-form__checkbox
+                        label
+                            input(type="checkbox" checked)
+                            span.sign-up-form__fake-checkbox
+                            span.sign-up-form__span-checkbox Получать спецпредложения
+                    .sign-up-form__checkbox
+                        label
+                            input(type="checkbox")
+                            span.sign-up-form__fake-checkbox
+                            span.sign-up-form__span-checkbox Получать спецпредложения
+                p.ui-kit-2-title LIKE BUTTON
+                .reviews-room__reviews
+                    .reviews-room__comment-images-2
+                        button(type="button").reviews-room__comment-like
+                            .reviews-room__comment-img
+                            span.reviews-room__like-number 2
+                    .reviews-room__comment-images-1
+                        button(type="button").reviews-room__comment-like.reviews-room__active-like
+                            .reviews-room__comment-img.reviews-room__comment-img-like
+                            span.reviews-room__like-number.reviews-room__active-like 12
+                    script. 
+                        $(".reviews-room__comment-images-1 > .reviews-room__comment-like").click(function() {
+                            if  ($(".reviews-room__comment-images-1 > .reviews-room__comment-like").hasClass('reviews-room__active-like') && $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").hasClass('reviews-room__active-like')) {
+                                $(".reviews-room__comment-images-1 > .reviews-room__comment-like").removeClass('reviews-room__active-like');
+                                $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").removeClass('reviews-room__active-like');
+                                $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass('reviews-room__comment-img-like');
+                            } else {
+                                $(".reviews-room__comment-images-1 > .reviews-room__comment-like").addClass('reviews-room__active-like');
+                                $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").addClass('reviews-room__active-like');
+                                $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass('reviews-room__comment-img-like');
+                            }
+                        });
+                        $(".reviews-room__comment-images-2 > .reviews-room__comment-like").click(function() {
+                            if  ($(".reviews-room__comment-images-2 > .reviews-room__comment-like").hasClass('reviews-room__active-like') && $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").hasClass('reviews-room__active-like')) {
+                                $(".reviews-room__comment-images-2 > .reviews-room__comment-like").removeClass('reviews-room__active-like');
+                                $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").removeClass('reviews-room__active-like');
+                                $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass('reviews-room__comment-img-like');
+                            } else {
+                                $(".reviews-room__comment-images-2 > .reviews-room__comment-like").addClass('reviews-room__active-like');
+                                $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").addClass('reviews-room__active-like');
+                                $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass('reviews-room__comment-img-like');
+                            }
+                        });
+                p.ui-kit-2-title RATE BUTTON
             .ui-kit-2-column-3

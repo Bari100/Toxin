@@ -25,19 +25,46 @@
     .reviews-room__reviews.reviews-room__space
         h2.reviews-room__title Отзывы посетителей номера <span class="reviews-room__title-num">2 отзыва
         .reviews-room__comment
-            .reviews-room__comment-images
+            .reviews-room__comment-images-1
                 img.reviews-room__comment-avatar(src='img/reviews-room__comment/avatar.png' alt='avatar')
-                img.reviews-room__comment-like(src='img/reviews-room__comment/like-2.svg' alt='like')
+                button(type="button").reviews-room__comment-like.reviews-room__active-like
+                    .reviews-room__comment-img.reviews-room__comment-img-like
+                    span.reviews-room__like-number.reviews-room__active-like 12
             .reviews-room__comment-name-text    
                 p.reviews-room__comment-name Мурад Сарафанов <span>5 дней назад
                 p.reviews-room__comment-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
         .reviews-room__comment
-            .reviews-room__comment-images
+            .reviews-room__comment-images-2
                 img.reviews-room__comment-avatar(src='img/reviews-room__comment/avatar-2.png' alt='avatar')
-                img.reviews-room__comment-like(src='img/reviews-room__comment/like.svg' alt='like')
-            .reviews-room__comment-name-text    
+                button(type="button").reviews-room__comment-like
+                    .reviews-room__comment-img
+                    span.reviews-room__like-number 2
+            .reviews-room__comment-name-text
                 p.reviews-room__comment-name Патрисия Стёклышкова <span>Неделю назад
                 p.reviews-room__comment-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
+        script. 
+            $(".reviews-room__comment-images-1 > .reviews-room__comment-like").click(function() {
+                if  ($(".reviews-room__comment-images-1 > .reviews-room__comment-like").hasClass('reviews-room__active-like') && $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").hasClass('reviews-room__active-like')) {
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like").removeClass('reviews-room__active-like');
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").removeClass('reviews-room__active-like');
+                    $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass('reviews-room__comment-img-like');
+                } else {
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like").addClass('reviews-room__active-like');
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").addClass('reviews-room__active-like');
+                    $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass('reviews-room__comment-img-like');
+                }
+            });
+            $(".reviews-room__comment-images-2 > .reviews-room__comment-like").click(function() {
+                if  ($(".reviews-room__comment-images-2 > .reviews-room__comment-like").hasClass('reviews-room__active-like') && $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").hasClass('reviews-room__active-like')) {
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").removeClass('reviews-room__active-like');
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").removeClass('reviews-room__active-like');
+                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass('reviews-room__comment-img-like');
+                } else {
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").addClass('reviews-room__active-like');
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").addClass('reviews-room__active-like');
+                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass('reviews-room__comment-img-like');
+                }
+            });
     .reviews-room__rules-cancel
         .reviews-room__rules.reviews-room__space
             h2.reviews-room__title Правила

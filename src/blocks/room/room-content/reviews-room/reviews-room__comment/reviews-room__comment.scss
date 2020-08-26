@@ -22,9 +22,41 @@
         top: -1.5px;
     }
     .reviews-room__comment-like {
+        display: flex;
         margin-top: 64px;
+        border-radius: 10px;
+        width: 40px;
+        height: 20px;
+        padding: 3px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        background: #fff;
+        z-index: 2;
+        outline: none;
+        cursor: pointer;
     }
-    .reviews-room__comment-images {
+    .reviews-room__like-number {
+        color: rgba(31, 32, 65, 0.25);
+        font-size: 10px;
+    }
+    .reviews-room__active-like {
+        border-color: #BC9CFF;
+        color: #BC9CFF;
+    }
+    .reviews-room__comment-img, .reviews-room__comment-img-like {
+        width: 9px;
+        height: 8px;
+        margin-top: 2px;
+        margin-left: 2px;
+        margin-right: 6px;
+        background-repeat: no-repeat;
+    }
+    .reviews-room__comment-img {
+        background-image: url(../img/reviews-room__comment/like-2.svg);
+    }
+    .reviews-room__comment-img-like {
+        background-image: url(../img/reviews-room__comment/like.svg);
+    }
+    .reviews-room__comment-images-1, .reviews-room__comment-images-2 {
         //background-color: antiquewhite;
         display: flex;
         justify-content: flex-start;
