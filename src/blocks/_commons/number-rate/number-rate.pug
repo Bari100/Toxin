@@ -19,6 +19,20 @@ mixin number-rate__name-price-rating-reviews(name, price, reviews, lux, img, rat
                         span.number-rate__price-24 &nbsp;в сутки
                 hr.number-rate__line
                 .number-rate__rating-reviews
-                    img.number-rate__rating(src= rating)
+                    .number-rate__rating
+                        div(id= rating)
+                            include ../stars/stars.pug
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating2_1', 'rating2_1', 'rating2_2', 'rating2_2', 'rating2_3', 'rating2_3', 'rating2_4', 'rating2_4', 'rating2_5', 'rating2_5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
+                            +rating-group-number('rating1', 'rating1', 'rating2', 'rating2', 'rating3', 'rating3', 'rating4', 'rating4', 'rating5', 'rating5')
                     p.number-rate__reviews= reviews
                         span.number-rate__reviews-rev &nbsp;Отзывов
