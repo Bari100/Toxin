@@ -276,6 +276,12 @@
         .ui-kit-2-title {
             margin-bottom: 15px;
         }
+        .ui-kit-2-title:nth-child(3) {
+            margin-bottom: 18px;
+        }
+        .ui-kit-2-title:nth-child(5) {
+            margin-bottom: 19px;
+        }
         .search-room__filter-checkbox {
             margin-bottom: 31px;
         }
@@ -292,10 +298,11 @@
             margin-bottom: 31px;
         }
         .sign-up-form__checkbox {
-            margin-bottom: 20px;
+            margin-bottom: 19px;
         }
         .reviews-room__reviews {
             display: flex;
+            height: 58px;
             .reviews-room__comment-like {
                 margin: 0;
             }
@@ -303,6 +310,21 @@
                 margin-right: 0;
                 padding-top: 2px;
             }
+        }
+        .ui-kit-2_rate {
+            display: flex;
+            .rating-group:nth-child(1) {
+                margin-right: 20px;
+            }
+        }
+        .guests__adults-baby {
+            width: 320px;
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+        .guests__dropdown-menu {
+            overflow: visible;
+            display: block;
+            max-height: 159px;
         }
     }
 }

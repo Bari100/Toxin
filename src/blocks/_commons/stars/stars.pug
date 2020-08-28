@@ -1,22 +1,22 @@
 doctype html
 html(lang="en")
-mixin rating-group-number(num, id, num2, id2, num3, id3, num4, id4, num5, id5)
+mixin rating-group-number(num, id, name, num2, id2, name2, num3, id3, name3, num4, id4, name4, num5, id5, name5, checked, checked2)
     head
     body
         .full-stars
             .rating-group
                 label.rating__label(aria-label='1 star' for= num)
                     i.rating__icon--star
-                input.rating__input(id= id name='rating3' value='1' type='radio')
+                input.rating__input(id= id name= name value='1' type='radio')
                 label.rating__label(aria-label='2 stars' for= num2)
                     i.rating__icon--star
-                input.rating__input(id= id2 name='rating3' value='2' type='radio')
+                input.rating__input(id= id2 name= name2 value='2' type='radio')
                 label.rating__label(aria-label='3 stars' for= num3)
                     i.rating__icon--star
-                input.rating__input(id= id3 name='rating3' value='3' type='radio')
+                input.rating__input(id= id3 name= name3 value='3' type='radio' checked=checked)
                 label.rating__label(aria-label='4 stars' for= num4)
                     i.rating__icon--star
-                input.rating__input(id= id4 name='rating3' value='4' type='radio' checked='')
+                input.rating__input(id= id4 name= name4 value='4' type='radio' checked=checked2)
                 label.rating__label(aria-label='5 stars' for= num5)
                     i.rating__icon--star
-                input.rating__input(id= id5 name='rating3' value='5' type='radio')
+                input.rating__input(id= id5 name= name5 value='5' type='radio')

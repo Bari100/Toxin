@@ -177,6 +177,19 @@ Element.prototype.hasClass = function(className) {
     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
 };
 
+
+$('.guests__button[data-action="clear"]').hide();
+$('.guests__plus').click(function(){
+	if ($('.guests_inchange-1').val() > -1 || $('.guests_inchange-2').val() > -1 || $('.guests_inchange-3').val() > -1){
+		$('.guests__button[data-action="clear"]').show();
+	}
+});
+// $('.guests__minus').click(function(){
+// 	if ($('.guests_inchange-1').val() < 1 && $('.guests_inchange-2').val() < 1 && $('.guests_inchange-3').val() < 1) {
+// 		$('.guests__button[data-action="clear"]').hide();
+// 	}
+// }); -- doesn't work
+
 $(function(){
 	var i = -1;
 	var tt = ["1 гость", "2 гостя", "3 гостя", "4 гостя", "5 гостей", "6 гостей", "7 гостей"];
@@ -261,5 +274,6 @@ $(function(){
 		$('.guests__minus-kids').css("color", "rgba(31, 32, 65, 0.25)");
 		$('.guests__circle-minus-baby').css("border-color", "rgba(31, 32, 65, 0.15)");
 		$('.guests__click-baby-minus').css("color", "rgba(31, 32, 65, 0.25)");
+		$('.guests__button[data-action="clear"]').hide();
 	}); 
 });

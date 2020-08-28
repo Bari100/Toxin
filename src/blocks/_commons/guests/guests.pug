@@ -15,7 +15,7 @@ body
                                 .guests__amount
                                     button.guests__minus.guests__click-minus.guests__minus-adults -
                                         .guests__circle.guests__circle-minus.guests__circle-minus-adults
-                                    input.guests__input(type="text" value="0" size="5" readonly)
+                                    input.guests__input.guests_inchange-1(type="text" value="0" size="5" readonly)
                                     button.guests__plus.guests__click.guests__plus-adults +
                                         .guests__circle.guests__circle-plus.guests__circle-plus-adults
                             li.kids__number.guests__number
@@ -23,7 +23,7 @@ body
                                 .guests__amount
                                     button.guests__minus.guests__click-minus.guests__minus-kids -
                                         .guests__circle.guests__circle-minus.guests__circle-minus-kids
-                                    input.guests__input(type="text" value="0" size="5" readonly)
+                                    input.guests__input.guests_inchange-2(type="text" value="0" size="5" readonly)
                                     button.guests__plus.guests__click.guests__plus-kids +
                                         .guests__circle.guests__circle-plus.guests__circle-plus-kids
                             li.baby__number.guests__number
@@ -31,10 +31,12 @@ body
                                 .guests__amount
                                     button.guests__minus.guests__click-baby-minus -
                                         .guests__circle.guests__circle-minus.guests__circle-minus-baby
-                                    input.guests__input(type="text" value="0" size="5" readonly)
+                                    input.guests__input.guests_inchange-3(type="text" value="0" size="5" readonly)
                                     button.guests__plus.guests__click-baby +
                                         .guests__circle.guests__circle-plus.guests__circle-plus-baby
                         .guests__buttons
-                            span.guests__button(data-action="clear") ОЧИСТИТЬ
-                            span.guests__button(data-action="apply") ПРИМЕНИТЬ
+                            .guests__clear-button
+                                span.guests__button(data-action="clear") ОЧИСТИТЬ
+                            .guests__apply-button
+                                span.guests__button(data-action="apply") ПРИМЕНИТЬ
     script(src="blocks/_commons/guests/guests.js")
