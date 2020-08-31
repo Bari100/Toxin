@@ -232,4 +232,117 @@ html(lang="en")
                     +rating-group-number('rating2_1', 'rating2_1', 'rat2', 'rating2_2', 'rating2_2', 'rat2', 'rating2_3', 'rating2_3', 'rat2', 'rating2_4', 'rating2_4', 'rat2', 'rating2_5', 'rating2_5', 'rat2')
                 p.ui-kit-2-title DROPDOWN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 include blocks/_commons/guests/guests.pug
+                .search-room__filter-accessibility
+                    h3.search-room__filter-titles.search-room__filter-titles-accessibility RICH CHECKBOX BUTTONS
+                    label
+                        input(type="checkbox" name="corridor")
+                        span.search-room__filter-fake-checkbox
+                        span.search-room__filter-span-accessibility Широкий коридор
+                    p.search-room__filter-clarification-accessibility Ширина коридоров в номере<br> не&nbspменее 91 см.
+                    label
+                        input(type="checkbox" name="disabled-assistant")
+                        span.search-room__filter-fake-checkbox
+                        span.search-room__filter-span-accessibility Помощник для инвалидов
+                    p.search-room__filter-clarification-accessibility На 1 этаже вас встретит специалист<br>и проводит до номера.
+                .reviews-room__reviews
+                    .reviews-room__comment
+                        .reviews-room__comment-images-1
+                            img.reviews-room__comment-avatar(src='img/reviews-room__comment/avatar.png' alt='avatar')
+                            button(type="button").reviews-room__comment-like.reviews-room__active-like
+                                .reviews-room__comment-img.reviews-room__comment-img-like
+                                span.reviews-room__like-number.reviews-room__active-like 12
+                        .reviews-room__comment-name-text    
+                            p.reviews-room__comment-name Мурад Сарафанов <span>5 дней назад
+                            p.reviews-room__comment-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
             .ui-kit-2-column-3
+                .search-room
+                    .search-room__filter
+                        .search-room__filter-price
+                            .search-room__title-input-price
+                                h3.search-room__filter-titles.search-room__filter-titles-price <nobr class="search-room__filter-titles-nobr">RANGE SLIDER</nobr>
+                                <input class="search-room__filter-price-input" type="text" id="amount" readonly>
+                            include blocks/search-room/search-room__filter/search-room__filter-price/search-room__filter-price.pug
+                .ui-kit-2-buttons
+                    p.ui-kit-2-title BUTTONS
+                    .ui-kit-2-buttons__small
+                        .ui-kit-2-buttons__orig
+                            .button.button-color CLICK&nbspME
+                            .button CLICK&nbspME
+                        .ui-kit-2-buttons__hover
+                            .button.button-color CLICK&nbspME
+                            .button CLICK&nbspME
+                    .ui-kit-2-buttons-click
+                        span.ui-kit-2-buttons-clickme CLICK ME&nbsp&nbsp&nbsp&nbsp&nbsp <span class="ui-kit-2-buttons-clickme ui-kit-2-buttons-clickme-grey">CLICK ME</span>
+                    button.button.button-color.sign-up-form__button-pay перейти к оплате
+                        img.sign-up-form__button-pay-img(src="img/arrow_forward-white.svg")
+                .pagination
+                    p.ui-kit-2-title PAGINATION
+                    .pagination__main
+                        a.pagination__first(href="#") 1
+                        a.pagination__second(href="#") 2
+                        a.pagination__third(href="#") 3
+                        span.pagination__dots ...
+                        a.pagination__fifteenth(href="#") 15
+                        a.pagination__next(href="#") <img class="pagination__img" src="img/arrow_forward-white.svg">
+                    p.pagination__text 1 – 12 из 100+ вариантов аренды
+                p.ui-kit-2-title DROPDOWN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                include blocks/_commons/guests/guests.pug
+                .reviews-room__rules-cancel
+                    .reviews-room__rules.reviews-room__space
+                        p.ui-kit-2-title BULLET LIST
+                        ul.reviews-room__rules-list
+                            li Нельзя с питомцами
+                            li Без вечеринок и мероприятий
+                            li Время прибытия — после 13:00, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;а выезд до 12:00
+        .ui-kit-3
+            include blocks/_commons/header/header.pug
+            header.header
+                .header__box.wrap
+                    a(href='').header__logo
+                        img(src='img/logo.svg' alt='logo')
+                    .header__navs   
+                        ul.header__nav-bar
+                            li
+                                a(href='').header__nav О&nbsp;нас
+                            li
+                                a(href='').header__nav Услуги
+                                img(src='img/arrow_down.svg')
+                            li.vacancy
+                                a(href='').header__nav Вакансии
+                            li
+                                a(href='').header__nav Новости
+                            li
+                                a(href='').header__nav Соглашения
+                                img(src='img/arrow_down.svg')
+                        ul.header__sign
+                            hr.header__sign-hr
+                            li.header__nav Юлий Цезарь
+                            button.btn-menu
+                                img(src="img/btn-menu.svg")
+                        .header__modal
+                            ul.header__nav-bar
+                                li
+                                    a(href='').header__nav О&nbsp;нас
+                                li
+                                    a(href='').header__nav Услуги
+                                    img(src='img/arrow_down.svg')
+                                li.vacancy
+                                    a(href='').header__nav Вакансии
+                                li
+                                    a(href='').header__nav Новости
+                                li
+                                    a(href='').header__nav Соглашения
+                                    img(src='img/arrow_down.svg')
+                script(src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous")
+                script(src="script.js")
+            include blocks/_commons/footer/footer.pug
+            .ui-kit-3__footer-alter
+                .column-1__footer
+                        a(href='' alt='logo').logo__footer
+                            img(src='img/logo.svg')
+                .bottom__footer
+                    p.copyright Copyright © 2018 Toxin отель. Все права зачищены.
+                    .social
+                        a(href='' alt='twitter').btn-social.btn-tw
+                        a(href='' alt='facebook').btn-social.btn-fb
+                        a(href='' alt='instagram').btn-social.btn-inst
