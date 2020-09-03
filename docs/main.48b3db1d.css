@@ -82,7 +82,7 @@ body ul {
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap-reverse;
-  background-image: url(/1.06f8af9e.png);
+  background-image: url(1.06f8af9e.png);
   background-position: -42px -128px;
   background-repeat: no-repeat;
   background-size: 106%;
@@ -194,7 +194,7 @@ body ul {
   justify-content: space-between;
 }
 .bottom__footer .social .btn-social {
-  background-image: url(/btn-social.7d9ce395.svg);
+  background-image: url(btn-social.7d9ce395.svg);
   background-repeat: no-repeat;
 }
 .bottom__footer .social .btn-social:hover {
@@ -225,19 +225,19 @@ body ul {
 }
 
 .photo-room__1 {
-  background-image: url(/room.09fe70fd.png);
+  background-image: url(room.09fe70fd.png);
   width: 981px;
   height: 485px;
 }
 
 .photo-room__2 {
-  background-image: url(/room-2.2e3f350e.png);
+  background-image: url(room-2.2e3f350e.png);
   width: 459px;
   height: 242px;
 }
 
 .photo-room__3 {
-  background-image: url(/room-3.2d47b616.png);
+  background-image: url(room-3.2d47b616.png);
   width: 459px;
   height: 242px;
 }
