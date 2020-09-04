@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.search-room__filter-convenience-additional__dropdown-menu {
+  padding-inline-start: 0;
+  margin-left: 0;
+}
+.search-room__filter-convenience-additional__dropdown-menu .search-room__filter-convenience-additional__dropdown-content {
+  margin-top: 11px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.search-room__filter-convenience-additional__container {
+  width: 100%;
+}
+.search-room__filter-convenience-additional__container > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.title {
+  font-family: "Pacifico";
+  font-weight: norma;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.4;
+  color: #2980B9;
+}
+
+.search-room__filter-convenience-additional__dropdown a {
+  text-decoration: none;
+}
+.search-room__filter-convenience-additional__dropdown [data-toggle=dropdown] {
+  position: relative;
+  display: block;
+  color: white;
+  padding: 10px;
+}
+.search-room__filter-convenience-additional__dropdown .icon-arrow {
+  position: absolute;
+  display: block;
+  font-size: 0.7em;
+  color: #fff;
+  top: 14px;
+  right: 10px;
+}
+.search-room__filter-convenience-additional__dropdown .icon-arrow:before {
+  content: "▼";
+}
+.search-room__filter-convenience-additional__dropdown .search-room__filter-convenience-additional__dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+}
+.search-room__filter-convenience-additional__dropdown .search-room__filter-convenience-additional__dropdown-menu li {
+  padding: 0;
+}
+.search-room__filter-convenience-additional__dropdown .search-room__filter-convenience-additional__dropdown-menu li a {
+  display: block;
+  color: #6f6f6f;
+  background: #EEE;
+  padding: 10px 10px;
+}
+.search-room__filter-convenience-additional__dropdown .show {
+  display: block;
+  max-height: 9999px;
+}
+.search-room__filter-convenience-additional__dropdown .hide {
+  max-height: 0;
+}
+
+.search-room__filter-convenience-additional {
+  overflow: hidden;
+}
+.search-room__filter-convenience-additional .search-room__filter-fake-checkbox {
+  float: none;
+}
+
+#search-room__filter-convenience-additional__text {
+  position: relative;
+}
+
+.search-room__filter-convenience-additional__arrow-down {
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+}
+
+/*# sourceMappingURL=/search-room__filter-convenience-additional.52b3e490.css.map */
