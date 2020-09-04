@@ -457,7 +457,7 @@ body ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-image: url(1.06f8af9e.png);
+  background-image: url(/1.06f8af9e.png);
   background-position: -42px -128px;
   background-repeat: no-repeat;
   background-size: 106%;
@@ -480,7 +480,7 @@ body ul {
 }
 
 .sign-up-in-content {
-  background-image: url(image_4.1.98b3ba54.png);
+  background-image: url(/image_4.1.98b3ba54.png);
   background-position: center -70px;
   width: 1440px;
   height: 684px;
@@ -685,7 +685,7 @@ body ul {
   background-color: transparent;
   z-index: 1;
   padding-left: 16px;
-  background-image: url(arrow_down.3d6b8982.svg), url(arrow_down.3d6b8982.svg);
+  background-image: url(/arrow_down.3d6b8982.svg), url(/arrow_down.3d6b8982.svg);
   background-position: 116px 10px, 286px 10px;
 }
 .ui-kit-2 .ui-kit-2-column-1 .main-search__dates .main-search__dates-titles {
@@ -1094,7 +1094,7 @@ body ul {
   background-color: transparent;
   z-index: 1;
   padding-left: 16px;
-  background-image: url(arrow_down.3d6b8982.svg), url(arrow_down.3d6b8982.svg);
+  background-image: url(/arrow_down.3d6b8982.svg), url(/arrow_down.3d6b8982.svg);
   background-position: 116px 10px, 286px 10px;
 }
 .main-search__container .main-search__button {
@@ -1448,7 +1448,7 @@ body ul {
   justify-content: space-between;
 }
 .bottom__footer .social .btn-social {
-  background-image: url(btn-social.7d9ce395.svg);
+  background-image: url(/btn-social.7d9ce395.svg);
   background-repeat: no-repeat;
 }
 .bottom__footer .social .btn-social:hover {
@@ -1858,25 +1858,25 @@ body ul {
 }
 
 .photo-room__1 {
-  background-image: url(room.09fe70fd.png);
+  background-image: url(/room.09fe70fd.png);
   width: 981px;
   height: 484px;
 }
 
 .photo-room__2 {
-  background-image: url(room-2.2e3f350e.png);
+  background-image: url(/room-2.2e3f350e.png);
   width: 459px;
   height: 242px;
 }
 
 .photo-room__3 {
-  background-image: url(room-3.2d47b616.png);
+  background-image: url(/room-3.2d47b616.png);
   width: 459px;
   height: 242px;
 }
 
 .photo-room__4 {
-  background-image: url(room.09fe70fd.png);
+  background-image: url(/room.09fe70fd.png);
   width: 459px;
   height: 242px;
   display: none;
@@ -2148,10 +2148,10 @@ body ul {
   background-repeat: no-repeat;
 }
 .reviews-room__reviews .reviews-room__comment-img {
-  background-image: url(like-2.48459f9d.svg);
+  background-image: url(/like-2.48459f9d.svg);
 }
 .reviews-room__reviews .reviews-room__comment-img-like {
-  background-image: url(like.e0f0220e.svg);
+  background-image: url(/like.e0f0220e.svg);
 }
 .reviews-room__reviews .reviews-room__comment-images-1, .reviews-room__reviews .reviews-room__comment-images-2 {
   display: flex;
@@ -2493,7 +2493,7 @@ body ul {
   background-color: transparent;
   z-index: 1;
   padding-left: 16px;
-  background-image: url(arrow_down.3d6b8982.svg), url(arrow_down.3d6b8982.svg);
+  background-image: url(/arrow_down.3d6b8982.svg), url(/arrow_down.3d6b8982.svg);
   background-position: 116px 10px, 286px 10px;
 }
 .reservation__container .reservation__calculate {
@@ -2544,7 +2544,7 @@ body ul {
   height: 1px;
   margin-top: 16px;
   box-sizing: border-box;
-  background-image: url(dashed.cd4262c6.svg);
+  background-image: url(/dashed.cd4262c6.svg);
 }
 .reservation__container .reservation__calculate-sum .reservation__calculate-sum-price {
   margin-bottom: 0;
@@ -3205,7 +3205,7 @@ body ul {
 .search-room__filter-checkbox .search-room__filter-fake-checkbox:before, .search-room__filter-accessibility .search-room__filter-fake-checkbox:before, .search-room__filter-convenience-additional .search-room__filter-fake-checkbox:before {
   content: "";
   position: absolute;
-  background-image: url(Vector.794dec81.svg);
+  background-image: url(/Vector.794dec81.svg);
   display: block;
   width: 10px;
   height: 10px;
@@ -3347,7 +3347,7 @@ body ul {
   left: -9999px !important;
 }
 .full-stars .rating__icon--star {
-  background-image: url(star.647382b2.svg);
+  background-image: url(/star.647382b2.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -3355,21 +3355,21 @@ body ul {
   cursor: pointer;
 }
 .full-stars .rating__input:checked ~ .rating__label .rating__icon--star {
-  background-image: url(star_border.61cbccc8.svg);
+  background-image: url(/star_border.61cbccc8.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   display: block;
 }
 .full-stars .rating-group:hover .rating__label .rating__icon--star {
-  background-image: url(star.647382b2.svg);
+  background-image: url(/star.647382b2.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   display: block;
 }
 .full-stars .rating__input:hover ~ .rating__label .rating__icon--star {
-  background-image: url(star_border.61cbccc8.svg);
+  background-image: url(/star_border.61cbccc8.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
