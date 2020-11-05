@@ -94,6 +94,9 @@
         .number-rate__rating-reviews {
             display: flex;
             justify-content: space-between;
+            .number-rate__rating {
+                margin-top: 10px;
+            }
         }
     }
 }
