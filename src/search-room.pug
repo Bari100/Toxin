@@ -1,7 +1,24 @@
 doctype html
 html(lang="en")
     head
+        meta(charset="utf-8")
+        meta(name="description" content="booking")
+        meta(name="keywords" content="booking, hotel, reservation")
         title Номера
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link color="#e52037" rel="mask-icon" href="img/favicon/favicon.svg">
         script(src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous")
         link(href="../node_modules/air-datepicker/dist/css/datepicker.css" rel="stylesheet" type="text/css")
         script(src="../node_modules/air-datepicker/dist/js/datepicker.js")
@@ -57,8 +74,8 @@ html(lang="en")
                         .search-room__filter-convenience-additional__container
                             ul
                                 li.search-room__filter-convenience-additional__dropdown
-                                    a#search-room__filter-convenience-additional__text(href="#" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">дополнительные удобства</h3>
-                                        img.search-room__filter-convenience-additional__arrow-down(src="img/arrow_down.svg")
+                                    a#search-room__filter-convenience-additional__text(href="index.pug" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">дополнительные удобства</h3>
+                                        img.search-room__filter-convenience-additional__arrow-down(src="img/arrow_down.svg" alt="button")
                                     ul.search-room__filter-convenience-additional__dropdown-menu
                                         .search-room__filter-convenience-additional__dropdown-content
                                             li.search-room__filter-convenience-additional__number
@@ -95,29 +112,29 @@ html(lang="en")
                 h2.search-room__room-list-text Номера, которые мы для вас подобрали
                 .search-room-room-list__rooms
                     include blocks/_commons/number-rate/number-rate.pug
-                    +number-rate__name-price-rating-reviews('888', '9 990₽', '145', ' люкс', 'img/.number-rate__img-1.png', '') 
+                    +number-rate__name-price-rating-reviews('888', '9 990₽', '145', ' люкс', 'img/.number-rate__img-1.jpg', '') 
                     +rating-group-number('rating1', 'rating1', 'rat', 'rating2', 'rating2', 'rat', 'rating3', 'rating3', 'rat', 'rating4', 'rating4', 'rat', 'rating5', 'rating5', 'rat')
-                    +number-rate__name-price-rating-reviews('840', '9 900₽', '65', '', 'img/.number-rate__img-2.png', 'number-rate__rating-2')
+                    +number-rate__name-price-rating-reviews('840', '9 900₽', '65', '', 'img/.number-rate__img-2.jpg', 'number-rate__rating-2')
                     +rating-group-number('rating2_1', 'rating2_1', 'rat2', 'rating2_2', 'rating2_2', 'rat2', 'rating2_3', 'rating2_3', 'rat2', 'rating2_4', 'rating2_4', 'rat2', 'rating2_5', 'rating2_5', 'rat2', false, true)
-                    +number-rate__name-price-rating-reviews('980', '8 500₽', '35', ' люкс', 'img/.number-rate__img-3.png', 'number-rate__rating-3')
+                    +number-rate__name-price-rating-reviews('980', '8 500₽', '35', ' люкс', 'img/.number-rate__img-3.jpg', 'number-rate__rating-3')
                     +rating-group-number('rating3_1', 'rating3_1', 'rat3', 'rating3_2', 'rating3_2', 'rat3', 'rating3_3', 'rating3_3', 'rat3', 'rating3_4', 'rating3_4', 'rat3', 'rating3_5', 'rating3_5', 'rat3', true)
-                    +number-rate__name-price-rating-reviews('856', '7 300₽', '19', '', 'img/.number-rate__img-4.png', 'number-rate__rating-4')
+                    +number-rate__name-price-rating-reviews('856', '7 300₽', '19', '', 'img/.number-rate__img-4.jpg', 'number-rate__rating-4')
                     +rating-group-number('rating4_1', 'rating4_1', 'rat4', 'rating4_2', 'rating4_2', 'rat4', 'rating4_3', 'rating4_3', 'rat4', 'rating4_4', 'rating4_4', 'rat4', 'rating4_5', 'rating4_5', 'rat4')
-                    +number-rate__name-price-rating-reviews('740', '6 000₽', '44', '', 'img/.number-rate__img-5.png', 'number-rate__rating-5')
+                    +number-rate__name-price-rating-reviews('740', '6 000₽', '44', '', 'img/.number-rate__img-5.jpg', 'number-rate__rating-5')
                     +rating-group-number('rating5_1', 'rating5_1', 'rat5', 'rating5_2', 'rating5_2', 'rat5', 'rating5_3', 'rating5_3', 'rat5', 'rating5_4', 'rating5_4', 'rat5', 'rating5_5', 'rating5_5', 'rat5', false, true)
-                    +number-rate__name-price-rating-reviews('982', '5 800₽', '56', '', 'img/.number-rate__img-6.png', 'number-rate__rating-6')
+                    +number-rate__name-price-rating-reviews('982', '5 800₽', '56', '', 'img/.number-rate__img-6.jpg', 'number-rate__rating-6')
                     +rating-group-number('rating6_1', 'rating6_1', 'rat6', 'rating6_2', 'rating6_2', 'rat6', 'rating6_3', 'rating6_3', 'rat6', 'rating6_4', 'rating6_4', 'rat6', 'rating6_5', 'rating6_5', 'rat6', true)
-                    +number-rate__name-price-rating-reviews('678', '5 500₽', '45', '', 'img/.number-rate__img-7.png', 'number-rate__rating-7')
+                    +number-rate__name-price-rating-reviews('678', '5 500₽', '45', '', 'img/.number-rate__img-7.jpg', 'number-rate__rating-7')
                     +rating-group-number('rating7_1', 'rating7_1', 'rat7', 'rating7_2', 'rating7_2', 'rat7', 'rating7_3', 'rating7_3', 'rat7', 'rating7_4', 'rating7_4', 'rat7', 'rating7_5', 'rating7_5', 'rat7')
-                    +number-rate__name-price-rating-reviews('450', '5 300₽', '39', '', 'img/.number-rate__img-8.png', 'number-rate__rating-8')
+                    +number-rate__name-price-rating-reviews('450', '5 300₽', '39', '', 'img/.number-rate__img-8.jpg', 'number-rate__rating-8')
                     +rating-group-number('rating8_1', 'rating8_1', 'rat8', 'rating8_2', 'rating8_2', 'rat8', 'rating8_3', 'rating8_3', 'rat8', 'rating8_4', 'rating8_4', 'rat8', 'rating8_5', 'rating8_5', 'rat8', false, true)
-                    +number-rate__name-price-rating-reviews('350', '5 000₽', '77', '', 'img/.number-rate__img-9.png', 'number-rate__rating-9')
+                    +number-rate__name-price-rating-reviews('350', '5 000₽', '77', '', 'img/.number-rate__img-9.jpg', 'number-rate__rating-9')
                     +rating-group-number('rating9_1', 'rating9_1', 'rat9', 'rating9_2', 'rating9_2', 'rat9', 'rating9_3', 'rating9_3', 'rat9', 'rating9_4', 'rating9_4', 'rat9', 'rating9_5', 'rating9_5', 'rat9', true)
-                    +number-rate__name-price-rating-reviews('666', '5 000₽', '25', '', 'img/.number-rate__img-10.png', 'number-rate__rating-10')
+                    +number-rate__name-price-rating-reviews('666', '5 000₽', '25', '', 'img/.number-rate__img-10.jpg', 'number-rate__rating-10')
                     +rating-group-number('rating10_1', 'rating10_1', 'rat10', 'rating10_2', 'rating10_2', 'rat10', 'rating10_3', 'rating10_3', 'rat10', 'rating10_4', 'rating10_4', 'rat10', 'rating10_5', 'rating10_5', 'rat10')
-                    +number-rate__name-price-rating-reviews('444', '5 000₽', '15', '', 'img/.number-rate__img-11.png', 'number-rate__rating-11')
+                    +number-rate__name-price-rating-reviews('444', '5 000₽', '15', '', 'img/.number-rate__img-11.jpg', 'number-rate__rating-11')
                     +rating-group-number('rating11_1', 'rating11_1', 'rat11', 'rating11_2', 'rating11_2', 'rat11', 'rating11_3', 'rating11_3', 'rat11', 'rating11_4', 'rating11_4', 'rat11', 'rating11_5', 'rating11_5', 'rat11', true)
-                    +number-rate__name-price-rating-reviews('352', '5 000₽', '55', '', 'img/.number-rate__img-12.png', 'number-rate__rating-12')
+                    +number-rate__name-price-rating-reviews('352', '5 000₽', '55', '', 'img/.number-rate__img-12.jpg', 'number-rate__rating-12')
                     +rating-group-number('rating12_1', 'rating12_1', 'rat12', 'rating12_2', 'rating12_2', 'rat12', 'rating12_3', 'rating12_3', 'rat12', 'rating12_4', 'rating12_4', 'rat12', 'rating12_5', 'rating12_5', 'rat12', true)
                 .search-room__room-list-pagination
                     include blocks/_commons/pagination/pagination.pug

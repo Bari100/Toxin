@@ -2,15 +2,15 @@
     .info-impressions
         .reviews-room__info.reviews-room__space
             h2.reviews-room__title Сведения о номере
-            img.reviews-room__info-emoticon(src='img/reviews-room__info/emoticon.png' alt='emoticon')
+            img.reviews-room__info-emoticon(src="img/reviews-room__info/emoticon.jpg" alt="smile")
             p.reviews-room__info-text-b Комфорт
             p.reviews-room__info-text Шумопоглощающие стены
             hr.reviews-room__info-line
-            img.reviews-room__info-city(src='img/reviews-room__info/city.png' alt='city')
+            img.reviews-room__info-city(src="img/reviews-room__info/city.jpg" alt="building")
             p.reviews-room__info-text-b Удобство
             p.reviews-room__info-text Окно в каждой из спален
             hr.reviews-room__info-line
-            img.reviews-room__info-shot(src='img/reviews-room__info/shot.png' alt='shot')
+            img.reviews-room__info-shot(src="img/reviews-room__info/shot.jpg" alt="shot")
             p.reviews-room__info-text-b Уют
             p.reviews-room__info-text Номер оснащён камином
         .reviews-room__impressions.reviews-room__space
@@ -26,7 +26,7 @@
         h2.reviews-room__title Отзывы посетителей номера <span class="reviews-room__title-num">2 отзыва
         .reviews-room__comment
             .reviews-room__comment-images-1
-                img.reviews-room__comment-avatar(src='img/reviews-room__comment/avatar.png' alt='avatar')
+                img.reviews-room__comment-avatar(src="img/reviews-room__comment/avatar.jpg" alt="avatar")
                 button(type="button").reviews-room__comment-like.reviews-room__active-like
                     .reviews-room__comment-img.reviews-room__comment-img-like
                     span.reviews-room__like-number.reviews-room__active-like 12
@@ -35,34 +35,34 @@
                 p.reviews-room__comment-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
         .reviews-room__comment
             .reviews-room__comment-images-2
-                img.reviews-room__comment-avatar(src='img/reviews-room__comment/avatar-2.png' alt='avatar')
+                img.reviews-room__comment-avatar(src="img/reviews-room__comment/avatar-2.jpg" alt="avatar")
                 button(type="button").reviews-room__comment-like
                     .reviews-room__comment-img
                     span.reviews-room__like-number 2
             .reviews-room__comment-name-text
                 p.reviews-room__comment-name Патрисия Стёклышкова <span>Неделю назад
                 p.reviews-room__comment-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
-        script. 
+        script.
             $(".reviews-room__comment-images-1 > .reviews-room__comment-like").click(function() {
-                if  ($(".reviews-room__comment-images-1 > .reviews-room__comment-like").hasClass('reviews-room__active-like') && $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").hasClass('reviews-room__active-like')) {
-                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like").removeClass('reviews-room__active-like');
-                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").removeClass('reviews-room__active-like');
-                    $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass('reviews-room__comment-img-like');
+                if  ($(".reviews-room__comment-images-1 > .reviews-room__comment-like").hasClass("reviews-room__active-like") && $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").hasClass("reviews-room__active-like")) {
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like").removeClass("reviews-room__active-like");
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").removeClass("reviews-room__active-like");
+                    $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass("reviews-room__comment-img-like");
                 } else {
-                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like").addClass('reviews-room__active-like');
-                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").addClass('reviews-room__active-like');
-                    $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass('reviews-room__comment-img-like');
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like").addClass("reviews-room__active-like");
+                    $(".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__like-number").addClass("reviews-room__active-like");
+                    $( ".reviews-room__comment-images-1 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass("reviews-room__comment-img-like");
                 }
             });
             $(".reviews-room__comment-images-2 > .reviews-room__comment-like").click(function() {
-                if  ($(".reviews-room__comment-images-2 > .reviews-room__comment-like").hasClass('reviews-room__active-like') && $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").hasClass('reviews-room__active-like')) {
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").removeClass('reviews-room__active-like');
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").removeClass('reviews-room__active-like');
-                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass('reviews-room__comment-img-like');
+                if  ($(".reviews-room__comment-images-2 > .reviews-room__comment-like").hasClass("reviews-room__active-like") && $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").hasClass("reviews-room__active-like")) {
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").removeClass("reviews-room__active-like");
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").removeClass("reviews-room__active-like");
+                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass("reviews-room__comment-img-like");
                 } else {
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").addClass('reviews-room__active-like');
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").addClass('reviews-room__active-like');
-                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass('reviews-room__comment-img-like');
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").addClass("reviews-room__active-like");
+                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").addClass("reviews-room__active-like");
+                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass("reviews-room__comment-img-like");
                 }
             });
     .reviews-room__rules-cancel
@@ -71,7 +71,7 @@
             ul.reviews-room__rules-list
                 li Нельзя с питомцами
                 li Без вечеринок и мероприятий
-                li Время прибытия — после 13:00, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;а выезд до 12:00
+                li Время прибытия — после 13:00, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;а выезд до 12:00
         .reviews-room__cancel.reviews-room__space
             h2.reviews-room__title Отмена
             p.reviews-room__cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.        
