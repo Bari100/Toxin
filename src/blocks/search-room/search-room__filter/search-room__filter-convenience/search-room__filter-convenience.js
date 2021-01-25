@@ -9,7 +9,7 @@ function getMessageBed() {
 	return objectBed[iBed];
 }
 var objectBedroom = ["1 спальня", "2 спальни", "3 спальни"];
-var convenienceText = document.getElementById('convenience__text');
+var convenienceText = document.querySelector('.convenience__text');
 var convenienceTextBed = document.getElementsByClassName('convenience__text-bed');
 var convenienceTextBathroom = document.getElementsByClassName('convenience__text-bathroom');
 $('.convenience__minus').attr("disabled", true);
@@ -194,8 +194,8 @@ $(function(){
 	function getMessageBedroom() {
 		return objectBedroom[iBedroom];
 	}
-	var convenienceText = document.getElementById('convenience__text');
-	var convenienceA = $('a#convenience__text');
+	var convenienceText = document.querySelector('.convenience__text');
+	var convenienceA = $('a.convenience__text');
 	var convenienceTextSpanBed = convenienceA.find('span.convenience__text-bed');
 	var convenienceTextSpanBathroom = convenienceA.find('span.convenience__text-bathroom');
 

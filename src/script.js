@@ -13,4 +13,8 @@ $(document).ready(function(){
         $(".sign-in-form").show(),
         $(".sign-up-form").hide();
     });
+    $(".sign-in-form__button-act").focus(function(){
+        $(".sign-in-form").hide(),
+        $(".sign-up-form").show();
+    });
 });

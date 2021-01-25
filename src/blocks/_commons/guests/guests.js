@@ -6,7 +6,7 @@ function getMessageBaby() {
 }
 var i = -1;
 var tt = ["1 гость", "2 гостя", "3 гостя", "4 гостя", "5 гостей", "6 гостей", "7 гостей"];
-var guestsText = document.getElementById('guests__text');
+var guestsText = document.querySelector('.guests__text');
 $('.guests__minus').attr("disabled", true);
 
 $(document).ready(function func() {
@@ -196,7 +196,7 @@ $(function(){
 	function getMessage() {
 		return tt[i];
 	}
-	var guestsText = document.getElementById('guests__text');
+	var guestsText = document.querySelector('.guests__text');
 	var a = $('a');
 	var guestsTextSpan = a.find('span.guests__text-baby');
 	
