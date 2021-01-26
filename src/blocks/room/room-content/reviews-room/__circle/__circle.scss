@@ -81,11 +81,14 @@
     color: #BC9CFF;
     position: absolute;
     z-index: 1;
-    bottom: 25px;
+    bottom: 39px;
     text-align: center;
-    span {
-        display: block;
+    .votes-num_num {
         font-size: 22px;
+        letter-spacing: -0.5px;
+    }
+    .votes-word_word {
+        font-size: 16px;
         letter-spacing: -0.5px;
     }
 }

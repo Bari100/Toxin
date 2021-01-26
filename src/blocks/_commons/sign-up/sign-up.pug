@@ -2,19 +2,19 @@ form.sign-up-form
     .sign-up-form__container
         h2 Регистрация аккаунта
         .sign-up-form__name-surname
-            input(type="text" placeholder="Имя" name="name" required)
+            input(type="text" placeholder="Имя" name="name" autofocus required)
             input(type="text" placeholder="Фамилия" name="surname" required)
         .sign-up-form__sex
             .sign-up-form__male
                 label
                     input(type="radio" name="sex" value="male")
                     span.sign-up-form__fake-radio
-                    span.sign-up-form__span-male-female Мужчина
+                    p.sign-up-form__span-male-female Мужчина
             .sign-up-form__female
                 label
                     input(type="radio" name="sex" value="female")
                     span.sign-up-form__fake-radio
-                    span.sign-up-form__span-male-female Женщина
+                    p.sign-up-form__span-male-female Женщина
         .sign-up-form__date
             h3 дата рождения
             input(type="date" name="date" required)

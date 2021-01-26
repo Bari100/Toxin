@@ -27,20 +27,22 @@
         .reviews-room__comment
             .reviews-room__comment-images-1
                 img.reviews-room__comment-avatar(src="img/reviews-room__comment/avatar.png" alt="avatar")
-                button(type="button").reviews-room__comment-like.reviews-room__active-like
+                .reviews-room__comment-like.reviews-room__active-like
                     .reviews-room__comment-img.reviews-room__comment-img-like
                     span.reviews-room__like-number.reviews-room__active-like 12
             .reviews-room__comment-name-text    
-                p.reviews-room__comment-name Мурад Сарафанов <span>5 дней назад
+                p.reviews-room__comment-name Мурад Сарафанов 
+                p.reviews-room__comment-days 5 дней назад
                 p.reviews-room__comment-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
         .reviews-room__comment
             .reviews-room__comment-images-2
                 img.reviews-room__comment-avatar(src="img/reviews-room__comment/avatar-2.png" alt="avatar")
-                button(type="button").reviews-room__comment-like
+                .reviews-room__comment-like
                     .reviews-room__comment-img
                     span.reviews-room__like-number 2
             .reviews-room__comment-name-text
-                p.reviews-room__comment-name Патрисия Стёклышкова <span>Неделю назад
+                p.reviews-room__comment-name Патрисия Стёклышкова 
+                p.reviews-room__comment-days Неделю назад
                 p.reviews-room__comment-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
         script.
             $(".reviews-room__comment-images-1 > .reviews-room__comment-like").click(function() {
