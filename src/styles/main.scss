@@ -44,19 +44,27 @@ body {
     background-size: 106%;
     height: 760px;
     padding-top: 70px;
-    position: relative;
+    // position: relative;
+    min-height: calc(100vh - 620px);
 }
 
 .content__text {
-    max-width: 297px;
+    // max-width: 297px;
+    max-width: 1060px;
     text-align: right;
     line-height: 23px;
     margin-bottom: 7px;
-    position: absolute;
     bottom: 15px;
     right: 133px;
+    height: 360px;
+    // background-color: bisque;
     .content__text-string {
+        display: inline-block;
+        margin-top: 320px;
         color: rgba(31, 32, 65, 0.75);
+        width: 310px;
+        position: relative;
+        left: 105px;
     }
 }
 
@@ -109,13 +117,16 @@ body {
                 margin: 0 auto;
             }
         }
+        .content__text {
+            margin-right: 150px;
+        }
     }
     .content {
         background-size: 1530px;
         background-position: 50% -128px;
     }
 }
-@media (max-width: 554px) {
+@media (max-width: 577px) {
     body {
         min-width: 400px;//НЕ ПОЗВОЛЯЕТ ПОЯВИТЬСЯ ПРОКРУТКЕ И ДАЕТ СУЖАТЬСЯ СТРАНИЦЕ
     }

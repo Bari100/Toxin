@@ -37,10 +37,13 @@
         }
         .header__sign {
             display: flex;
+            margin: 0;
             .sign-in {
+                margin-top: 1em;
                 margin-left: 5px;
             }
             .sign-up {
+                margin-top: 1em;
                 margin-left: 18px;
             }
             @import '../button/.button';
@@ -49,7 +52,7 @@
                 width: 30px;
                 height: 30px;
                 align-items: center;
-                margin-top: -6px;
+                margin-top: 0.5em;
                 border: none;
                 background-color: transparent;
                 &:focus {

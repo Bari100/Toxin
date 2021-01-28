@@ -14,11 +14,11 @@
     .reservation__name-price {
         display: flex;
         justify-content: space-between;
-        margin-top: -3px;
         .reservation__name-number {
             font-weight: 800;
             font-size: 14px;
             color: #1F2041;
+            margin-top: 10px;
             .reservation__name {
                 font-size: 16px;
             }
@@ -32,6 +32,7 @@
     .reservation__price {
         font-weight: 800;
         color: rgba(31, 32, 65, 0.5);
+        margin-top: 10px;
     }
     .reservation__price-24 {
         font-weight: 400;
