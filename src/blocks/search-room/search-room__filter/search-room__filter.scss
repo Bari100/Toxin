@@ -42,8 +42,6 @@
 }
 .search-room__filter-titles-convenience-additional {
     margin-top: 2px;
-    margin-left: -10px;
-    margin-bottom: -1px;
 }
 .search-room__title-input-price {
     display: flex;
@@ -55,6 +53,9 @@
 }
 .search-room__filter-checkbox {
     margin-bottom: 20px;
+    .search-room__filter-fake-checkbox {
+        margin-left: 12px;
+    }
     .search-room__filter-span-checkbox:nth-child(3) {
         width: 200px;
     }
@@ -69,6 +70,7 @@
 .search-room__filter-checkbox, .search-room__filter-accessibility, .search-room__filter-convenience-additional {
     input {
         opacity: 0;
+        position: absolute;
     }
     .search-room__filter-fake-checkbox {
         width: 20px;
@@ -78,7 +80,7 @@
         float: left;
         position: relative;
         left: -13px;
-        margin-right: -2px;
+        // margin-right: -2px;
     }
     .search-room__filter-fake-checkbox:before {
         content: '';
@@ -111,6 +113,7 @@
     .search-room__filter-span-accessibility {
         font-weight: 800;
         color: rgba(31, 32, 65, 0.75);
+        margin-left: 10px;
     }
     .search-room__filter-clarification-accessibility {
         margin-left: 30px;

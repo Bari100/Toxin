@@ -3,8 +3,10 @@
     justify-content: center;
     width: 100%;
     background-repeat: no-repeat;
+    // .sign-up-form {
+    //     padding-bottom: 30px;
+    // }
     .sign-up-form, .sign-in-form {
-        margin-top: 19px;
         background-color: #fff;
         border: 1px solid rgba(0, 0, 0, 0.12);
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -42,7 +44,6 @@
 
 .sign-up-form, .sign-in-form {
     width: 380px;
-    height: 646px;
     padding: 23px 20px 20px 30px;
     box-sizing: border-box;
     h2, h3 {
@@ -52,6 +53,7 @@
     h2 {
         font-size: 23px;
         margin-bottom: 21px;
+        margin-top: 17px;
     }
 
     h3 {
@@ -75,6 +77,9 @@
         input:hover, input:focus {
             border: 1px solid rgba(31, 32, 65, 0.5);
         }
+    }
+    .sign-up-form__sex {
+        margin-bottom: 25px;
     }
     .sign-up-form__sex, .sign-up-form__male, .sign-up-form__female, .sign-up-form__sign-in {
         display: flex;
@@ -117,11 +122,8 @@
                 color: rgba(31, 32, 65, 0.75);
             }
             .sign-up-form__span-male-female {
-                // margin-left: 30px;
-                margin-right: 18px;
-                // margin-top: -21px;
+                margin-right: 20px;
                 margin-top: 0;
-                // margin-bottom: 15px;
             }
         }
     }
@@ -150,7 +152,6 @@
             border-radius: 10px;
             position: relative;
             top: -1px;
-            margin-right: -2px;
         }
         .sign-up-form__fake-checkbox:before {
             content: '';
@@ -175,6 +176,9 @@
         .sign-up-form__span-checkbox {
             color: rgba(31, 32, 65, 0.75);
         }
+    }
+    .sign-up-form__sign-in {
+        margin-bottom: 10px;
     }
     .sign-up-form__sign-in, .sign-in-form__sign-up {
         display: flex;

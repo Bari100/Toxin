@@ -7,6 +7,7 @@
     border-radius: 4px;
     color: #1F2041;
     display: inline-block; //ПОЗВОЛЯЕТ КОНТЕЙНЕРУ РАСШИРЯТЬСЯ В ЗАВИСИМОСТИ ОТ СОДЕРЖИМОГО
+    position: absolute;
     .main-search__title {
         font-family: 'Open Sans';
         font-size: 24px;

@@ -1,6 +1,6 @@
 form.sign-up-form
     .sign-up-form__container
-        h2 Регистрация аккаунта
+        h2.sign-up-form__main-header Регистрация аккаунта
         .sign-up-form__name-surname
             input(type="text" placeholder="Имя" name="name" autofocus required)
             input(type="text" placeholder="Фамилия" name="surname" required)
@@ -16,10 +16,10 @@ form.sign-up-form
                     span.sign-up-form__fake-radio
                     span.sign-up-form__span-male-female Женщина
         .sign-up-form__date
-            h3 дата рождения
+            h3.sign-up-form__header дата рождения
             input(type="date" name="date" required)
         .sign-up-form__email-pass
-            h3 данные для входа в сервис
+            h3.sign-up-form__header данные для входа в сервис
             input(type="email" placeholder="Email" name="email" required)
             input(type="password" placeholder="Пароль" name="password" required)
         .sign-up-form__checkbox
@@ -30,5 +30,5 @@ form.sign-up-form
         button.button.button-color.sign-up-form__button-pay перейти к оплате
             img.sign-up-form__button-pay-img(src="img/arrow_forward-white.svg" alt="button")
         .sign-up-form__sign-in
-            p Уже есть аккаунт на Toxin
+            p.sign-up-form_already-has Уже есть аккаунт на Toxin
             a(href="index.pug").button.sign-up-form__button-act ВОЙТИ
