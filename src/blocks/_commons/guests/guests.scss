@@ -73,7 +73,7 @@
 	.guests__circle {
 		cursor: pointer;
 		width: 28px;
-		height: 28px;
+		padding: 14px 0;
 		border-radius: 22px;
 		background-color: transparent;
 		border: 1px solid rgba(31, 32, 65, 0.25);
@@ -150,15 +150,6 @@ $gray: #EEE;
 //	Classes dropdown
 // =============================================================================
 
-// .title {
-//   font-family: 'Pacifico';
-//   font-weight: norma;
-//   font-size: 40px;
-//   text-align: center;
-//   line-height: 1.4;
-//   color: $blue;
-// }
-
 .guests__dropdown {
 	a {
 		text-decoration: none;
@@ -173,8 +164,7 @@ $gray: #EEE;
 		border: 1px solid rgba(31, 32, 65, 0.25);
 		border-radius: 4px;
 		width: 266px;
-		height: 44px;
-		padding: 13.8px 10px 10px 14px;
+		padding: 13.5px 10px 14px;
 		text-transform: none;
 	}
 	.icon-arrow {
@@ -216,7 +206,6 @@ $gray: #EEE;
 	}
 
 	.hide {
-		// max-height: 0;
 		display: none;
 	}
 }
@@ -235,7 +224,7 @@ $gray: #EEE;
 	cursor: pointer;
 	border-radius: 4px;
 	align-items: center;
-	height: 0; }
+	}
 	.guests__button[data-action='clear'] {
 	  color: rgba(31, 32, 65, 0.5);
 	}

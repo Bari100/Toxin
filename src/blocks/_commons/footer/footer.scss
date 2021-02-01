@@ -188,19 +188,16 @@
         .btn-tw {
             background-position: -1px 10px;
             width: 24px;
-            height: 34px;
         }
         
         .btn-fb {
             background-position: -45px 10px;
             width: 24px;
-            height: 34px;
         }
         
         .btn-inst {
             background-position: -89px 10px;
             width: 24px;
-            height: 34px;
         }
     }
 }
@@ -297,12 +294,12 @@
             }
             img {
                 width: 80px;
-                height: 80px;
+                margin-top: 26px;
                 margin-bottom: 0;
             }
             .text__footer {
                 width: 560px;
-                height: 80px;
+                margin-bottom: 45px;
                 text-align: right;
                 font-size: 11px;
                 text-align: center;
@@ -329,9 +326,14 @@
             .text__footer {
                 width: 83vw;
                 margin-left: 55px;
+                margin-bottom: 25px;
             }
             .logo__footer {
                 margin: 0 auto;
+                margin-bottom: 25px;
+                img {
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -343,10 +345,12 @@
     }
     .top__footer .footer__nav .column-5__footer .column-5__footer-width {
         width: 38vw;
+        img {
+            margin-top: 5px;
+        }
     }
     .top__footer .footer__nav .column-5__footer li input {
         width: 38vw;
-        height: 25px;
     }
     .top__footer .footer__nav .column-5__footer .column-5__footer-width button {
         right: -3.5rem;

@@ -58,6 +58,7 @@
     }
     .search-room__filter-span-checkbox:nth-child(3) {
         width: 200px;
+        margin-left: 10px;
     }
 }
 .search-room__filter-checkbox, .search-room__filter-convenience-additional {
@@ -79,8 +80,7 @@
         border-radius: 4px;
         float: left;
         position: relative;
-        left: -13px;
-        // margin-right: -2px;
+        margin-left: 0;
     }
     .search-room__filter-fake-checkbox:before {
         content: '';

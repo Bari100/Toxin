@@ -29,19 +29,19 @@
                 letter-spacing: 0.3px;
             }
         }
-        .main-search__input-fake-split {
-            position: absolute;
-            width: 22px;
-            height: 44px;
-            background-color: transparent;
-            bottom: 0;
-            left: 150px;
-            z-index: 2;
-        }
+        // .main-search__input-fake-split {
+        //     position: absolute;
+        //     width: 22px;
+        //     height: 44px;
+        //     background-color: transparent;
+        //     bottom: 0;
+        //     left: 150px;
+        //     z-index: 2;
+        // }
         .main-search__input-fake-split-left {
             position: absolute;
             width: 150px;
-            height: 44px;
+            padding-top: 42px;
             background-color: transparent;
             bottom: 0;
             left: 0;
@@ -52,7 +52,7 @@
         .main-search__input-fake-split-right {
             position: absolute;
             width: 150px;
-            height: 44px;
+            padding-top: 42px;
             background-color: transparent;
             bottom: 0;
             left: 171px;
@@ -74,7 +74,6 @@
     }
     .datepicker-here {
         width: 320px;
-        height: 44px;
         box-sizing: border-box;
         border: none;
         background-color: transparent;
@@ -85,7 +84,7 @@
     }
     .main-search__button {
         width: 320px;
-        height: 44px;
+        padding: 13.5px 0;
         outline: none;
         cursor: pointer;
         margin-top: 11px;

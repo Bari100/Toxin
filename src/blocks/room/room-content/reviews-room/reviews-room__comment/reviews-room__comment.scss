@@ -58,7 +58,6 @@
         background-image: url(../img/reviews-room__comment/like.svg);
     }
     .reviews-room__comment-images-1, .reviews-room__comment-images-2 {
-        //background-color: antiquewhite;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -67,8 +66,6 @@
         position: relative;
         width: 47.67px;
         height: 80px;
-        //align-items: center;
- 
     }
     .reviews-room__comment-name {
         font-weight: 800;

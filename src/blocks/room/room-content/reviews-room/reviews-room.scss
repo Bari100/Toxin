@@ -37,10 +37,7 @@
             position: relative;
         }
         .reservation__container {
-            // position: absolute;
-            // left: 400px;
-            // top: 200px;
-            position: relative; //при absolut .reservation__container не увеличивается при открытии dropdown
+            position: relative; //при absolute .reservation__container не увеличивается при открытии dropdown
             right: 350px;
             top: 200px;
             width: 370px;
