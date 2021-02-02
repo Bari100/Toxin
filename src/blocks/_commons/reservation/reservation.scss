@@ -52,19 +52,19 @@
                 margin-top: 9px;
             }
         }
-        .reservation__input-fake-split {
-            position: absolute;
-            width: 22px;
-            height: 44px;
-            background-color: transparent;
-            bottom: 0;
-            left: 150px;
-            z-index: 2;
-        }
+        // .reservation__input-fake-split {
+        //     position: absolute;
+        //     width: 22px;
+        //     height: 44px;
+        //     background-color: transparent;
+        //     bottom: 0;
+        //     left: 150px;
+        //     z-index: 2;
+        // }
         .reservation__input-fake-split-left {
             position: absolute;
             width: 150px;
-            height: 44px;
+            padding-top: 42px;
             background-color: transparent;
             bottom: 0;
             left: 0;
@@ -75,7 +75,7 @@
         .reservation__input-fake-split-right {
             position: absolute;
             width: 150px;
-            height: 44px;
+            padding-top: 42px;
             background-color: transparent;
             bottom: 0;
             left: 171px;
@@ -97,7 +97,6 @@
     }
     .datepicker-here {
         width: 320px;
-        height: 44px;
         box-sizing: border-box;
         border: none;
         background-color: transparent;
@@ -131,7 +130,6 @@
     .reservation__calculate-services-sale-ellipse, .reservation__calculate-add-services-txt-ellipse {
         display: inline-block;
         width: 20px;
-        height: 20px;
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 50%;
         box-sizing: border-box;
@@ -140,6 +138,7 @@
         top: -2px;
         padding-left: 7px;
         padding-top: 1px;
+        padding-bottom: 1px;
     }
     .reservation__calculate-sum {
         color: #1F2041;
@@ -162,7 +161,7 @@
     }
     .reservation__button {
         width: 320px;
-        height: 44px;
+        padding: 13.5px 0;
         outline: none;
         cursor: pointer;
         margin-top: 11px;

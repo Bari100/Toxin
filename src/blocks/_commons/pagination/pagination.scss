@@ -16,10 +16,9 @@
     text-align: center;
     vertical-align: middle;
     width: 40px;
-    height: 40px;
+    padding: 13.5px 0;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
-    padding-top: 13px;
     box-sizing: border-box;
     color: #fff;
     font-weight: 800;
@@ -30,7 +29,6 @@
     color: rgba(31, 32, 65, 0.5);
     display: inline-block;
     width: 25px;
-    height: 20px;
     text-align: center;
     padding-top: 5px;
 }
@@ -39,7 +37,6 @@
     color: rgba(31, 32, 65, 0.5);
     display: inline-block;
     width: 25px;
-    height: 20px;
     text-align: center;
     padding-top: 5px;
 }
@@ -52,14 +49,13 @@
     color: rgba(31, 32, 65, 0.5);
     display: inline-block;
     width: 25px;
-    height: 20px;
     text-align: center;
     padding-top: 5px;
 }
 .pagination__next {
     display: inline-block;
     width: 40px;
-    height: 40px;
+    padding: 20px 0;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     border-radius: 22px;
     vertical-align: middle;
