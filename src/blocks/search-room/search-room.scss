@@ -24,342 +24,302 @@
         }
     }
     .search-room-room-list__rooms {
-        position: relative;
+        // position: relative;
         display: grid;
-        grid-template-rows: 8px 8px 8px;
-        grid-template-columns: 12px 12px 12px;
-        grid-gap: 270px;
-        margin-top: 22px;
-        // .full-stars:nth-child(2) {
-        //     position: absolute;
-        //     top: 216px;
-        //     left: 22px;
-        // }
-        // .full-stars:nth-child(4) {
-        //     // position: absolute;
-        //     top: 216px;
-        //     left: 304px;
-        // }
-        // .full-stars:nth-child(6) {
-        //     position: absolute;
-        //     top: 216px;
-        //     left: 586px;
-        // }
-        // .full-stars:nth-child(8) {
-        //     position: absolute;
-        //     top: 493px;
-        //     left: 22px;
-        // }
-        // .full-stars:nth-child(10) {
-        //     position: absolute;
-        //     top: 493px;
-        //     left: 304px;
-        // }
-        // .full-stars:nth-child(12) {
-        //     position: absolute;
-        //     top: 493px;
-        //     left: 586px;
-        // }
-        // .full-stars:nth-child(14) {
-        //     position: absolute;
-        //     top: 771px;
-        //     left: 22px;
-        // }
-        // .full-stars:nth-child(16) {
-        //     position: absolute;
-        //     top: 771px;
-        //     left: 304px;
-        // }
-        // .full-stars:nth-child(18) {
-        //     position: absolute;
-        //     top: 771px;
-        //     left: 586px;
-        // }
-        // .full-stars:nth-child(20) {
-        //     position: absolute;
-        //     top: 1049px;
-        //     left: 22px;
-        // }
-        // .full-stars:nth-child(22) {
-        //     position: absolute;
-        //     top: 1049px;
-        //     left: 304px;
-        // }
-        // .full-stars:nth-child(27) {
-        //     position: absolute;
-        //     top: 1049px;
-        //     left: 586px;
-        // }
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-columns: repeat(3, 12px);
+        // grid-template-columns: repeat(auto-fit, minmax(12px, 1fr));
+        // grid-template-rows: repeat(3, 8px);
+        grid-gap: 1rem;
+        // grid-auto-flow: dense;
+        // margin-top: 22px;
     }
+    // .search-room-room-list__rooms > .number-rate-container:nth-child(4n) {
+    //     grid-column: span 2; /* Spans two columns */
+    //     grid-row: span 2; /* Spans two rows */
+    // }
+    // .search-room-room-list__rooms > .number-rate-container:nth-child(8n) {
+    //     grid-column: span 3;
+    //     grid-row: span 3;
+    // }
+    // .number-rate__img {
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    // }
 }
-@media(max-width: 1240px) {
-    .search-room {
-        .search-room__filter {
-            margin-right: 20px;
-        }
-        .search-room-room-list__rooms {
-            grid-template-rows: 8px 8px 8px 8px;
-            grid-template-columns: 12px 12px 12px;
-            grid-gap: 20vw;
-        }
-    }
-    .number-rate-container {
-        width: 225px;
-        .number-rate__photo-slider {
-            width: 225px;
-            margin-bottom: 0;
-        }
-        .number-rate__img {
-            width: 225px;
-        }
-        .number-rate__name-price-rating-reviews {
-            width: 220px;
-            .number-rate__line {
-                width: 220px;
-            }
-        }
-    }
-    .search-room__room-list-text {
-        width: 50vw;
-    }
-    .search-room__room-list {
-        min-width: 550px;
-        margin: 0 auto;
-        .search-room-room-list__rooms {
-            margin-bottom: 250px;
-        }
-    }
-}
+// @media(max-width: 1240px) {
+//     .search-room {
+//         .search-room__filter {
+//             margin-right: 20px;
+//         }
+//         .search-room-room-list__rooms {
+//             grid-template-rows: 8px 8px 8px 8px 8px;
+//             grid-template-columns: 12px 12px;
+//             // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+//         }
+//     }
+//     .number-rate-container {
+//         width: 225px;
+//         .number-rate__photo-slider {
+//             width: 355px;
+//             margin-bottom: 0;
+//             img{
+//                 width: 225px;
+//             }
+//         }
+//         .number-rate__img {
+//             width: 225px;
+//         }
+//         .number-rate__name-price-rating-reviews {
+//             width: 220px;
+//             .number-rate__line {
+//                 width: 220px;
+//             }
+//         }
+//     }
+//     .search-room__room-list-text {
+//         width: 50vw;
+//     }
+//     .search-room__room-list {
+//         min-width: 550px;
+//         margin: 0 auto;
+//         .search-room-room-list__rooms {
+//             margin-bottom: 250px;
+//         }
+//     }
+// }
 
-@media(max-width: 1069px) {
-    .search-room {
-        padding-left: 30px;
-        .search-room__filter {
-            margin-top: 62px;
-            margin-right: 4px;
-        }
-        .search-room-room-list__rooms {
-            grid-template-rows: 8px 8px 8px 8px;
-            grid-template-columns: 12px 12px 12px;
-            grid-gap: 21vw;
-        }
-    }
-    .number-rate-container {
-        width: 205px;
-        height: 213px;
-        .number-rate__photo-slider {
-            width: 205px;
-            margin-bottom: 0;
-            height: 123px;
-            .number-rate__btn-previous, .number-rate__btn-next {
-                height: 115px;
-            }
-        }
-        .number-rate__img {
-            width: 205px;
-        }
-        .number-rate__name-price-rating-reviews {
-            width: 210px;
-            .number-rate__line {
-                width: 200px;
-            }
-        }
-    }
-    .search-room__room-list-text {
-        width: 55vw;
-    }
-    .search-room__room-list {
-        min-width: 550px;
-        margin: 0 auto;
-    }
-}
+// @media(max-width: 1069px) {
+//     .search-room {
+//         padding-left: 30px;
+//         .search-room__filter {
+//             margin-top: 62px;
+//             margin-right: 4px;
+//         }
+//         .search-room-room-list__rooms {
+//             grid-template-rows: 8px 8px 8px 8px;
+//             grid-template-columns: 12px 12px 12px;
+//             grid-gap: 21vw;
+//         }
+//     }
+//     .number-rate-container {
+//         width: 205px;
+//         height: 213px;
+//         .number-rate__photo-slider {
+//             width: 205px;
+//             margin-bottom: 0;
+//             height: 123px;
+//             .number-rate__btn-previous, .number-rate__btn-next {
+//                 height: 115px;
+//             }
+//         }
+//         .number-rate__img {
+//             width: 205px;
+//         }
+//         .number-rate__name-price-rating-reviews {
+//             width: 210px;
+//             .number-rate__line {
+//                 width: 200px;
+//             }
+//         }
+//     }
+//     .search-room__room-list-text {
+//         width: 55vw;
+//     }
+//     .search-room__room-list {
+//         min-width: 550px;
+//         margin: 0 auto;
+//     }
+// }
 
-@media(max-width: 935px) {
-    .search-room {
-        .search-room__filter {
-            margin-top: 90px;
-            margin-right: 50px;
-        }
-        .search-room-room-list__rooms {
-            grid-template-rows: 8px 8px 8px 8px 8px;
-            grid-template-columns: 12px 12px;
-            grid-gap: 26vw;
-        }
-        .search-room__room-list {
-            min-width: 550px;
-            margin: 0 auto;
-            .search-room-room-list__rooms {
-                margin-bottom: 0;
-            }
-            .search-room__room-list-pagination {
-                padding: 0 120px;
-            }
-        }
-    }
-    .number-rate-container {
-        width: 225px;
-        height: 213px;
-        .number-rate__photo-slider {
-            width: 225px;
-            margin-bottom: 0;
-            height: 123px;
-            .number-rate__btn-previous, .number-rate__btn-next {
-                height: 126px;
-            }
-        }
-        .number-rate__img {
-            width: 225px;
-        }
-        .number-rate__name-price-rating-reviews {
-            width: 220px;
-            .number-rate__line {
-                width: 220px;
-            }
-        }
-    }
-    .search-room__room-list-text {
-        width: 50vw;
-    }
-}
-@media(max-width: 806px) {
-    .search-room {
-        width: 135vw;
-        padding-right: 0;
-        justify-content: space-between;
-        .search-room__filter {
-            margin-right: 80px;
-        }
-        .search-room-room-list__rooms {
-            grid-template-rows: 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px;
-            grid-template-columns: 12px;
-            grid-gap: 250px;
-        }
-        .search-room__room-list {
-            .search-room__room-list-text {
-                width: 270px;
-                font-size: 3vw;
-            }
-            .search-room__room-list-pagination {
-                padding: 0 20px;
-            }
-        }
-    }
-    .number-rate-container {
-        width: 270px;
-        height: 257px;
-        .number-rate__photo-slider {
-            width: 270px;
-            margin-bottom: 10px;
-            height: 151px;
-            .number-rate__btn-previous, .number-rate__btn-next {
-                height: 151px;
-            }
-        }
-        .number-rate__img {
-            width: 270px;
-        }
-        .number-rate__name-price-rating-reviews {
-            width: 220px;
-            .number-rate__line {
-                width: 220px;
-            }
-        }
-    }
-}
-@media(max-width: 680px) {
-    .search-room {
-        .search-room__filter {
-            margin-right: 40px;
-        }
-    }
-}
-@media(max-width: 630px) {
-    .search-room {
-        .search-room__filter {
-            margin-right: 30px;
-        }
-        .search-room-room-list__rooms {
-            grid-template-rows: 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px;
-            grid-template-columns: 12px;
-            grid-gap: 220px;
-        }
-        .search-room__room-list {
-            .search-room__room-list-pagination {
-                padding: 0;
-            }
-        }
-    }
-    .number-rate-container {
-        width: 225px;
-        height: 213px;
-        .number-rate__photo-slider {
-            width: 225px;
-            margin-bottom: 0;
-            .number-rate__btn-previous, .number-rate__btn-next {
-                height: 126px;
-            }
-        }
-        .number-rate__img {
-            width: 225px;
-        }
-        .number-rate__name-price-rating-reviews {
-            width: 220px;
-            .number-rate__line {
-                width: 220px;
-            }
-        }
-    }
-    .wrap {
-        padding-left: 5%;
-    }
-}
-@media(max-width: 568px) {
-    .search-room {
-        padding-left: 10px;
-        .search-room__filter {
-            margin-right: 10px;
-        }
-    }
-}
-@media(max-width: 522px) {
-    .search-room {
-        // display: flex;
-        // flex-wrap: wrap; //позволяет флексам занять несколько строк при сужении страницы. удобно т.к. 'flex-direction: column' почему-то не позволяет разместить элементы по середине страницы
-        display: block;//не замечено разницы с верхними двумя строками
-        margin: 0 auto;
-        width: 280px;
-        .search-room__filter {
-            margin-top: 10px;
-        }
-        .number-rate-container {
-            width: 270px;
-            height: 250px;
-            .number-rate__photo-slider {
-                width: 270px;
-                height: 158px;
-                margin-bottom: 0;
-                .number-rate__btn-previous, .number-rate__btn-next {
-                    height: 151px;
-                }
-            }
-            .number-rate__img {
-                width: 270px;
-            }
-            .number-rate__name-price-rating-reviews {
-                width: 227px;
-                .number-rate__line {
-                    width: 227px;
-                }
-            }
-        }
-        .search-room-room-list__rooms {
-            grid-gap: 250px;
-        }
-        .search-room__room-list {
-            .search-room__room-list-pagination {
-                padding: 0;
-                margin-left: 15px;
-            }
-        }
-    }
-}
+// @media(max-width: 935px) {
+//     .search-room {
+//         .search-room__filter {
+//             margin-top: 90px;
+//             margin-right: 50px;
+//         }
+//         .search-room-room-list__rooms {
+//             grid-template-rows: 8px 8px 8px 8px 8px;
+//             grid-template-columns: 12px 12px;
+//             grid-gap: 26vw;
+//         }
+//         .search-room__room-list {
+//             min-width: 550px;
+//             margin: 0 auto;
+//             .search-room-room-list__rooms {
+//                 margin-bottom: 0;
+//             }
+//             .search-room__room-list-pagination {
+//                 padding: 0 120px;
+//             }
+//         }
+//     }
+//     .number-rate-container {
+//         width: 225px;
+//         height: 213px;
+//         .number-rate__photo-slider {
+//             width: 225px;
+//             margin-bottom: 0;
+//             height: 123px;
+//             .number-rate__btn-previous, .number-rate__btn-next {
+//                 height: 126px;
+//             }
+//         }
+//         .number-rate__img {
+//             width: 225px;
+//         }
+//         .number-rate__name-price-rating-reviews {
+//             width: 220px;
+//             .number-rate__line {
+//                 width: 220px;
+//             }
+//         }
+//     }
+//     .search-room__room-list-text {
+//         width: 50vw;
+//     }
+// }
+// @media(max-width: 806px) {
+//     .search-room {
+//         width: 135vw;
+//         padding-right: 0;
+//         justify-content: space-between;
+//         .search-room__filter {
+//             margin-right: 80px;
+//         }
+//         .search-room-room-list__rooms {
+//             grid-template-rows: 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px;
+//             grid-template-columns: 12px;
+//             grid-gap: 250px;
+//         }
+//         .search-room__room-list {
+//             .search-room__room-list-text {
+//                 width: 270px;
+//                 font-size: 3vw;
+//             }
+//             .search-room__room-list-pagination {
+//                 padding: 0 20px;
+//             }
+//         }
+//     }
+//     .number-rate-container {
+//         width: 270px;
+//         height: 257px;
+//         .number-rate__photo-slider {
+//             width: 270px;
+//             margin-bottom: 10px;
+//             height: 151px;
+//             .number-rate__btn-previous, .number-rate__btn-next {
+//                 height: 151px;
+//             }
+//         }
+//         .number-rate__img {
+//             width: 270px;
+//         }
+//         .number-rate__name-price-rating-reviews {
+//             width: 220px;
+//             .number-rate__line {
+//                 width: 220px;
+//             }
+//         }
+//     }
+// }
+// @media(max-width: 680px) {
+//     .search-room {
+//         .search-room__filter {
+//             margin-right: 40px;
+//         }
+//     }
+// }
+// @media(max-width: 630px) {
+//     .search-room {
+//         .search-room__filter {
+//             margin-right: 30px;
+//         }
+//         .search-room-room-list__rooms {
+//             grid-template-rows: 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px;
+//             grid-template-columns: 12px;
+//             grid-gap: 220px;
+//         }
+//         .search-room__room-list {
+//             .search-room__room-list-pagination {
+//                 padding: 0;
+//             }
+//         }
+//     }
+//     .number-rate-container {
+//         width: 225px;
+//         height: 213px;
+//         .number-rate__photo-slider {
+//             width: 225px;
+//             margin-bottom: 0;
+//             .number-rate__btn-previous, .number-rate__btn-next {
+//                 height: 126px;
+//             }
+//         }
+//         .number-rate__img {
+//             width: 225px;
+//         }
+//         .number-rate__name-price-rating-reviews {
+//             width: 220px;
+//             .number-rate__line {
+//                 width: 220px;
+//             }
+//         }
+//     }
+//     .wrap {
+//         padding-left: 5%;
+//     }
+// }
+// @media(max-width: 568px) {
+//     .search-room {
+//         padding-left: 10px;
+//         .search-room__filter {
+//             margin-right: 10px;
+//         }
+//     }
+// }
+// @media(max-width: 522px) {
+//     .search-room {
+//         // display: flex;
+//         // flex-wrap: wrap; //позволяет флексам занять несколько строк при сужении страницы. удобно т.к. 'flex-direction: column' почему-то не позволяет разместить элементы по середине страницы
+//         display: block;//не замечено разницы с верхними двумя строками
+//         margin: 0 auto;
+//         width: 280px;
+//         .search-room__filter {
+//             margin-top: 10px;
+//         }
+//         .number-rate-container {
+//             width: 270px;
+//             height: 250px;
+//             .number-rate__photo-slider {
+//                 width: 270px;
+//                 height: 158px;
+//                 margin-bottom: 0;
+//                 .number-rate__btn-previous, .number-rate__btn-next {
+//                     height: 151px;
+//                 }
+//             }
+//             .number-rate__img {
+//                 width: 270px;
+//             }
+//             .number-rate__name-price-rating-reviews {
+//                 width: 227px;
+//                 .number-rate__line {
+//                     width: 227px;
+//                 }
+//             }
+//         }
+//         .search-room-room-list__rooms {
+//             grid-gap: 250px;
+//         }
+//         .search-room__room-list {
+//             .search-room__room-list-pagination {
+//                 padding: 0;
+//                 margin-left: 15px;
+//             }
+//         }
+//     }
+// }
