@@ -24,208 +24,157 @@
         }
     }
     .search-room-room-list__rooms {
-        // position: relative;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        // grid-template-columns: repeat(3, 12px);
-        // grid-template-columns: repeat(auto-fit, minmax(12px, 1fr));
-        // grid-template-rows: repeat(3, 8px);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
-        // grid-auto-flow: dense;
-        // margin-top: 22px;
     }
-    // .search-room-room-list__rooms > .number-rate-container:nth-child(4n) {
-    //     grid-column: span 2; /* Spans two columns */
-    //     grid-row: span 2; /* Spans two rows */
-    // }
-    // .search-room-room-list__rooms > .number-rate-container:nth-child(8n) {
-    //     grid-column: span 3;
-    //     grid-row: span 3;
-    // }
-    // .number-rate__img {
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: cover;
-    // }
 }
-// @media(max-width: 1240px) {
-//     .search-room {
-//         .search-room__filter {
-//             margin-right: 20px;
-//         }
-//         .search-room-room-list__rooms {
-//             grid-template-rows: 8px 8px 8px 8px 8px;
-//             grid-template-columns: 12px 12px;
-//             // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-//         }
-//     }
-//     .number-rate-container {
-//         width: 225px;
-//         .number-rate__photo-slider {
-//             width: 355px;
-//             margin-bottom: 0;
-//             img{
-//                 width: 225px;
-//             }
-//         }
-//         .number-rate__img {
-//             width: 225px;
-//         }
-//         .number-rate__name-price-rating-reviews {
-//             width: 220px;
-//             .number-rate__line {
-//                 width: 220px;
-//             }
-//         }
-//     }
-//     .search-room__room-list-text {
-//         width: 50vw;
-//     }
-//     .search-room__room-list {
-//         min-width: 550px;
-//         margin: 0 auto;
-//         .search-room-room-list__rooms {
-//             margin-bottom: 250px;
-//         }
-//     }
-// }
+@media(max-width: 1240px) {
+    .search-room {
+        .search-room__filter {
+            margin-right: 1.5vw;
+        }
+        .search-room-room-list__rooms {
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.8rem;
+        }
+    }
+    .number-rate-container {
+        width: 100%;
+        height: 243px;
+        .number-rate__photo-slider {
+            width: 100%;
+            margin-bottom: 0;
+            img{
+                width: 100%;
+            }
+        }
+        .number-rate__img {
+            width: 100%;
+        }
+        .number-rate__name-price-rating-reviews {
+            width: 100%;
+            .number-rate__line {
+                width: 100%;
+            }
+        }
+    }
+    .search-room__room-list-text {
+        width: 50vw;
+    }
+    .search-room__room-list {
+        min-width: 75%;
+    }
+}
 
-// @media(max-width: 1069px) {
-//     .search-room {
-//         padding-left: 30px;
-//         .search-room__filter {
-//             margin-top: 62px;
-//             margin-right: 4px;
-//         }
-//         .search-room-room-list__rooms {
-//             grid-template-rows: 8px 8px 8px 8px;
-//             grid-template-columns: 12px 12px 12px;
-//             grid-gap: 21vw;
-//         }
-//     }
-//     .number-rate-container {
-//         width: 205px;
-//         height: 213px;
-//         .number-rate__photo-slider {
-//             width: 205px;
-//             margin-bottom: 0;
-//             height: 123px;
-//             .number-rate__btn-previous, .number-rate__btn-next {
-//                 height: 115px;
-//             }
-//         }
-//         .number-rate__img {
-//             width: 205px;
-//         }
-//         .number-rate__name-price-rating-reviews {
-//             width: 210px;
-//             .number-rate__line {
-//                 width: 200px;
-//             }
-//         }
-//     }
-//     .search-room__room-list-text {
-//         width: 55vw;
-//     }
-//     .search-room__room-list {
-//         min-width: 550px;
-//         margin: 0 auto;
-//     }
-// }
+@media(max-width: 1052px) {
+    .search-room__room-list {
+        min-width: 74%;
+    }
+}
+@media(max-width: 1000px) {
+    .search-room__room-list {
+        min-width: 73%;
+    }
+}
+@media(max-width: 965px) {
+    .search-room__room-list {
+        min-width: 72%;
+    }
+}
+@media(max-width: 930px) {
+    .search-room__room-list {
+        min-width: 70%;
+    }
+}
+@media(max-width: 880px) {
+    .number-rate-container {
+        height: 213px;
+        .number-rate__photo-slider {
+            height: 113px;
+        }
+    }
+    .search-room__room-list {
+        min-width: 68%;
+    }
+}
 
-// @media(max-width: 935px) {
+@media(max-width: 845px) {
+    .search-room {
+        .search-room__filter {
+            margin-top: 90px;
+        }
+        .search-room-room-list__rooms {
+            display: block;
+            margin-bottom: 0;
+        }
+        .search-room__room-list {
+            min-width: 70%;
+            .search-room__room-list-pagination {
+                padding: 0 120px;
+            }
+        }
+    }
+    .number-rate-container {
+        width: 90%;
+        .number-rate__photo-slider {
+            height: 243px;
+        }
+        .number-rate__photo-slider {
+            margin-bottom: 0;
+            img{
+                width: 100%;
+            }
+        }
+        .number-rate__img {
+            width: 100%;
+        }
+        .number-rate__name-price-rating-reviews {
+            width: 100%;
+            .number-rate__line {
+                width: 100%;
+            }
+        }
+    }
+    .search-room__room-list-text {
+        width: 50vw;
+    }
+}
+// @media(max-width: 840px) {
 //     .search-room {
-//         .search-room__filter {
-//             margin-top: 90px;
-//             margin-right: 50px;
-//         }
-//         .search-room-room-list__rooms {
-//             grid-template-rows: 8px 8px 8px 8px 8px;
-//             grid-template-columns: 12px 12px;
-//             grid-gap: 26vw;
-//         }
 //         .search-room__room-list {
-//             min-width: 550px;
-//             margin: 0 auto;
-//             .search-room-room-list__rooms {
-//                 margin-bottom: 0;
-//             }
-//             .search-room__room-list-pagination {
-//                 padding: 0 120px;
-//             }
+//             min-width: 68%;
 //         }
-//     }
-//     .number-rate-container {
-//         width: 225px;
-//         height: 213px;
-//         .number-rate__photo-slider {
-//             width: 225px;
-//             margin-bottom: 0;
-//             height: 123px;
-//             .number-rate__btn-previous, .number-rate__btn-next {
-//                 height: 126px;
-//             }
-//         }
-//         .number-rate__img {
-//             width: 225px;
-//         }
-//         .number-rate__name-price-rating-reviews {
-//             width: 220px;
-//             .number-rate__line {
-//                 width: 220px;
-//             }
-//         }
-//     }
-//     .search-room__room-list-text {
-//         width: 50vw;
 //     }
 // }
 // @media(max-width: 806px) {
 //     .search-room {
-//         width: 135vw;
-//         padding-right: 0;
-//         justify-content: space-between;
-//         .search-room__filter {
-//             margin-right: 80px;
-//         }
-//         .search-room-room-list__rooms {
-//             grid-template-rows: 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px 8px;
-//             grid-template-columns: 12px;
-//             grid-gap: 250px;
-//         }
 //         .search-room__room-list {
-//             .search-room__room-list-text {
-//                 width: 270px;
-//                 font-size: 3vw;
-//             }
-//             .search-room__room-list-pagination {
-//                 padding: 0 20px;
-//             }
-//         }
-//     }
-//     .number-rate-container {
-//         width: 270px;
-//         height: 257px;
-//         .number-rate__photo-slider {
-//             width: 270px;
-//             margin-bottom: 10px;
-//             height: 151px;
-//             .number-rate__btn-previous, .number-rate__btn-next {
-//                 height: 151px;
-//             }
-//         }
-//         .number-rate__img {
-//             width: 270px;
-//         }
-//         .number-rate__name-price-rating-reviews {
-//             width: 220px;
-//             .number-rate__line {
-//                 width: 220px;
-//             }
+//             min-width: 65%;
 //         }
 //     }
 // }
+// @media(max-width: 760px) {
+//     .search-room {
+//         .search-room__room-list {
+//             min-width: 60%;
+//         }
+//     }
+// }
+// @media(max-width: 740px) {
+//     .search-room {
+//         .search-room__room-list {
+//             min-width: 58%;
+//         }
+//     }
+// }
+
+
+
+
+
 // @media(max-width: 680px) {
 //     .search-room {
 //         .search-room__filter {
