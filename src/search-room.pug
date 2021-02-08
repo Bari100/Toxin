@@ -25,119 +25,120 @@ html(lang="ru")
     body
         include blocks/_commons/header/header.pug
         .search-room.wrap
-            .search-room__filter
-                .search-room__filter-dates
-                    h3.search-room__filter-titles.search-room__filter-titles-dates даты пребывания в отеле
-                    input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" readonly)
-                .guests
-                    h3.search-room__filter-titles.search-room__filter-titles-guests гости
-                        .search-room__filter-guests-space
-                        include blocks/_commons/guests/guests.pug
-                .search-room__filter-price
-                    .search-room__title-input-price
-                        h3.search-room__filter-titles.search-room__filter-titles-price <nobr class="search-room__filter-titles-nobr">диапазон цены</nobr>
-                        <input class="search-room__filter-price-input" type="text" readonly>
-                    include blocks/search-room/search-room__filter/search-room__filter-price/search-room__filter-price.pug
-                    p.search-room__filter-price-clarification Стоимость за сутки пребывания в номере
-                .search-room__filter-checkbox
-                    h3.search-room__filter-titles.search-room__filter-titles-checkbox Checkbox Buttons
-                    label
-                        input(type="checkbox" name="smoke")
-                        span.search-room__filter-fake-checkbox
-                        span.search-room__filter-span-checkbox Можно курить
-                    label
-                        input(type="checkbox" name="pets")
-                        span.search-room__filter-fake-checkbox
-                        span.search-room__filter-span-checkbox Можно с питомцами
-                    label
-                        input(type="checkbox" name="guests")
-                        span.search-room__filter-fake-checkbox
-                        span.search-room__filter-span-checkbox Можно пригласить гостей (до 10 человек)
-                .search-room__filter-accessibility
-                    h3.search-room__filter-titles.search-room__filter-titles-accessibility доступность
-                    label
-                        input(type="checkbox" name="corridor")
-                        span.search-room__filter-fake-checkbox
-                        span.search-room__filter-span-accessibility Широкий коридор
-                    p.search-room__filter-clarification-accessibility Ширина коридоров в номере не&nbspменее 91 см.
-                    label
-                        input(type="checkbox" name="disabled-assistant")
-                        span.search-room__filter-fake-checkbox
-                        span.search-room__filter-span-accessibility Помощник для инвалидов
-                    p.search-room__filter-clarification-accessibility На 1 этаже вас встретит специалист и проводит до номера.
-                .search-room__filter-convenience
-                    h3.search-room__filter-titles.search-room__filter-titles-convenience удобства номера
-                        .search-room__filter-convenience-space
-                        include blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.pug
-                .search-room__filter-convenience-additional
-                    .dropdown
-                        .search-room__filter-convenience-additional__container
-                            ul
-                                li.search-room__filter-convenience-additional__dropdown
-                                    a.search-room__filter-convenience-additional__text(href="index.pug" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">дополнительные удобства</h3>
-                                        img.search-room__filter-convenience-additional__arrow-down(src="img/arrow_down.svg" alt="button")
-                                    ul.search-room__filter-convenience-additional__dropdown-menu
-                                        .search-room__filter-convenience-additional__dropdown-content
-                                            li.search-room__filter-convenience-additional__number
-                                                label
-                                                    input(type="checkbox" name="breakfast")
-                                                    span.search-room__filter-fake-checkbox
-                                                    span.search-room__filter-span-convenience-additional Завтрак
-                                            li.search-room__filter-convenience-additional__number  
-                                                label
-                                                    input(type="checkbox" name="desk")
-                                                    span.search-room__filter-fake-checkbox
-                                                    span.search-room__filter-span-convenience-additional Письменный стол
-                                            li.search-room__filter-convenience-additional__number
-                                                label
-                                                    input(type="checkbox" name="table")
-                                                    span.search-room__filter-fake-checkbox
-                                                    span.search-room__filter-span-convenience-additional Стул для кормления
-                                            li.search-room__filter-convenience-additional__number
-                                                label
-                                                    input(type="checkbox" name="bed")
-                                                    span.search-room__filter-fake-checkbox
-                                                    span.search-room__filter-span-convenience-additional Кроватка
-                                            li.search-room__filter-convenience-additional__number
-                                                label
-                                                    input(type="checkbox" name="tv")
-                                                    span.search-room__filter-fake-checkbox
-                                                    span.search-room__filter-span-convenience-additional Телевизор
-                                            li.search-room__filter-convenience-additional__number
-                                                label
-                                                    input(type="checkbox" name="shampoo")
-                                                    span.search-room__filter-fake-checkbox
-                                                    span.search-room__filter-span-convenience-additional Шампунь
-            .search-room__room-list
-                h2.search-room__room-list-text Номера, которые мы для вас подобрали
-                .search-room-room-list__rooms
-                    include blocks/_commons/number-rate/number-rate.pug
-                    +number-rate__name-price-rating-reviews("888", "9 990₽", "145", " люкс", "img/.number-rate__img-1.jpg", "") 
-                    +rating-group-number("rating1", "rating1", "rat", "rating2", "rating2", "rat", "rating3", "rating3", "rat", "rating4", "rating4", "rat", "rating5", "rating5", "rat")
-                    +number-rate__name-price-rating-reviews("840", "9 900₽", "65", "", "img/.number-rate__img-2.jpg", "number-rate__rating-2")
-                    +rating-group-number("rating2_1", "rating2_1", "rat2", "rating2_2", "rating2_2", "rat2", "rating2_3", "rating2_3", "rat2", "rating2_4", "rating2_4", "rat2", "rating2_5", "rating2_5", "rat2", false, true)
-                    +number-rate__name-price-rating-reviews("980", "8 500₽", "35", " люкс", "img/.number-rate__img-3.jpg", "number-rate__rating-3")
-                    +rating-group-number("rating3_1", "rating3_1", "rat3", "rating3_2", "rating3_2", "rat3", "rating3_3", "rating3_3", "rat3", "rating3_4", "rating3_4", "rat3", "rating3_5", "rating3_5", "rat3", true)
-                    +number-rate__name-price-rating-reviews("856", "7 300₽", "19", "", "img/.number-rate__img-4.jpg", "number-rate__rating-4")
-                    +rating-group-number("rating4_1", "rating4_1", "rat4", "rating4_2", "rating4_2", "rat4", "rating4_3", "rating4_3", "rat4", "rating4_4", "rating4_4", "rat4", "rating4_5", "rating4_5", "rat4")
-                    +number-rate__name-price-rating-reviews("740", "6 000₽", "44", "", "img/.number-rate__img-5.jpg", "number-rate__rating-5")
-                    +rating-group-number("rating5_1", "rating5_1", "rat5", "rating5_2", "rating5_2", "rat5", "rating5_3", "rating5_3", "rat5", "rating5_4", "rating5_4", "rat5", "rating5_5", "rating5_5", "rat5", false, true)
-                    +number-rate__name-price-rating-reviews("982", "5 800₽", "56", "", "img/.number-rate__img-6.jpg", "number-rate__rating-6")
-                    +rating-group-number("rating6_1", "rating6_1", "rat6", "rating6_2", "rating6_2", "rat6", "rating6_3", "rating6_3", "rat6", "rating6_4", "rating6_4", "rat6", "rating6_5", "rating6_5", "rat6", true)
-                    +number-rate__name-price-rating-reviews("678", "5 500₽", "45", "", "img/.number-rate__img-7.jpg", "number-rate__rating-7")
-                    +rating-group-number("rating7_1", "rating7_1", "rat7", "rating7_2", "rating7_2", "rat7", "rating7_3", "rating7_3", "rat7", "rating7_4", "rating7_4", "rat7", "rating7_5", "rating7_5", "rat7")
-                    +number-rate__name-price-rating-reviews("450", "5 300₽", "39", "", "img/.number-rate__img-8.jpg", "number-rate__rating-8")
-                    +rating-group-number("rating8_1", "rating8_1", "rat8", "rating8_2", "rating8_2", "rat8", "rating8_3", "rating8_3", "rat8", "rating8_4", "rating8_4", "rat8", "rating8_5", "rating8_5", "rat8", false, true)
-                    +number-rate__name-price-rating-reviews("350", "5 000₽", "77", "", "img/.number-rate__img-9.jpg", "number-rate__rating-9")
-                    +rating-group-number("rating9_1", "rating9_1", "rat9", "rating9_2", "rating9_2", "rat9", "rating9_3", "rating9_3", "rat9", "rating9_4", "rating9_4", "rat9", "rating9_5", "rating9_5", "rat9", true)
-                    +number-rate__name-price-rating-reviews("666", "5 000₽", "25", "", "img/.number-rate__img-10.jpg", "number-rate__rating-10")
-                    +rating-group-number("rating10_1", "rating10_1", "rat10", "rating10_2", "rating10_2", "rat10", "rating10_3", "rating10_3", "rat10", "rating10_4", "rating10_4", "rat10", "rating10_5", "rating10_5", "rat10")
-                    +number-rate__name-price-rating-reviews("444", "5 000₽", "15", "", "img/.number-rate__img-11.jpg", "number-rate__rating-11")
-                    +rating-group-number("rating11_1", "rating11_1", "rat11", "rating11_2", "rating11_2", "rat11", "rating11_3", "rating11_3", "rat11", "rating11_4", "rating11_4", "rat11", "rating11_5", "rating11_5", "rat11", true)
-                    +number-rate__name-price-rating-reviews("352", "5 000₽", "55", "", "img/.number-rate__img-12.jpg", "number-rate__rating-12")
-                    +rating-group-number("rating12_1", "rating12_1", "rat12", "rating12_2", "rating12_2", "rat12", "rating12_3", "rating12_3", "rat12", "rating12_4", "rating12_4", "rat12", "rating12_5", "rating12_5", "rat12", true)
-                .search-room__room-list-pagination
-                    include blocks/_commons/pagination/pagination.pug
+            .search-room-box
+                .search-room__filter
+                    .search-room__filter-dates
+                        h3.search-room__filter-titles.search-room__filter-titles-dates даты пребывания в отеле
+                        input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" readonly)
+                    .guests
+                        h3.search-room__filter-titles.search-room__filter-titles-guests гости
+                            .search-room__filter-guests-space
+                            include blocks/_commons/guests/guests.pug
+                    .search-room__filter-price
+                        .search-room__title-input-price
+                            h3.search-room__filter-titles.search-room__filter-titles-price <nobr class="search-room__filter-titles-nobr">диапазон цены</nobr>
+                            <input class="search-room__filter-price-input" type="text" readonly>
+                        include blocks/search-room/search-room__filter/search-room__filter-price/search-room__filter-price.pug
+                        p.search-room__filter-price-clarification Стоимость за сутки пребывания в номере
+                    .search-room__filter-checkbox
+                        h3.search-room__filter-titles.search-room__filter-titles-checkbox Checkbox Buttons
+                        label
+                            input(type="checkbox" name="smoke")
+                            span.search-room__filter-fake-checkbox
+                            span.search-room__filter-span-checkbox Можно курить
+                        label
+                            input(type="checkbox" name="pets")
+                            span.search-room__filter-fake-checkbox
+                            span.search-room__filter-span-checkbox Можно с питомцами
+                        label
+                            input(type="checkbox" name="guests")
+                            span.search-room__filter-fake-checkbox
+                            span.search-room__filter-span-checkbox Можно пригласить гостей (до 10 человек)
+                    .search-room__filter-accessibility
+                        h3.search-room__filter-titles.search-room__filter-titles-accessibility доступность
+                        label
+                            input(type="checkbox" name="corridor")
+                            span.search-room__filter-fake-checkbox
+                            span.search-room__filter-span-accessibility Широкий коридор
+                        p.search-room__filter-clarification-accessibility Ширина коридоров в номере не&nbspменее 91 см.
+                        label
+                            input(type="checkbox" name="disabled-assistant")
+                            span.search-room__filter-fake-checkbox
+                            span.search-room__filter-span-accessibility Помощник для инвалидов
+                        p.search-room__filter-clarification-accessibility На 1 этаже вас встретит специалист и проводит до номера.
+                    .search-room__filter-convenience
+                        h3.search-room__filter-titles.search-room__filter-titles-convenience удобства номера
+                            .search-room__filter-convenience-space
+                            include blocks/search-room/search-room__filter/search-room__filter-convenience/search-room__filter-convenience.pug
+                    .search-room__filter-convenience-additional
+                        .dropdown
+                            .search-room__filter-convenience-additional__container
+                                ul
+                                    li.search-room__filter-convenience-additional__dropdown
+                                        a.search-room__filter-convenience-additional__text(href="index.pug" data-toggle="dropdown") <h3 class="search-room__filter-titles search-room__filter-titles-convenience-additional">дополнительные удобства</h3>
+                                            img.search-room__filter-convenience-additional__arrow-down(src="img/arrow_down.svg" alt="button")
+                                        ul.search-room__filter-convenience-additional__dropdown-menu
+                                            .search-room__filter-convenience-additional__dropdown-content
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="breakfast")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Завтрак
+                                                li.search-room__filter-convenience-additional__number  
+                                                    label
+                                                        input(type="checkbox" name="desk")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Письменный стол
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="table")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Стул для кормления
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="bed")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Кроватка
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="tv")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Телевизор
+                                                li.search-room__filter-convenience-additional__number
+                                                    label
+                                                        input(type="checkbox" name="shampoo")
+                                                        span.search-room__filter-fake-checkbox
+                                                        span.search-room__filter-span-convenience-additional Шампунь
+                .search-room__room-list
+                    h2.search-room__room-list-text Номера, которые мы для вас подобрали
+                    .search-room-room-list__rooms
+                        include blocks/_commons/number-rate/number-rate.pug
+                        +number-rate__name-price-rating-reviews("888", "9 990₽", "145", " люкс", "img/.number-rate__img-1.jpg", "") 
+                        +rating-group-number("rating1", "rating1", "rat", "rating2", "rating2", "rat", "rating3", "rating3", "rat", "rating4", "rating4", "rat", "rating5", "rating5", "rat")
+                        +number-rate__name-price-rating-reviews("840", "9 900₽", "65", "", "img/.number-rate__img-2.jpg", "number-rate__rating-2")
+                        +rating-group-number("rating2_1", "rating2_1", "rat2", "rating2_2", "rating2_2", "rat2", "rating2_3", "rating2_3", "rat2", "rating2_4", "rating2_4", "rat2", "rating2_5", "rating2_5", "rat2", false, true)
+                        +number-rate__name-price-rating-reviews("980", "8 500₽", "35", " люкс", "img/.number-rate__img-3.jpg", "number-rate__rating-3")
+                        +rating-group-number("rating3_1", "rating3_1", "rat3", "rating3_2", "rating3_2", "rat3", "rating3_3", "rating3_3", "rat3", "rating3_4", "rating3_4", "rat3", "rating3_5", "rating3_5", "rat3", true)
+                        +number-rate__name-price-rating-reviews("856", "7 300₽", "19", "", "img/.number-rate__img-4.jpg", "number-rate__rating-4")
+                        +rating-group-number("rating4_1", "rating4_1", "rat4", "rating4_2", "rating4_2", "rat4", "rating4_3", "rating4_3", "rat4", "rating4_4", "rating4_4", "rat4", "rating4_5", "rating4_5", "rat4")
+                        +number-rate__name-price-rating-reviews("740", "6 000₽", "44", "", "img/.number-rate__img-5.jpg", "number-rate__rating-5")
+                        +rating-group-number("rating5_1", "rating5_1", "rat5", "rating5_2", "rating5_2", "rat5", "rating5_3", "rating5_3", "rat5", "rating5_4", "rating5_4", "rat5", "rating5_5", "rating5_5", "rat5", false, true)
+                        +number-rate__name-price-rating-reviews("982", "5 800₽", "56", "", "img/.number-rate__img-6.jpg", "number-rate__rating-6")
+                        +rating-group-number("rating6_1", "rating6_1", "rat6", "rating6_2", "rating6_2", "rat6", "rating6_3", "rating6_3", "rat6", "rating6_4", "rating6_4", "rat6", "rating6_5", "rating6_5", "rat6", true)
+                        +number-rate__name-price-rating-reviews("678", "5 500₽", "45", "", "img/.number-rate__img-7.jpg", "number-rate__rating-7")
+                        +rating-group-number("rating7_1", "rating7_1", "rat7", "rating7_2", "rating7_2", "rat7", "rating7_3", "rating7_3", "rat7", "rating7_4", "rating7_4", "rat7", "rating7_5", "rating7_5", "rat7")
+                        +number-rate__name-price-rating-reviews("450", "5 300₽", "39", "", "img/.number-rate__img-8.jpg", "number-rate__rating-8")
+                        +rating-group-number("rating8_1", "rating8_1", "rat8", "rating8_2", "rating8_2", "rat8", "rating8_3", "rating8_3", "rat8", "rating8_4", "rating8_4", "rat8", "rating8_5", "rating8_5", "rat8", false, true)
+                        +number-rate__name-price-rating-reviews("350", "5 000₽", "77", "", "img/.number-rate__img-9.jpg", "number-rate__rating-9")
+                        +rating-group-number("rating9_1", "rating9_1", "rat9", "rating9_2", "rating9_2", "rat9", "rating9_3", "rating9_3", "rat9", "rating9_4", "rating9_4", "rat9", "rating9_5", "rating9_5", "rat9", true)
+                        +number-rate__name-price-rating-reviews("666", "5 000₽", "25", "", "img/.number-rate__img-10.jpg", "number-rate__rating-10")
+                        +rating-group-number("rating10_1", "rating10_1", "rat10", "rating10_2", "rating10_2", "rat10", "rating10_3", "rating10_3", "rat10", "rating10_4", "rating10_4", "rat10", "rating10_5", "rating10_5", "rat10")
+                        +number-rate__name-price-rating-reviews("444", "5 000₽", "15", "", "img/.number-rate__img-11.jpg", "number-rate__rating-11")
+                        +rating-group-number("rating11_1", "rating11_1", "rat11", "rating11_2", "rating11_2", "rat11", "rating11_3", "rating11_3", "rat11", "rating11_4", "rating11_4", "rat11", "rating11_5", "rating11_5", "rat11", true)
+                        +number-rate__name-price-rating-reviews("352", "5 000₽", "55", "", "img/.number-rate__img-12.jpg", "number-rate__rating-12")
+                        +rating-group-number("rating12_1", "rating12_1", "rat12", "rating12_2", "rating12_2", "rat12", "rating12_3", "rating12_3", "rat12", "rating12_4", "rating12_4", "rat12", "rating12_5", "rating12_5", "rat12", true)
+            .pagination-box
+                include blocks/_commons/pagination/pagination.pug
         include blocks/_commons/footer/footer.pug
         script(src="blocks/search-room/search-room__filter/search-room__filter-convenience-additional/search-room__filter-convenience-additional.js")
         script(src="index.js")

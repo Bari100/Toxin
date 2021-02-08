@@ -80,6 +80,7 @@ body {
 .room-content {
     display: flex;
     justify-content: space-between;
+    min-height: calc(100vh - 620px);
 }
 
 //MEDIA

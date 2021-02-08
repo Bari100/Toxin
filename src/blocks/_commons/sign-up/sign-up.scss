@@ -1,8 +1,13 @@
+.sign-up-in-box {
+    min-height: calc(100vh - 429px);
+}
+
 .sign-up-in-content {
     display: flex;
     justify-content: center;
     width: 100%;
     background-repeat: no-repeat;
+    
     .sign-up-form, .sign-in-form {
         background-color: #fff;
         border: 1px solid rgba(0, 0, 0, 0.12);
