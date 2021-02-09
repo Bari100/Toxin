@@ -44,7 +44,7 @@ body {
     background-size: 106%;
     padding-top: 70px;
     padding-bottom: 300px;
-    min-height: calc(100vh - 620px);
+    min-height: calc(100vh - 820px);
     position: relative;
 }
 
@@ -129,10 +129,10 @@ body {
 }
 @media (max-width: 390px) {
     body {
-        min-width: 300px;//НЕ ПОЗВОЛЯЕТ ПОЯВИТЬСЯ ПРОКРУТКЕ И ДАЕТ СУЖАТЬСЯ СТРАНИЦЕ
+        min-width: 300px;
     }
 }
-@media (max-height: 1100px) {
+@media (max-height: 1300px) {
     .content {
         min-height: 480px;;
     }
