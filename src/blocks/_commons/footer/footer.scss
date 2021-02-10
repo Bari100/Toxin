@@ -89,27 +89,25 @@
     }
     .footer__responsive-nav {
         .column-2__footer, .column-3__footer, .column-4__footer {
-            .footer__dropdown {
+            .footer__dropdown-about, .footer__dropdown-nav, .footer__dropdown-support {
                 position:relative;
                 z-index: 2;
                 cursor: pointer;
-                &:hover ul {
-                    max-width:300px;
-                    max-height: 350px;
-                }
-                .footer__dropdown-menu {
+                .footer__dropdown-menu-about, .footer__dropdown-menu-nav, .footer__dropdown-menu-support {
                     z-index: 1;
                     background-color: rgba(255, 255, 255, 0.95);
                     position:absolute;
                     text-align:center;
                     top:-5px;
                     left:150px;
-                    max-height: 0;
-                    max-width:0px;
+                    visibility: hidden;
                     overflow:hidden;
                     -webkit-transition:max-width 0.3s linear;
                     -moz-transition:max-width 0.3s linear;
                     transition:max-width 0.3s linear;
+                    li:hover {
+                        font-weight: 800;
+                    }
                     li {
                         margin: 0;
                         padding: 15px 80px;
@@ -123,27 +121,30 @@
                         color: rgba(31, 32, 65, 0.5);
                     }
                 }
+                .footer__dropdown-menu-about.footer__dropdown-menu-open, .footer__dropdown-menu-nav.footer__dropdown-menu-open, .footer__dropdown-menu-support.footer__dropdown-menu-open {
+                    visibility: visible;
+                }
             }
         }
         .column-2__footer {
-            .footer__dropdown {
-                .footer__dropdown-menu {
+            .footer__dropdown-about {
+                .footer__dropdown-menu-about {
                     left:150px;
                     top: -20px;
                 }
             }
         }
         .column-3__footer {
-            .footer__dropdown {
-                .footer__dropdown-menu {
+            .footer__dropdown-nav {
+                .footer__dropdown-menu-nav {
                     left:150px;
                     top: -70px;
                 }
             }
         }
         .column-4__footer {
-            .footer__dropdown {
-                .footer__dropdown-menu {
+            .footer__dropdown-support {
+                .footer__dropdown-menu-support {
                     left:150px;
                     top: -125px;
                     li {
