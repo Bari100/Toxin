@@ -90,6 +90,11 @@ body {
         background-position: 50% -128px;
     }
 }
+@media (max-width: 1280px) {
+    .main-search__container {
+        left: 55px;
+    }
+}
 @media (max-width: 1055px) {
     header.header {
         .wrap {
@@ -112,9 +117,6 @@ body {
             padding: 0;
             padding-top: 70px;
             padding-bottom: 300px;
-            .main-search__container {
-                margin-left: 40px;
-            }
         }
     }
     .content {
