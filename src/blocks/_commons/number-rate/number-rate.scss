@@ -115,3 +115,30 @@
         }
     }
 }
+
+@media(max-width: 1240px) {
+    .number-rate__name-price, .number-rate__rating-reviews {
+        padding: 0 10px;
+    }
+}
+@media(max-width: 845px) {
+    .number-rate__rating-reviews {
+        padding-bottom: 5px;
+    }
+}
+@media(max-width: 596px) {
+    .number-rate__name-price, .number-rate__rating-reviews {
+        padding: 0;
+    }
+    .number-rate__rating-reviews {
+        padding-bottom: 5px;
+    }
+}
+@media(max-width: 541px) {
+    .number-rate__name-price, .number-rate__rating-reviews {
+        padding: 0 10px;
+    }
+    .number-rate__rating-reviews {
+        padding-bottom: 5px;
+    }
+}

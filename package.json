@@ -8,7 +8,7 @@
     "prod": "parcel build src/index.pug --public-url ./"
   },
   "devDependencies": {
-    "pug": "^3.0.0",
+    "pug": "^3.0.2",
     "sass": "^1.26.7"
   },
   "dependencies": {
