@@ -119,6 +119,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"../node_modules/air-datepicker/dist/js/datepicker.js":[function(require,module,exports) {
 ;(function (window, $, undefined) { ;(function () {
+    var div = document.createElement('div');
+    div.className = "thing";
     var VERSION = '2.2.3',
         pluginName = 'datepicker',
         autoInitSelector = '.datepicker-here',
@@ -140,7 +142,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             dateFormat: '',
             altField: '',
             altFieldDateFormat: '@',
-            toggleSelected: true,
+            toggleSelected: false,
             keyboardNav: true,
 
             position: 'bottom left',
@@ -165,18 +167,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             multipleDatesSeparator: ',',
             range: false,
 
-            todayButton: false,
-            clearButton: false,
+            todayButton: true,
+            clearButton: true,
 
             showEvent: 'focus',
             autoClose: false,
 
             // navigation
             monthsField: 'monthsShort',
-            prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-            nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+            prevHtml: '<img src="arrow_forward.b453ccca.svg">',
+            nextHtml: '<img src="arrow_forward.04b75f4b.svg">',
             navTitles: {
-                days: 'MM, <i>yyyy</i>',
+                days: 'MM <i>yyyy</i>',
                 months: 'yyyy',
                 years: 'yyyy1 - yyyy2'
             },
@@ -697,15 +699,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             })
         },
 
-        today: function () {
-            this.silent = true;
-            this.view = this.opts.minView;
-            this.silent = false;
-            this.date = new Date();
-
-            if (this.opts.todayButton instanceof Date) {
-                this.selectDate(this.opts.todayButton)
-            }
+        today: function(){
+            $(".datepicker").hide();
         },
 
         clear: function () {
@@ -1233,6 +1228,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
                     this.timepicker.update();
                 }
             }
+            if (this.lastSelectedDate = alreadySelected && $(".-selected-").length == 1) {
+                $(".datepicker--cell.-selected-").css({'background':'linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)'});
+                $(".datepicker--cell.-range-from-.-range-to-.-selected_2-").removeClass('-selected_2-');
+            }
         },
 
         _onShowEvent: function (e) {
@@ -1596,10 +1595,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
             daysShort: ['Вос','Пон','Вто','Сре','Чет','Пят','Суб'],
             daysMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-            months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', '<h2>Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
             monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-            today: 'Сегодня',
-            clear: 'Очистить',
+            today: 'ПРИМЕНИТЬ',
+            clear: 'ОЧИСТИТЬ',
             dateFormat: 'dd.mm.yyyy',
             timeFormat: 'hh:ii',
             firstDay: 1
@@ -1608,6 +1607,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
     $(function () {
         $(autoInitSelector).datepicker();
+    })
+    $(function () {
+        $(autoInitSelector).click(function () {
+            $('.datepicker').show();
+        });
     })
 
 })();
@@ -1618,6 +1622,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
         '<div class="datepicker--days datepicker--body">' +
         '<div class="datepicker--days-names"></div>' +
         '<div class="datepicker--cells datepicker--cells-days"></div>' +
+        
         '</div>',
         months: '' +
         '<div class="datepicker--months datepicker--body">' +
@@ -1746,6 +1751,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
             if (dp.isSame(currentDate, date, type)) classes += ' -current-';
             if (parent.focused && dp.isSame(date, parent.focused, type)) classes += ' -focus-';
             if (parent._isSelected(date, type)) classes += ' -selected-';
+            if (parent._isSelected(date, type)) classes += ' -selected_2-';
+            // if (dp.bigger(minRange, date) && dp.less(maxRange, date)) classes += ' -selected_2-';
             if (!parent._isInRange(date, type) || render.disabled) classes += ' -disabled-';
 
             return {
@@ -1963,11 +1970,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
         },
 
         _addButtonsIfNeed: function () {
-            if (this.opts.todayButton) {
-                this._addButton('today')
-            }
             if (this.opts.clearButton) {
                 this._addButton('clear')
+            }
+            if (this.opts.todayButton) {
+                this._addButton('today')
             }
         },
 
@@ -2382,7 +2389,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63172" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59012" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
