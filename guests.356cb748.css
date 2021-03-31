@@ -199,4 +199,8 @@
   width: 71px;
 }
 
+.guests__apply-button {
+  z-index: 1;
+}
+
 /*# sourceMappingURL=/guests.356cb748.css.map */
