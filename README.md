@@ -8,5 +8,4 @@ https://bari100.github.io/Toxin/
 
     $ git clone https://github.com/Bari100/Toxin.git
     $ cd Toxin
-    $ npm install
-    $ npm run dev
+    $ yarn dev
