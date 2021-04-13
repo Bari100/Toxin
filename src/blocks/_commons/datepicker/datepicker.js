@@ -55,7 +55,7 @@
 
             // navigation
             monthsField: 'monthsShort',
-            prevHtml: '<img src="arrow_forward.b453ccca.svg">',
+            prevHtml: '<img src="arrow_forward.04b75f4b.svg">',
             nextHtml: '<img src="arrow_forward.04b75f4b.svg">',
             navTitles: {
                 days: 'MM <i>yyyy</i>',
