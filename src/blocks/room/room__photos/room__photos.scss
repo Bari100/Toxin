@@ -1,27 +1,27 @@
-.photo-room {
+.room__photos {
     display: flex;
     justify-content: center;
     margin-bottom: 72px;
 }
 
-.photo-room__1 {
+.room__photo-1 {
     background-image: url(../img/room/room.jpg);
     width: 981px;
 }
 
-.photo-room__2 {
+.room__photo-2 {
     background-image: url(../img/room/room-2.jpg);
     width: 459px;
     height: 242px;
 }
 
-.photo-room__3 {
+.room__photo-3 {
     background-image: url(../img/room/room-3.jpg);
     width: 459px;
     height: 242px;
 }
 
-.photo-room__4 {
+.room__photo-1-repeat {
     background-image: url(../img/room/room.jpg);
     width: 459px;
     height: 242px;
@@ -29,11 +29,11 @@
 }
 
 @media(max-width: 760px) {
-    .photo-room {
-        .photo-room__1 {
+    .room__photos {
+        .room__photo-1 {
             display: none;
         }
-        .photo-room__4 {
+        .room__photo-1-repeat {
             display: block;
             background-size: cover;
         }

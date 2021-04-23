@@ -668,7 +668,7 @@
     text-transform: none;
     background: transparent;
     cursor: pointer;
-    background-image: url(../../../../src/img/arrow_down.svg);
+    background-image: url(../../../../src/img/svg/arrow_down.svg);
     background-position: 231px 11px;
     background-repeat: no-repeat;
   }

@@ -23,9 +23,10 @@ html(lang="ru")
         link(rel="stylesheet" href="styles/style.scss")
     body
         include blocks/_commons/header/header.pug
-        include blocks/room/photo-room/photo-room.pug
-        .room-content.wrap
-            include blocks/room/room-content/reviews-room/reviews-room.pug
-            include blocks/_commons/reservation/reservation.pug
+        .room
+            include blocks/room/room__photos/room__photos.pug
+            .room__content.wrap
+                include blocks/room/room__content/room__reviews/room__reviews.pug
+                include blocks/_commons/reservation/reservation.pug
         include blocks/_commons/footer/footer.pug
         //script(src="index.js")

@@ -1,4 +1,4 @@
-// Dropdown Menu
+
 var dropdown = document.querySelectorAll('.search-room__filter-convenience-additional__dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
 dropdownArray.forEach(function(el){
@@ -8,14 +8,14 @@ dropdownArray.forEach(function(el){
 	button.onclick = function(event) {
 		if(!menu.hasClass('show')) {
 			$('.search-room__filter-convenience-additional__arrow-down').css('transform', 'rotate(0.5turn)');
-			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
+			event.preventDefault();
 			menu.classList.add('show');
 			menu.classList.remove('hide');
 			event.preventDefault();
 		}
 		else {
 			$('.search-room__filter-convenience-additional__arrow-down').css('transform', '');
-			event.preventDefault(); // ЗАПРЕЩАЕТ СКРОЛЛ СТРАНИЦЫ ПРИ НАЖАТИИ НА ССЫЛКУ
+			event.preventDefault();
 			menu.classList.remove('show');
 			menu.classList.add('hide');
 			event.preventDefault();

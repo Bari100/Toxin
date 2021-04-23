@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/main/1.jpg);
     background-position: -42px -128px;
     background-repeat: no-repeat;
     background-size: 106%;
@@ -66,7 +66,7 @@ body {
 }
 
 .sign-up-in-content {
-    background-image: url(../img/image_4.1.jpg);
+    background-image: url(../img/sign-up-in/image_4.1.jpg);
     background-position: center -70px;
     width: 1440px;
     padding-bottom: 17px;
@@ -77,7 +77,7 @@ body {
     }
 }
 
-.room-content {
+.room__content {
     display: flex;
     justify-content: space-between;
     min-height: calc(100vh - 620px);
@@ -126,7 +126,7 @@ body {
 }
 @media (max-width: 577px) {
     body {
-        min-width: 400px;//НЕ ПОЗВОЛЯЕТ ПОЯВИТЬСЯ ПРОКРУТКЕ И ДАЕТ СУЖАТЬСЯ СТРАНИЦЕ
+        min-width: 400px;
     }
 }
 @media (max-width: 390px) {

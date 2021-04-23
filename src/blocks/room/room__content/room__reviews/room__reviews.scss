@@ -1,22 +1,22 @@
+@import'room__reviews-info/room__reviews-info.scss';
+@import'room__reviews-impressions/room__reviews-impressions.scss';
+@import'room__reviews-comment/room__reviews-comment.scss';
+@import'room__reviews-rules-cancel/room__reviews-rules-cancel.scss';
+
+
 .reviews-room {
     width: 712px;
 }
 
-.info-impressions {
+.reviews-room__information {
     display: flex;
 }
-@import'reviews-room__info/reviews-room__info.scss';
-@import'reviews-room__impressions/reviews-room__impressions.scss';
-@import'reviews-room__comment/reviews-room__comment.scss';
-@import'reviews-room__rules-cancel/reviews-room__rules-cancel.scss';
+
 
 
 //MEDIA
 @media(max-width: 1215px) {
     .reviews-room__reviews {
-        /*.reviews-room__title {
-            width: 440px;
-        }*/
         .reviews-room__title-num {
             display: none;
         }
@@ -24,18 +24,18 @@
 }
 
 @media(max-width: 1122px) {
-    .room-content {
+    .room__content {
         position: relative;
         width: 700px;
         .reviews-room {
             margin: 0 auto;
             position: relative;
-            .info-impressions {
+            .reviews-room__information {
                 display: block;
             }
         }
         .reservation__container {
-            position: relative; //при absolute .reservation__container не увеличивается при открытии dropdown
+            position: relative;
             right: 350px;
             width: 370px;
             padding: 9px 25px 30px 25px;
@@ -43,7 +43,7 @@
     }
 }
 @media(max-width: 805px) {
-    .room-content {
+    .room__content {
         padding: 0;
         width: auto;
         margin: 0;
@@ -52,7 +52,7 @@
         .reviews-room {
             width: 600px;
             padding-left: 50px;
-            .info-impressions {
+            .reviews-room__information {
                 display: flex;
             }
             .reviews-room__info {
@@ -106,9 +106,21 @@
     }
 }
 
+@media(max-width: 760px) {
+    .room__photos {
+        .room__photo-1 {
+            display: none;
+        }
+        .room__photo-1-repeat {
+            display: block;
+            background-size: cover;
+        }
+    }
+}
+
 @media(max-width: 615px) {
     
-    .room-content {
+    .room__content {
         .reviews-room { 
             margin: auto;
             .reviews-room__reviews {
@@ -119,7 +131,7 @@
                     }
                 }
             }
-            .info-impressions {
+            .reviews-room__information {
                 width: 400px;
                 display: block;
                 margin: auto;
@@ -127,7 +139,7 @@
                 .reviews-room__info {
                     margin-bottom: 65px;
                 }
-                .circle-list {
+                .reviews-room__circle-list {
                     display: flex;
                     justify-content: space-between;
                 }
@@ -144,24 +156,18 @@
     }
 }
 @media(max-width: 596px) {
-    // body {
-    //     .wrap {
-    //         padding: 0;
-    //     }
-    // }
-    
-    .room-content {
+    .room__content {
         padding-left: 0;
         .reviews-room { 
             margin: 0;
             width: 500px;
             padding-left: 0;
-            .info-impressions {
+            .reviews-room__information {
                 width: 400px;
                 padding-left: 100px;
                 display: block;
                 margin-bottom: 65px;
-                .circle-list {
+                .reviews-room__circle-list {
                     display: flex;
                     justify-content: space-between;
                 }
@@ -177,90 +183,3 @@
         }
     }
 }
-
-// @media(max-width: 580px) {
-//     .room-content {
-//         .reviews-room {
-//             margin-right: 80px;
-//         }
-//         .reservation__container {
-//             margin-left: 10vw;
-//         }
-//     }
-//     .info-impressions, .reviews-room__rules-cancel {
-//         display: block;
-//         width: 300px;
-//         margin: 0 auto;
-//     }
-//     .info-impressions {
-//         margin-bottom: 150px;
-//     }
-//     .reviews-room__reviews {
-//         display: block;
-//         width: 300px;
-//         margin: 0 auto;
-//         .reviews-room__comment-text {
-//             width: 100%;
-//         }
-//     }
-//     .reviews-room__impressions {
-//         margin-bottom: 0;
-//         .circle-list {
-//             .reviews-room__circle {
-//                 left: 5px;
-//             }
-//             .reviews-room__list {
-//                 left: -30px;
-//             }
-//         }
-//     }
-// }
-// @media(max-width: 555px) {
-//     .room-content {
-//         .reviews-room {
-//             margin-right: 0;
-//         }
-//     }
-// }
-// @media(max-width: 538px) {
-//     .room-content {
-//         .reservation__container {
-//             margin-left: 6vw;
-//         }
-//     }
-// }
-// @media(max-width: 500px) {
-//     .room-content {
-//         .reservation__container {
-//             margin-left: 4vw;
-//         }
-//     }
-// }
-// @media(max-width: 450px) {
-//     .room-content {
-//         .reservation__container {
-//             margin-left: 0;
-//         }
-//     }
-// }
-// @media(max-width: 430px) {
-//     .room-content {
-//         .reservation__container {
-//             left: 25px;
-//         }
-//     }
-// }
-// @media(max-width: 410px) {
-//     .room-content {
-//         .reservation__container {
-//             left: 15px;
-//         }
-//     }
-// }
-// @media(max-width: 392px) {
-//     .room-content {
-//         .reservation__container {
-//             left: 0;
-//         }
-//     }
-// }
