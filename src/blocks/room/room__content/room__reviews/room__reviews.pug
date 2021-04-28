@@ -1,33 +1,33 @@
-.reviews-room
-    .reviews-room__information
-        .reviews-room__info.reviews-room__space
-            h2.reviews-room__title Сведения о номере
-            img.reviews-room__info-emoticon(src="img/reviews-room__info/emoticon.jpg" alt="smile")
-            p.reviews-room__info-text-b Комфорт
-            p.reviews-room__info-text Шумопоглощающие стены
-            hr.reviews-room__info-line
-            img.reviews-room__info-city(src="img/reviews-room__info/city.jpg" alt="building")
-            p.reviews-room__info-text-b Удобство
-            p.reviews-room__info-text Окно в каждой из спален
-            hr.reviews-room__info-line
-            img.reviews-room__info-shot(src="img/reviews-room__info/shot.jpg" alt="shot")
-            p.reviews-room__info-text-b Уют
-            p.reviews-room__info-text Номер оснащён камином
-        .reviews-room__impressions.reviews-room__space
-            h2.reviews-room__title Впечатления от номера
-            .reviews-room__circle-list
+.room__reviews
+    .room__reviews-information
+        .room__reviews-info.room__reviews-space
+            h2.room__reviews-title Сведения о номере
+            img.room__reviews-emoticon(src="img/reviews-room__info/emoticon.jpg" alt="smile")
+            p.room__reviews-text-b Комфорт
+            p.room__reviews-text Шумопоглощающие стены
+            hr.room__reviews-line
+            img.room__reviews-city(src="img/reviews-room__info/city.jpg" alt="building")
+            p.room__reviews-text-b Удобство
+            p.room__reviews-text Окно в каждой из спален
+            hr.room__reviews-line
+            img.room__reviews-shot(src="img/reviews-room__info/shot.jpg" alt="shot")
+            p.room__reviews-text-b Уют
+            p.room__reviews-text Номер оснащён камином
+        .room__reviews-impressions.room__reviews-space
+            h2.room__reviews-title Впечатления от номера
+            .room__reviews-circle
                 include __circle/__circle.pug
-                ul.reviews-room__list
+                ul.room__reviews-list
                     li <span>Великолепно
                     li <span>Хорошо
                     li <span>Удовлетворительно
                     li <span>Разочарован
-    .reviews-room__reviews.reviews-room__space
-        h2.reviews-room__title Отзывы посетителей номера <span class="reviews-room__title-num">2 отзыва
-        .reviews-room__comment
-            .reviews-room__comment-images-1
-                img.reviews-room__comment-avatar(src="img/reviews-room__comment/avatar.png" alt="avatar")
-                .reviews-room__comment-like.reviews-room__active-like
+    .room__reviews-comments.room__reviews-space
+        h2.room__reviews-title Отзывы посетителей номера <span class="reviews-room__title-num">2 отзыва
+        .room__reviews-comment
+            .room__reviews-comment1
+                img.room__reviews-avatar(src="img/reviews-room__comment/avatar.png" alt="avatar")
+                .room__reviews-like.room__reviews-like_active
                     .reviews-room__comment-img.reviews-room__comment-img-like
                     span.reviews-room__like-number.reviews-room__active-like 12
             .reviews-room__comment-name-text    
