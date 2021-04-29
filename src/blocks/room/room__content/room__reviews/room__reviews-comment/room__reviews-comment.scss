@@ -1,11 +1,11 @@
-.reviews-room__reviews {
+.room__reviews-comments {
     margin-bottom: 3px;
     color: rgba(31, 32, 65, 0.75);
-    .reviews-room__title {
+    .room__reviews-title {
         display: flex;
         justify-content: space-between;
         margin-bottom: 11px;
-        .reviews-room__title-num {
+        .room__reviews-titlenum {
             font-size: 14px;
             font-weight: 400;
             color: rgba(31, 32, 65, 0.5);
@@ -13,15 +13,15 @@
             margin-top: 4px;
         }
     }
-    .reviews-room__comment {
+    .room__reviews-comment {
         display: flex;
     }
-    .reviews-room__comment-avatar {
+    .room__reviews-avatar {
         position: absolute;
         left: -20px;
         top: -1.5px;
     }
-    .reviews-room__comment-like {
+    .room__reviews-like {
         display: flex;
         margin-top: 64px;
         border-radius: 10px;
@@ -34,29 +34,29 @@
         outline: none;
         cursor: pointer;
     }
-    .reviews-room__like-number {
+    .room__reviews-likenum {
         color: rgba(31, 32, 65, 0.466);
         font-size: 9px;
         margin-top: 1px;
     }
-    .reviews-room__active-like {
+    .room__reviews-like_active {
         border-color: #BC9CFF;
         color: #BC9CFF;
     }
-    .reviews-room__comment-img, .reviews-room__comment-img-like {
+    .room__reviews-heart, .room__reviews-heart_liked {
         width: 9px;
         margin-top: 2px;
         margin-left: 2px;
         margin-right: 6px;
         background-repeat: no-repeat;
     }
-    .reviews-room__comment-img {
+    .room__reviews-heart {
         background-image: url(../img/reviews-room__comment/like-2.svg);
     }
-    .reviews-room__comment-img-like {
+    .room__reviews-heart_liked {
         background-image: url(../img/reviews-room__comment/like.svg);
     }
-    .reviews-room__comment-images-1, .reviews-room__comment-images-2 {
+    .room__reviews-comment1, .room__reviews-comment2 {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -65,19 +65,19 @@
         position: relative;
         width: 47.67px;
     }
-    .reviews-room__comment-name {
+    .room__reviews-comment-name {
         font-weight: 800;
         margin-bottom: 0px;
     }
-    .reviews-room__comment-days {
+    .room__reviews-comment-days {
         margin-top: 8px;
     }
-    .reviews-room__comment-text {
+    .room__reviews-commenttxt {
         width: 653px;
         line-height: 24px;
     }
 }
 
-.reviews-room__rules-list {
-    width: 260px;
-}
+// .room__reviews-list {
+//     width: 260px;
+// }

@@ -4,11 +4,11 @@
 @import'room__reviews-rules-cancel/room__reviews-rules-cancel.scss';
 
 
-.reviews-room {
+.room__reviews {
     width: 712px;
 }
 
-.reviews-room__information {
+.room__reviews-information {
     display: flex;
 }
 
@@ -16,8 +16,8 @@
 
 //MEDIA
 @media(max-width: 1215px) {
-    .reviews-room__reviews {
-        .reviews-room__title-num {
+    .room__reviews-comments {
+        .room__reviews-titlenum {
             display: none;
         }
     }
@@ -27,10 +27,10 @@
     .room__content {
         position: relative;
         width: 700px;
-        .reviews-room {
+        .room__reviews {
             margin: 0 auto;
             position: relative;
-            .reviews-room__information {
+            .room__reviews-information {
                 display: block;
             }
         }
@@ -49,26 +49,26 @@
         margin: 0;
         flex-direction: column;
         justify-content: center;
-        .reviews-room {
+        .room__reviews {
             width: 600px;
             padding-left: 50px;
-            .reviews-room__information {
+            .room__reviews-information {
                 display: flex;
             }
-            .reviews-room__info {
+            .room__reviews-info {
                 margin-right: 2vw;
             }
             .reviews-room__circle {
                 left: 60px;
             }
-            .reviews-room__list {
+            .room__reviews-list {
                 top: 120px;
                 left: 15px;
             }
-            .reviews-room__space {
+            .room__reviews-space {
                 margin-bottom: 20px;
             }
-            .reviews-room__title {
+            .room__reviews-title {
                 margin: 0;
                 margin-bottom: 10px;
             }
@@ -86,11 +86,11 @@
             margin-bottom: 50px;
         }
     }
-    .reviews-room__reviews {
+    .room__reviews-comments {
         .reviews-room__comment-text {
             max-width: 72%;
         }
-        .reviews-room__title-num {
+        .room__reviews-titlenum {
             display: none;
         }
     }
@@ -99,7 +99,7 @@
     }
     .reviews-room__rules-cancel {
         .reviews-room__rules {
-            .reviews-room__title {
+            .room__reviews-title {
                 margin: 0;
             }
         }
@@ -121,9 +121,9 @@
 @media(max-width: 615px) {
     
     .room__content {
-        .reviews-room { 
+        .room__reviews { 
             margin: auto;
-            .reviews-room__reviews {
+            .room__reviews-comments {
                 .reviews-room__comment {
                     .reviews-room__comment-text {
                         max-width: 95%;
@@ -131,7 +131,7 @@
                     }
                 }
             }
-            .reviews-room__information {
+            .room__reviews-information {
                 width: 400px;
                 display: block;
                 margin: auto;
@@ -139,15 +139,15 @@
                 .reviews-room__info {
                     margin-bottom: 65px;
                 }
-                .reviews-room__circle-list {
+                .room__reviews-circle {
                     display: flex;
                     justify-content: space-between;
                 }
-                .reviews-room__circle {
+                .room__reviews-circle {
                     margin: 0;
                     left: 0;
                 }
-                .reviews-room__list {
+                .room__reviews-list {
                     position: static;
                     padding: 0;
                 }
@@ -158,24 +158,24 @@
 @media(max-width: 596px) {
     .room__content {
         padding-left: 0;
-        .reviews-room { 
+        .room__reviews { 
             margin: 0;
             width: 500px;
             padding-left: 0;
-            .reviews-room__information {
+            .room__reviews-information {
                 width: 400px;
                 padding-left: 100px;
                 display: block;
                 margin-bottom: 65px;
-                .reviews-room__circle-list {
+                .room__reviews-circle {
                     display: flex;
                     justify-content: space-between;
                 }
-                .reviews-room__circle {
+                .room__reviews-circle {
                     margin: 0;
                     left: 0;
                 }
-                .reviews-room__list {
+                .room__reviews-list {
                     position: static;
                     padding: 0;
                 }

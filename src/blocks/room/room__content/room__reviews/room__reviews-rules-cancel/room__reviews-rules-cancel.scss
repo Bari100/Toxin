@@ -1,16 +1,17 @@
 
-.reviews-room__rules-cancel {
+.room__reviews-rulcancel {
     color: rgba(31, 32, 65, 0.75);
     display: flex;
     justify-content: space-between;
     margin-bottom: 53px;
-    .reviews-room__rules {
+    .room__reviews-rules {
         width: 292px;
-        .reviews-room__title {
+        .room__reviews-title {
             margin-left: 19px;
         }
-        .reviews-room__rules-list {
+        .room__reviews-list {
             padding: 0;
+            width: 260px;
             li {
                 margin-bottom: 18px;
                 &:nth-child(2) {
@@ -31,13 +32,13 @@
             }
         }
     }
-    .reviews-room__cancel {
+    .room__reviews-cancel {
         width: 341px;
         margin-right: 10px;
-        .reviews-room__title {
+        .room__reviews-title {
             margin-bottom: 18px;
         }
-        .reviews-room__cancel-text {
+        .room__reviews-canceltxt {
             line-height: 24px;
         }
     } 
