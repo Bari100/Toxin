@@ -16,12 +16,12 @@
         .room__reviews-impressions.room__reviews-space
             h2.room__reviews-title Впечатления от номера
             .room__reviews-circle
-                include __circle/__circle.pug
+                include room__reviews-circle/room__reviews-circle.pug
                 ul.room__reviews-list
-                    li <span>Великолепно
-                    li <span>Хорошо
-                    li <span>Удовлетворительно
-                    li <span>Разочарован
+                    li.room__reviews-option <span>Великолепно
+                    li.room__reviews-option <span>Хорошо
+                    li.room__reviews-option <span>Удовлетворительно
+                    li.room__reviews-option <span>Разочарован
     .room__reviews-comments.room__reviews-space
         h2.room__reviews-title Отзывы посетителей номера <span class="room__reviews-titlenum">2 отзыва
         .room__reviews-comment
@@ -45,35 +45,30 @@
                 p.room__reviews-comment-days Неделю назад
                 p.room__reviews-commenttxt Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
         script.
-            $(".room__reviews-comment1 > .room__reviews-like").click(function() {
-                if  ($(".room__reviews-comment1 > .room__reviews-like").hasClass("room__reviews-like_active") && $(".room__reviews-comment1 > .room__reviews-like > .room__reviews-likenum").hasClass("room__reviews-like_active")) {
-                    $(".room__reviews-comment1 > .room__reviews-like").removeClass("room__reviews-like_active");
-                    $(".room__reviews-comment1 > .room__reviews-like > .room__reviews-likenum").removeClass("room__reviews-like_active");
-                    $( ".room__reviews-comment1 > .room__reviews-like > .room__reviews-heart" ).removeClass("room__reviews-heart_liked");
-                } else {
-                    $(".room__reviews-comment1 > .room__reviews-like").addClass("room__reviews-like_active");
-                    $(".room__reviews-comment1 > .room__reviews-like > .room__reviews-likenum").addClass("room__reviews-like_active");
-                    $( ".room__reviews-comment1 > .room__reviews-like > .room__reviews-heart" ).addClass("room__reviews-heart_liked");
-                }
-            });
-            $(".room__reviews-comment2 > .reviews-room__comment-like").click(function() {
-                if  ($(".reviews-room__comment-images-2 > .reviews-room__comment-like").hasClass("reviews-room__active-like") && $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").hasClass("reviews-room__active-like")) {
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").removeClass("reviews-room__active-like");
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").removeClass("reviews-room__active-like");
-                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).removeClass("reviews-room__comment-img-like");
-                } else {
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like").addClass("reviews-room__active-like");
-                    $(".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__like-number").addClass("reviews-room__active-like");
-                    $( ".reviews-room__comment-images-2 > .reviews-room__comment-like > .reviews-room__comment-img" ).addClass("reviews-room__comment-img-like");
-                }
-            });
+
+            let makeLiked = function(num) {
+                $(`.room__reviews-comment${num} > .room__reviews-like`).click(function() {
+                    if  ($(`.room__reviews-comment${num} > .room__reviews-like`).hasClass("room__reviews-like_active") && $(`.room__reviews-comment${num} > .room__reviews-like > .room__reviews-likenum`).hasClass("room__reviews-like_active")) {
+                        $(`.room__reviews-comment${num} > .room__reviews-like`).removeClass("room__reviews-like_active");
+                        $(`.room__reviews-comment${num} > .room__reviews-like > .room__reviews-likenum`).removeClass("room__reviews-like_active");
+                        $( `.room__reviews-comment${num} > .room__reviews-like > .room__reviews-heart` ).removeClass("room__reviews-heart_liked");
+                    } else {
+                        $(`.room__reviews-comment${num} > .room__reviews-like`).addClass("room__reviews-like_active");
+                        $(`.room__reviews-comment${num} > .room__reviews-like > .room__reviews-likenum`).addClass("room__reviews-like_active");
+                        $( `.room__reviews-comment${num} > .room__reviews-like > .room__reviews-heart` ).addClass("room__reviews-heart_liked");
+                    }
+                });
+            }   
+            makeLiked(1);
+            makeLiked(2);
+
     .room__reviews-rulcancel
         .room__reviews-rules.room__reviews-space
             h2.room__reviews-title Правила
             ul.room__reviews-restrictions
-                li Нельзя с питомцами
-                li Без вечеринок и мероприятий
-                li Время прибытия — после 13:00, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;а выезд до 12:00
+                li.room__reviews-res Нельзя с питомцами
+                li.room__reviews-res Без вечеринок и мероприятий
+                li.room__reviews-res Время прибытия — после 13:00, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;а выезд до 12:00
         .room__reviews-cancel.room__reviews-space
             h2.room__reviews-title Отмена
             section.room__reviews-canceltxt Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.        

@@ -58,7 +58,7 @@
             .room__reviews-info {
                 margin-right: 2vw;
             }
-            .reviews-room__circle {
+            .room__reviews-circle {
                 left: 60px;
             }
             .room__reviews-list {
@@ -72,9 +72,9 @@
                 margin: 0;
                 margin-bottom: 10px;
             }
-            .reviews-room__rules-cancel {
+            .room__reviews-rulcancel {
                 justify-content: unset;
-                .reviews-room__cancel-text {
+                .room__reviews-canceltxt {
                     width: 80%;
                     margin: 0;
                 }
@@ -87,18 +87,18 @@
         }
     }
     .room__reviews-comments {
-        .reviews-room__comment-text {
+        .room__reviews-commenttxt {
             max-width: 72%;
         }
         .room__reviews-titlenum {
             display: none;
         }
     }
-    .reviews-room__space {
+    .room__reviews-space {
         margin-bottom: 60px;
     }
-    .reviews-room__rules-cancel {
-        .reviews-room__rules {
+    .room__reviews-rulcancel {
+        .room__reviews-rules {
             .room__reviews-title {
                 margin: 0;
             }
@@ -124,8 +124,8 @@
         .room__reviews { 
             margin: auto;
             .room__reviews-comments {
-                .reviews-room__comment {
-                    .reviews-room__comment-text {
+                .room__reviews-comment {
+                    .room__reviews-commenttxt {
                         max-width: 95%;
                         width: 95%;
                     }
@@ -136,7 +136,7 @@
                 display: block;
                 margin: auto;
                 margin-bottom: 65px;
-                .reviews-room__info {
+                .room__reviews-info {
                     margin-bottom: 65px;
                 }
                 .room__reviews-circle {

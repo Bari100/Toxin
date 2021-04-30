@@ -1,37 +1,37 @@
-.reviews-room__info {
+.room__reviews-info {
     width: 291px;
     color: rgba(31, 32, 65, 0.75);
     margin-right: 70px;
-    .reviews-room__title {
+    .room__reviews-title {
         margin-bottom: 24px;
     }
-    .reviews-room__info-text-b {
+    .room__reviews-text-b {
         font-weight: 700;
         margin-top: 0;
         margin-bottom: 0;
     }
-    .reviews-room__info-text {
+    .room__reviews-text {
         margin-bottom: 22px;
         margin-top: 10px;
     }
-    img {
+    .room__reviews-emoticon, .room__reviews-city, .room__reviews-shot {
         float: left;
     }
-    img.reviews-room__info-emoticon {
+    .room__reviews-emoticon {
         margin-right: 15px;
         margin-left: 4px;
     }
-    img.reviews-room__info-city {
+    .room__reviews-city {
         margin-right: 17px;
         margin-left: 6px;
     }
-    img.reviews-room__info-shot {
+    .room__reviews-shot {
         margin-right: 18px;
         margin-left: 7px;
     }
 }
 
-.reviews-room__info-line {
+.room__reviews-line {
     width: 280px;
     border: none;
     height: 1px;

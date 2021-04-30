@@ -9,10 +9,10 @@
         .room__reviews-title {
             margin-left: 19px;
         }
-        .room__reviews-list {
+        .room__reviews-restrictions {
             padding: 0;
             width: 260px;
-            li {
+            .room__reviews-res {
                 margin-bottom: 18px;
                 &:nth-child(2) {
                     margin-bottom: 15px;
@@ -21,7 +21,7 @@
                     line-height: 24px;
                 }
             }
-            li:before{
+            .room__reviews-res:before{
                 content: '';
                 display: inline-block;
                 height: 10px;
